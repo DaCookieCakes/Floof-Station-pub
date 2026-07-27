@@ -1,0 +1,14 @@
+- type: entity
+  parent: BaseAction
+  id: ActionSelectDogBorgType
+  name: Select DogBorg Type
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    useDelay: 0.5
+  - type: Sprite
+    sprite: Interface/Actions/actions_borg.rsi
+    layers:
+    - state: select-type
+  - type: InstantAction
+    event: !type:DogBorgToggleSelectTypeEvent

@@ -1,0 +1,120 @@
+- type: entity
+  id: DogBorgChassisSelectable
+  parent: BaseDogBorgChassisNT
+  name: dogborg
+  components:
+  - type: Sprite
+    sprite: _Floof/Mobs/Silicon/chassis.rsi
+    layers:
+    - state: robot
+      map: [ "enum.BorgVisualLayers.Body", "movement" ]
+    - state: robot_e_r
+      map: [ "enum.BorgVisualLayers.Light", "movement_e" ]
+      shader: unshaded
+      visible: false
+    - state: robot_l
+      shader: unshaded
+      map: [ "light", "enum.BorgVisualLayers.LightStatus", "movement_l" ]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: robot_moving
+      movement_e:
+        state: robot_moving_e
+      movement_l:
+        state: robot_moving_l
+    noMovementLayers:
+      movement:
+        state: robot
+      movement_e:
+        state: robot_e
+      movement_l:
+        state: robot_l
+  - type: BorgChassis
+    maxModules: 0
+    hasMindState: robot_e
+    noMindState: robot_e_r
+  - type: BorgTransponder
+    sprite:
+      sprite: _Floof/Mobs/Silicon/chassis.rsi
+      state: robot
+    name: dogborg
+  - type: InteractionPopup
+    interactSuccessString: petting-success-generic-cyborg
+    interactFailureString: petting-failure-generic-cyborg
+  - type: DogBorgSwitchableType
+    inherentRadioChannels:
+    - Common
+    - Binary
+
+- type: entity
+  id: DogBorgChassisGeneric
+  parent: DogBorgChassisSelectable
+  name: generic dogborg
+  suffix: type picked
+  components:
+  - type: Sprite
+    layers:
+    - state: robot
+      map: [ "enum.BorgVisualLayers.Body", "movement" ]
+    - state: robot_e_r
+      map: [ "enum.BorgVisualLayers.Light", "movement_e" ]
+      shader: unshaded
+      visible: false
+    - state: robot_l
+      shader: unshaded
+      map: [ "light", "enum.BorgVisualLayers.LightStatus", "movement_l" ]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: robot_moving
+      movement_e:
+        state: robot_moving_e
+      movement_l:
+        state: robot_moving_l
+    noMovementLayers:
+      movement:
+        state: robot
+      movement_e:
+        state: robot_e
+      movement_l:
+        state: robot_l
+  - type: DogBorgSwitchableType
+    selectedBorgType: generic_dogborg
+
+- type: entity
+  id: DogBorgChassisJanitor
+  parent: DogBorgChassisSelectable
+  name: janitor dogborg
+  components:
+  - type: Sprite
+    layers:
+    - state: janitor
+      map: [ "enum.BorgVisualLayers.Body", "movement" ]
+    - state: janitor_e_r
+      map: [ "enum.BorgVisualLayers.Light", "movement_e" ]
+      shader: unshaded
+      visible: false
+    - state: janitor_l
+      shader: unshaded
+      map: [ "light", "enum.BorgVisualLayers.LightStatus", "movement_l" ]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: janitor_moving
+      movement_e:
+        state: janitor_moving_e
+      movement_l:
+        state: janitor_moving_l
+    noMovementLayers:
+      movement:
+        state: janitor
+      movement_e:
+        state: janitor_e
+      movement_l:
+        state: janitor_l
+  - type: DogBorgSwitchableType
+    selectedBorgType: janitor_dogborg

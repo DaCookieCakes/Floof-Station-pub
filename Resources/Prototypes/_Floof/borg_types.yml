@@ -1,0 +1,70 @@
+# Generic DogBorg
+- type: dogBorgType
+  id: generic_dogborg
+  dummyPrototype: DogBorgChassisGeneric
+  extraModuleCount: 5
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleScience
+  defaultModules:
+  - BorgModulePrying
+  - BorgModuleTool
+  - BorgModuleInflatable
+  - BorgModuleArtifact
+  - BorgModuleAnomaly
+  radioChannels:
+  - Science
+  inventoryTemplateId: borgShort
+  spriteBodyState: robot
+  bodyMovementLayers:
+    movement:
+      state: robot_moving
+    movement_e:
+      state: robot_moving_e
+    movement_l:
+      state: robot_moving_l
+  bodyNoMovementLayers:
+    movement:
+      state: robot
+    movement_e:
+      state: robot_e
+    movement_l:
+      state: robot_l
+  petSuccessString: petting-success-generic-cyborg
+  petFailureString: petting-failure-generic-cyborg
+
+# Janitor DogBorg
+- type: dogBorgType
+  id: janitor_dogborg
+  dummyPrototype: DogBorgChassisJanitor
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleJanitor
+  defaultModules:
+  - BorgModulePrying
+  - BorgModuleCleaning
+  - BorgModuleCustodial
+  radioChannels:
+  - Science
+  - Service
+  inventoryTemplateId: borgShort
+  spriteBodyState: janitor
+  bodyMovementLayers:
+    movement:
+      state: janitor_moving
+    movement_e:
+      state: janitor_moving_e
+    movement_l:
+      state: janitor_moving_l
+  bodyNoMovementLayers:
+    movement:
+      state: janitor
+    movement_e:
+      state: janitor_e
+    movement_l:
+      state: janitor_l
+  petSuccessString: petting-success-janitor-cyborg
+  petFailureString: petting-failure-janitor-cyborg
