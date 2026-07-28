@@ -1,0 +1,71 @@
+{
+    "version": 1,
+    "license": "CC0-1.0",
+    "copyright": "Edited by Flareguy, originally created by github user @moonheart08. Modified by Cookie for Floof Station.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "line_e_c"
+        },
+        {
+            "name": "line_e_c_stripped"
+        },
+        {
+            "name": "line_e_n"
+        },
+        {
+            "name": "line_e_s"
+        },
+        {
+            "name": "line_n_c"
+        },
+        {
+            "name": "line_n_c_stripped"
+        },
+        {
+            "name": "line_n_e"
+        },
+        {
+            "name": "line_n_w"
+        },
+        {
+            "name": "line_s_c"
+        },
+        {
+            "name": "line_s_c_stripped"
+        },
+        {
+            "name": "line_s_e"
+        },
+        {
+            "name": "line_s_w"
+        },
+        {
+            "name": "line_w_c"
+        },
+        {
+            "name": "line_w_c_stripped"
+        },
+        {
+            "name": "line_w_n"
+        },
+        {
+            "name": "line_w_s"
+        },
+        {
+            "name": "tile_n_e"
+        },
+        {
+            "name": "tile_n_w"
+        },
+        {
+            "name": "tile_s_e"
+        },
+        {
+            "name": "tile_s_w"
+        }
+    ]
+}

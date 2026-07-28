@@ -1,0 +1,146 @@
+# TILE #
+# quarters
+- type: decal
+  id: BrickTileDarkBottomLeft
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: tile_s_w
+
+- type: decal
+  id: BrickTileDarkBottomRight
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: tile_s_e
+
+- type: decal
+  id: BrickTileDarkTopLeft
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: tile_n_w
+
+- type: decal
+  id: BrickTileDarkTopRight
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: tile_n_e
+
+# LINES #
+# East
+- type: decal
+  id: BrickTileDarkLineECenter
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_e_c
+
+- type: decal
+  id: BrickTileDarkLineECenterStriped
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_e_c_stripped
+
+- type: decal
+  id: BrickTileDarkLineENorth
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_e_n
+
+- type: decal
+  id: BrickTileDarkLineESouth
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_e_s
+
+# North
+- type: decal
+  id: BrickTileDarkLineNCenter
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_n_c
+
+- type: decal
+  id: BrickTileDarkLineNCenterStriped
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_n_c_stripped
+
+- type: decal
+  id: BrickTileDarkLineNEast
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_n_e
+
+- type: decal
+  id: BrickTileDarkLineNWest
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_n_w
+
+# South
+- type: decal
+  id: BrickTileDarkLineSCenter
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_s_c
+
+- type: decal
+  id: BrickTileDarkLineSCenterStriped
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_s_c_stripped
+
+- type: decal
+  id: BrickTileDarkLineSEast
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_s_e
+
+- type: decal
+  id: BrickTileDarkLineSWest
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_s_w
+
+# West
+- type: decal
+  id: BrickTileDarkLineWCenter
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_w_c
+
+- type: decal
+  id: BrickTileDarkLineWCenterStriped
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_w_c_stripped
+
+- type: decal
+  id: BrickTileDarkLineWNorth
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_w_n
+
+- type: decal
+  id: BrickTileDarkLineWSouth
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Floof/Decals/BrickTile/dark.rsi
+    state: line_w_s
