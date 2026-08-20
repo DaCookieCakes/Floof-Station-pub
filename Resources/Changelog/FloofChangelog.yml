@@ -234,3 +234,99 @@ Entries:
       message: Pet Vend
   id: 30
   time: '2026-07-27T09:44:02.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added Boom cradle!
+    - type: Tweak
+      message: Tweaked volume of newton cradle.
+  id: 31
+  time: '2026-07-27T21:24:00.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: Added cowbell item.
+  id: 32
+  time: '2026-07-28T10:42:17.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Ported id lockable crates and lockers
+    - type: Add
+      message: Ported dorms airlocks
+  id: 33
+  time: '2026-07-28T10:54:00.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Fix
+      message: Fixed character imports!
+  id: 34
+  time: '2026-07-29T01:03:42.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added prize counter
+  id: 35
+  time: '2026-07-30T03:04:43.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added the big marking update!
+  id: 36
+  time: '2026-07-31T14:20:49.0000000+00:00'
+- author: DaCookieCakes
+  changes:
+    - type: Add
+      message: Added male Shadekin sounds.
+    - type: Remove
+      message: Removed a secondary Shadekin scream.
+    - type: Tweak
+      message: Improved the Shadekin NV to be a toggle.
+    - type: Fix
+      message: Fixed the Shock Collar.
+    - type: Fix
+      message: Fixed Shadekin loadout vocal names.
+    - type: Fix
+      message: Fixed Feroxi Vision/Goob NV.
+  id: 37
+  time: '2026-08-02T14:34:04.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Fix
+      message: Fixed most markings locale.
+  id: 38
+  time: '2026-08-02T20:59:14.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added clothes from floof
+  id: 39
+  time: '2026-08-03T02:45:52.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added cocks!
+    - type: Add
+      message: Added vaginas!
+    - type: Add
+      message: Added breasts!
+  id: 40
+  time: '2026-08-03T18:15:34.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added Janitorial plungers!
+  id: 41
+  time: '2026-08-04T14:51:48.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added addOrganEffect!
+    - type: Tweak
+      message: tweaked Breastfeeding to require breasts.
+    - type: Add
+      message: >-
+        Added Several Organs to represent genitals with their respective
+        solutions.
+  id: 42
+  time: '2026-08-08T18:35:30.0000000+00:00'
