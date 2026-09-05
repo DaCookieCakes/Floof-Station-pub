@@ -3,14 +3,11 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using Content.Shared.CCVar;
 using Content.Shared.Chat.Prototypes;
-using Content.Shared.EntityEffects.Effects;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
-using Content.Shared.Speech.Components;
-using Content.Shared.Traits;
 using Robust.Shared.Collections;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
@@ -21,7 +18,7 @@ using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
-using Content.Shared._DV.Traits; // DeltaV - Traits rework
+using Content.Shared._Floof.Traits; // DeltaV - Traits rework
 using Robust.Shared;
 using YamlDotNet.RepresentationModel;
 
@@ -338,7 +335,7 @@ namespace Content.Shared.Preferences
         /// <returns>A new character profile with values randomized</returns>
         public static HumanoidCharacterProfile Random(HashSet<string>? ignoredSpecies = null)
         {
-            var config = RandomizeConfigAll;
+            var config = RandomizeConfigAll &~ RandomizeCfg.Markings; // Floof - random markings look terrible, so we skip them on character creation.
             var baseProfile = new HumanoidCharacterProfile();
             if (ignoredSpecies != null)
             {
@@ -378,7 +375,7 @@ namespace Content.Shared.Preferences
             profile.Gender = (randomizeCfg & RandomizeCfg.Gender) != 0 ? RandomGender(profile.Sex) : baseProfile.Gender;
             profile.Name = (randomizeCfg & RandomizeCfg.Name) != 0 ? RandomName(speciesProto, profile.Gender) : baseProfile.Name;
             profile.Age = (randomizeCfg & RandomizeCfg.Age) != 0 ? RandomAge(speciesProto) : baseProfile.Age;
-
+            
             profile.Appearance = HumanoidCharacterAppearance.Random(speciesProto, profile.Sex, randomizeCfg, baseProfile.Appearance);
 
             return profile;

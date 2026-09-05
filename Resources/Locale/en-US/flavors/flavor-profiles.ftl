@@ -195,7 +195,7 @@ flavor-complex-rocksandstones = like rocks and stones
 
 ## Basic drinks
 flavor-complex-water = like water
-flavor-complex-beer = like piss
+flavor-complex-beer = like fermented hops # Floof
 flavor-complex-cognac = like dry spicy alcohol
 flavor-complex-mead = like fermented honey
 flavor-complex-vermouth = like herbal grape rinds
@@ -318,7 +318,6 @@ flavor-complex-manhattan-project = like I am become Death, the destroyer of worl
 flavor-complex-margarita = like a very bad hangover
 flavor-complex-martini = like a spy movie
 flavor-complex-mojito = like going into the shade after being in the hot sun
-flavor-complex-neurotoxin = like an underground testing facility
 flavor-complex-patron = like being serenaded by mariachi
 flavor-complex-radler = like spiked lemonade
 flavor-complex-red-mead = like a viking battle

@@ -11,9 +11,11 @@
   metabolisms:
     Digestion:
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 0.2
-      - !type:SatiateHunger
+      - !type:Satiate
+        satiationType: Hunger
         factor: 1
   footstepSound:
     collection: FootstepSticky
@@ -35,7 +37,8 @@
   metabolisms:
     Digestion:
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 0.3
   footstepSound:
     collection: FootstepSticky
@@ -62,5 +65,27 @@
   metabolisms:
     Digestion:
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 4
+
+- type: reagent
+  id: Piss
+  name: reagent-name-piss
+  group: Biological
+  desc: reagent-desc-piss
+  physicalDesc: reagent-physical-desc-dirty
+  flavor: piss
+  color: "#FFFBE8"
+  recognizable: true
+  plantMetabolism:
+  - !type:PlantAdjustNutrition
+    amount: 0.1
+  - !type:PlantAdjustWater
+    amount: 0.9
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 0.3

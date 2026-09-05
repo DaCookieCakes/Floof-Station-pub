@@ -65,6 +65,7 @@
   # Floof-start
   - type: OwnInteractionVerbs
     allowedVerbs: [] # TODO: define something here, or don't.
+  - type: Carriable
   # Floof-end
 
 - type: entity
@@ -83,6 +84,7 @@
   - type: Damageable
   - type: Injurable
     damageContainer: Biological
+  - type: DamageOverlay
   - type: RadiationReceiver
   - type: Stamina
   - type: StunVisuals
