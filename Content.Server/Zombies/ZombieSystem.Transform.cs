@@ -44,6 +44,8 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Server._Starlight.Language; // Starlight-edit: Languages
+using Content.Shared._Starlight.Language.Components; // Starlight-edit: Languages
 
 namespace Content.Server.Zombies;
 
@@ -73,6 +75,7 @@ public sealed partial class ZombieSystem
     [Dependency] private TagSystem _tag = default!;
     [Dependency] private ISharedPlayerManager _player = default!;
     [Dependency] private BodySystem _body = default!;
+    [Dependency] private LanguageSystem _language = default!; // Starlight-edit: Languages
 
     private static readonly ProtoId<TagPrototype> InvalidForGlobalSpawnSpellTag = "InvalidForGlobalSpawnSpell";
     private static readonly ProtoId<TagPrototype> CannotSuicideTag = "CannotSuicide";
@@ -154,11 +157,23 @@ public sealed partial class ZombieSystem
         }
 
         //funny voice
-        var accentType = "zombie";
-        if (TryComp<ZombieAccentOverrideComponent>(target, out var accent))
-            accentType = accent.Accent;
+        //var accentType = "zombie";
+        //if (TryComp<ZombieAccentOverrideComponent>(target, out var accent)) Floof - Let's not give it the accent by force, we have a zombie language.
+        //    accentType = accent.Accent;
+      
+        // Starlight-start: Add Zombie Language - Starlight
+        RemComp<UniversalLanguageSpeakerComponent>(target);
+        EnsureComp<LanguageKnowledgeComponent>(target, out var knowledge);
+        EnsureComp<LanguageSpeakerComponent>(target, out var speaker);
 
-        _replacementAccent.ApplyAccent(target, accentType);
+        knowledge.SpokenLanguages.Clear();
+        knowledge.UnderstoodLanguages.Clear();
+
+        speaker.SpokenLanguages.Clear();
+        speaker.UnderstoodLanguages.Clear();
+
+        _language.AddLanguage(target, "Zombie");
+        // Starlight-end
 
         //This is needed for stupid entities that fuck up combat mode component
         //in an attempt to make an entity not attack. This is the easiest way to do it.
