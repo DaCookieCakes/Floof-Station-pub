@@ -23,9 +23,6 @@
       visible: false
       shader: unshaded
       map: [ "enum.ToggleableVisuals.Layer" ]
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Items/welder_drop.ogg
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
