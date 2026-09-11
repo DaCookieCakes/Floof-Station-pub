@@ -370,3 +370,14 @@ Entries:
       message: Added a map auto-vote at the end of rounds/in lobbies.
   id: 48
   time: '2026-09-06T04:48:55.0000000+00:00'
+- author: DaCookieCakes
+  changes:
+    - type: Add
+      message: Added new sounds for airlocks from Funky and closets from Goob.
+    - type: Add
+      message: >-
+        Item interaction sounds make a return! Objects such as paper, tools,
+        clothing, and more now have sound effects for being picked up and put
+        down.
+  id: 49
+  time: '2026-09-11T09:17:12.0000000+00:00'
