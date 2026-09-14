@@ -65,6 +65,9 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+  - type: Tag # FLOOF
+    tags:
+    - Jumpskirt
 
 - type: entity
   abstract: true
