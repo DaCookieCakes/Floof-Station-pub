@@ -119,3 +119,7 @@
   - type: Singer
     proto: HarpySinger
   - type: UltraVision
+  - type: UserInterface
+    interfaces:
+      enum.InstrumentUiKey.Key:
+        type: InstrumentBoundUserInterface

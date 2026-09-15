@@ -38,12 +38,14 @@ public sealed partial class SingerSystem : SharedSingerSystem
         if (!ProtoMan.TryIndex(ent.Comp.Proto, out var singer))
             return;
 
-        _actionsSystem.AddAction(ent, ref ent.Comp.MidiAction, ent.Comp.MidiActionId);
+        _actionsSystem.AddAction(ent, ref ent.Comp.ToggleActionEntity, ent.Comp.MidiActionId);
 
         var instrumentComp = EnsureComp<InstrumentComponent>(ent);
         var defaultData = singer.InstrumentList[singer.DefaultInstrument];
         _instrument.SetInstrumentProgram(ent.Owner, instrumentComp, defaultData.Item1, defaultData.Item2);
         SetUpSwappableInstrument(ent, singer);
+
+        Dirty(ent, instrumentComp);
     }
 
     protected override void SetUpSwappableInstrument(EntityUid uid, SingerInstrumentPrototype singer)

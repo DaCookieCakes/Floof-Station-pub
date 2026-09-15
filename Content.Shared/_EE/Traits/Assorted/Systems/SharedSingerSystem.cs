@@ -16,7 +16,7 @@ public abstract partial class SharedSingerSystem : EntitySystem
     [SubscribeLocalEvent]
     private void OnShutdown(Entity<Components.SingerComponent> ent, ref ComponentShutdown args)
     {
-        _actionsSystem.RemoveAction(ent.Owner, ent.Comp.MidiAction);
+        _actionsSystem.RemoveAction(ent.Owner, ent.Comp.ToggleActionEntity);
     }
 
     [SubscribeLocalEvent]

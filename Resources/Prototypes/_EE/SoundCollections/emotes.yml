@@ -20,6 +20,11 @@
   - /Audio/Voice/Moth/moth_scream.ogg
   - /Audio/Voice/Skeleton/skeleton_scream.ogg
   - /Audio/Voice/Reptilian/reptilian_scream.ogg
+  - /Audio/Voice/Diona/diona_scream.ogg # FLOOF
+  - /Audio/Voice/Arachnid/arachnid_scream.ogg # FLOOF
+  - /Audio/_Floof/Voice/Avali/avali_scream.ogg # FLOOF
+  - /Audio/_EE/Voice/IPC/robot-scream.ogg # FLOOF
+  - /Audio/_Starlight/Voice/Shadekin/scream_f1.ogg # FLOOF
 
 - type: soundCollection
   id: HarpyLaugh
@@ -98,12 +103,12 @@
   - /Audio/Voice/Vulpkanin/dog_growl4.ogg
   - /Audio/Voice/Vulpkanin/dog_growl5.ogg
   - /Audio/Voice/Vulpkanin/dog_growl6.ogg
-  - /Audio/DeltaV/Voice/Vulpkanin/dog_growl1.ogg
-  - /Audio/DeltaV/Voice/Vulpkanin/dog_growl2.ogg
-  - /Audio/DeltaV/Voice/Vulpkanin/dog_growl3.ogg
-  - /Audio/DeltaV/Voice/Vulpkanin/dog_growl4.ogg
-  - /Audio/DeltaV/Voice/Vulpkanin/dog_growl5.ogg
-  - /Audio/DeltaV/Voice/Vulpkanin/dog_growl6.ogg
+  - /Audio/_DV/Voice/Vulpkanin/dog_growl1.ogg
+  - /Audio/_DV/Voice/Vulpkanin/dog_growl2.ogg
+  - /Audio/_DV/Voice/Vulpkanin/dog_growl3.ogg
+  - /Audio/_DV/Voice/Vulpkanin/dog_growl4.ogg
+  - /Audio/_DV/Voice/Vulpkanin/dog_growl5.ogg
+  - /Audio/_DV/Voice/Vulpkanin/dog_growl6.ogg
 
 - type: soundCollection
   id: HarpyPurrs
