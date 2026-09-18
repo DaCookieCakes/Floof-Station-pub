@@ -1,4 +1,4 @@
-﻿namespace Content.Shared.Atmos;
+namespace Content.Shared.Atmos;
 
 /// <summary>
 /// Internal Atmospherics struct that stores data about a hotspot in a tile.
@@ -54,4 +54,13 @@ public struct Hotspot
     /// </summary>
     [ViewVariables]
     public byte State;
+    
+    [ViewVariables] 
+    public HotspotType Type; // Floof - tile fires
+}
+
+public enum HotspotType : byte // Floof - tile fires
+{
+    Gas = 0,
+    Puddle = 1
 }

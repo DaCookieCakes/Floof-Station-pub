@@ -1,7 +1,5 @@
 using Content.Server.Administration.Logs;
-using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
-using Content.Server.Ghost;
 using Content.Server.Power.Components;
 using Content.Shared.Chat;
 using Content.Shared.Database;
@@ -31,8 +29,6 @@ public sealed partial class RadioSystem : SharedRadioSystem
     [Dependency] private IAdminLogManager _adminLogger = default!;
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private ChatSystem _chat = default!;
-    [Dependency] private IChatManager _chatManager = default!;
-    [Dependency] private GhostSystem _ghost = default!;
     [Dependency] private EntityQuery<TelecomExemptComponent> _exemptQuery = default!;
     [Dependency] private LanguageSystem _language = default!; // Starlight
     // set used to prevent radio feedback loops.
@@ -56,34 +52,19 @@ public sealed partial class RadioSystem : SharedRadioSystem
 
     private void OnIntrinsicReceive(EntityUid uid, IntrinsicRadioReceiverComponent component, ref RadioReceiveEvent args)
     {
-        if (!TryComp(uid, out ActorComponent? actor))
-            return;
-
-        // Starlight - Start
-        var listener = component.Owner;
-        var chatMsg = args.OriginalChatMsg;
-
-        if (!_language.CanUnderstand(listener, args.Language.ID))
-            chatMsg = args.LanguageObfuscatedChatMsg;
-
-        _netMan.ServerSendMessage(new MsgChatMessage { Message = chatMsg }, actor.PlayerSession.Channel);
-        // Starlight - End
-        MsgChatMessage msg;
-        if (_ghost.CanGhostWarp(actor.PlayerSession, out _))
+        if (TryComp(uid, out ActorComponent? actor))
         {
-            msg = new MsgChatMessage
-            {
-                Message = new ChatMessage(args.OriginalChatMsg)
-                {
-                    WrappedMessage = _chatManager.PrependFollowButtonIfAppropriate(
-                        args.OriginalChatMsg.Message,
-                        args.MessageSource,
-                        actor.PlayerSession.Channel),
-                },
-            };
-            _netMan.ServerSendMessage(msg, actor.PlayerSession.Channel);
-        }
+            _netMan.ServerSendMessage(args.ChatMsg, actor.PlayerSession.Channel);
+            // Starlight - Start
+            var listener = component.Owner;
+            var chatMsg = args.OriginalChatMsg;
 
+            if (!_language.CanUnderstand(listener, args.Language.ID))
+                chatMsg = args.LanguageObfuscatedChatMsg;
+
+            _netMan.ServerSendMessage(new MsgChatMessage { Message = chatMsg }, actor.PlayerSession.Channel);
+            // Starlight - End
+        }
     }
     
     /// <summary>
@@ -115,7 +96,7 @@ public sealed partial class RadioSystem : SharedRadioSystem
         RaiseLocalEvent(messageSource, evt);
 
         var name = evt.VoiceName;
-        name = FormattedMessage.EscapeText(name);
+        name = _chat.ChatNameLinks ? $"[textlink=\"{FormattedMessage.EscapeStringParameter(name)}\" entity=\"{GetNetEntity(messageSource)}\" color=\"{channel.Color.ToHex()}\"]" : FormattedMessage.EscapeText(name);
 
         SpeechVerbPrototype speech;
         if (evt.SpeechVerb != null && ProtoMan.Resolve(evt.SpeechVerb, out var evntProto))
@@ -135,7 +116,8 @@ public sealed partial class RadioSystem : SharedRadioSystem
         var obfuscated = _language.ObfuscateSpeech(content, language);
         var obfuscatedWrapped = WrapRadioMessage(messageSource, channel, name, obfuscated, language, true);
         var notUdsMsg = new ChatMessage(ChatChannel.Radio, obfuscated, obfuscatedWrapped, NetEntity.Invalid, null);
-        var ev = new RadioReceiveEvent(messageSource, channel, msg, notUdsMsg, language, radioSource, []);
+        var chatMsg = new MsgChatMessage { Message = msg };
+        var ev = new RadioReceiveEvent(messageSource, channel, msg, notUdsMsg, language, radioSource, [], chatMsg);
         // Starlight - End
         var sendAttemptEv = new RadioSendAttemptEvent(channel, radioSource);
         RaiseLocalEvent(ref sendAttemptEv);
