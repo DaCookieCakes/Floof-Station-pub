@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Atmos.Components; // Floof section - tile fires
 using JetBrains.Annotations;
 
