@@ -66,8 +66,6 @@ public sealed partial class RadioSystem : SharedRadioSystem
             // Starlight - End
         }
     }
-
-    }
     
     /// <summary>
     /// Send radio message to all active radio listeners
@@ -118,7 +116,8 @@ public sealed partial class RadioSystem : SharedRadioSystem
         var obfuscated = _language.ObfuscateSpeech(content, language);
         var obfuscatedWrapped = WrapRadioMessage(messageSource, channel, name, obfuscated, language, true);
         var notUdsMsg = new ChatMessage(ChatChannel.Radio, obfuscated, obfuscatedWrapped, NetEntity.Invalid, null);
-        var ev = new RadioReceiveEvent(messageSource, channel, msg, notUdsMsg, language, radioSource, []);
+        var chatMsg = new MsgChatMessage { Message = msg };
+        var ev = new RadioReceiveEvent(messageSource, channel, msg, notUdsMsg, language, radioSource, [], chatMsg);
         // Starlight - End
         var sendAttemptEv = new RadioSendAttemptEvent(channel, radioSource);
         RaiseLocalEvent(ref sendAttemptEv);
