@@ -1,6 +1,8 @@
 using System.Collections.Frozen;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Content.Shared._Starlight.Language;
+using Content.Shared._Starlight.Language.Systems;
 using Content.Shared.ActionBlocker;
 using Content.Shared.CCVar;
 using Content.Shared.Chat.Prototypes;
@@ -17,6 +19,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using Robust.Shared.Serialization; // Starlight
 
 namespace Content.Shared.Chat;
 
@@ -32,6 +35,8 @@ public abstract partial class SharedChatSystem : EntitySystem
     public const char OOCPrefix = '[';
     public const char EmotesPrefix = '@';
     public const char EmotesAltPrefix = '*';
+    public const char SubtlePrefix = '-'; // Floof
+    public const char SubtleOOCPrefix = '{'; // Floof
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
     public const char DefaultChannelKey = 'h';
@@ -56,6 +61,9 @@ public abstract partial class SharedChatSystem : EntitySystem
     [Dependency] private EntityWhitelistSystem _whitelist = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
+
+    [Dependency] private SharedLanguageSystem _language = default!;
+
 
     /// <summary>
     /// Cache of the keycodes for faster lookup.
@@ -407,6 +415,7 @@ public abstract partial class SharedChatSystem : EntitySystem
         string action,
         ChatTransmitRange range,
         string? nameOverride,
+        LanguagePrototype language,
         bool hideLog = false,
         bool checkEmote = true,
         bool ignoreActionBlocker = false,
@@ -437,7 +446,8 @@ public abstract partial class SharedChatSystem : EntitySystem
         ICommonSession? player = null,
         string? nameOverride = null,
         bool checkRadioPrefix = true,
-        bool ignoreActionBlocker = false)
+        bool ignoreActionBlocker = false
+        )
     { }
 
     /// <summary>
@@ -462,7 +472,8 @@ public abstract partial class SharedChatSystem : EntitySystem
         ICommonSession? player = null,
         string? nameOverride = null,
         bool checkRadioPrefix = true,
-        bool ignoreActionBlocker = false
+        bool ignoreActionBlocker = false,
+        LanguagePrototype? languageOverride = null // Starlight
         )
     { }
 
@@ -564,7 +575,9 @@ public enum InGameICChatType : byte
 {
     Speak,
     Emote,
-    Whisper
+    Whisper,
+    Subtle, // Floof
+    SubtleOOC // Floof
 }
 
 /// <summary>
