@@ -1,0 +1,5 @@
+- type: loadoutGroup
+  id: ResearchAssistantNeck
+  parent: ScienceCollars
+  name: loadout-group-research-assistant-neck
+  minLimit: 0

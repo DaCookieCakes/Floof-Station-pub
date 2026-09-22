@@ -63,6 +63,7 @@
   - ChiefMedicalOfficerWintercoat
 
 - type: loadoutGroup
+  parent: CommandCollars # FLOOF
   id: ChiefMedicalOfficerNeck
   name: loadout-group-chief-medical-officer-neck
   minLimit: 0

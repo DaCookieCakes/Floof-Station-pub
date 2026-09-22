@@ -64,6 +64,7 @@
   groups:
   - GroupTankHarness
   - BartenderHead
+  - BartenderNeck # FLOOF
   - BartenderJumpsuit
   - CommonBackpack
   - BartenderOuterClothing
@@ -78,7 +79,8 @@
   id: JobServiceWorker
   groups:
   - GroupTankHarness
-  - BartenderJumpsuit
+  - ServiceWorkerNeck # FLOOF
+  - ServiceWorkerJumpsuit # FLOOF: 'BartenderJumpsuit'
   - CommonBackpack
   - Glasses
   - AssistiveItems
@@ -92,6 +94,7 @@
   groups:
   - GroupTankHarness
   - ChefHead
+  - ChefNeck # FLOOF
   - ChefMask
   - ChefJumpsuit
   - CommonBackpack
@@ -107,6 +110,7 @@
   id: JobLibrarian
   groups:
   - GroupTankHarness
+  - LibrarianNeck # FLOOF
   - LibrarianJumpsuit
   - CommonBackpack
   - Glasses
@@ -154,6 +158,7 @@
   groups:
   - GroupTankHarness
   - JanitorHead
+  - JanitorNeck # FLOOF
   - JanitorJumpsuit
   - JanitorGloves
   - CommonBackpack
@@ -170,6 +175,7 @@
   groups:
   - GroupTankHarness
   - BotanistHead
+  - BotanistNeck # FLOOF
   - BotanistJumpsuit
   - BotanistBackpack
   - BotanistOuterClothing
@@ -186,6 +192,7 @@
   groups:
   - GroupTankHarness
   - ClownHead
+  - ClownNeck # FLOOF
   - ClownJumpsuit
   - ClownBackpack
   - ClownOuterClothing
@@ -202,6 +209,7 @@
   groups:
   - GroupTankHarness
   - MimeHead
+  - MimeNeck # FLOOF
   - MimeMask
   - MimeJumpsuit
   - MimeBackpack
@@ -218,6 +226,7 @@
   canCustomizeName: true
   groups:
   - GroupTankHarness
+  - MusicianNeck # FLOOF
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
@@ -252,6 +261,7 @@
   groups:
   - GroupTankHarness
   - CargoTechnicianHead
+  - CargoTechnicianNeck # FLOOF
   - CargoTechnicianJumpsuit
   - CargoTechnicianBackpack
   - CargoTechnicianOuterClothing
@@ -268,6 +278,7 @@
   id: JobSalvageSpecialist
   groups:
   - GroupTankHarness
+  - SalvageSpecialistNeck # FLOOF
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistShoes
@@ -299,6 +310,7 @@
   id: JobTechnicalAssistant
   groups:
   - GroupTankHarness
+  - TechnicalAssistantNeck # FLOOF
   - TechnicalAssistantJumpsuit
   - StationEngineerBackpack
   - AssistiveItems
@@ -312,6 +324,7 @@
   groups:
   - GroupTankHarness
   - StationEngineerHead
+  - StationEngineerNeck # FLOOF
   - StationEngineerJumpsuit
   - StationEngineerBackpack
   - StationEngineerOuterClothing
@@ -327,6 +340,7 @@
   id: JobAtmosphericTechnician
   groups:
   - GroupTankHarness
+  - AtmosphericTechnicianNeck # FLOOF
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
@@ -379,6 +393,7 @@
   id: JobResearchAssistant
   groups:
   - GroupTankHarness
+  - ResearchAssistantNeck # FLOOF
   - ResearchAssistantJumpsuit
   - ScientistBackpack
   - Glasses
@@ -409,6 +424,7 @@
   id: JobWarden
   groups:
   - WardenHead
+  - WardenNeck # FLOOFS@
   - WardenJumpsuit
   - SecurityBackpack
   - SecurityBelt
@@ -424,6 +440,7 @@
   id: JobSecurityOfficer
   groups:
   - SecurityHead
+  - SecurityNeck # FLOOF
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing
@@ -454,6 +471,7 @@
 - type: roleLoadout
   id: JobSecurityCadet
   groups:
+  - SecurityCadetNeck # FLOOF
   - SecurityCadetJumpsuit
   - SecurityBackpack
   - AssistiveItems
@@ -469,6 +487,7 @@
   - GroupTankHarness
   - ReporterJumpsuit
   - ReporterHead
+  - ReporterNeck # FLOOF
   - ReporterOuterClothing
   - CommonBackpack
   - Glasses
@@ -482,6 +501,7 @@
   id: JobPsychologist
   groups:
   - GroupTankHarness
+  - PsychologistNeck # FLOOF
   - PsychologistJumpsuit
   - MedicalBackpack
   - Glasses
@@ -495,6 +515,7 @@
   id: JobTramDriver
   groups:
   - GroupTankHarness
+  - TramDriverNeck # FLOOF
   - CommonBackpack
   - TramDriverJumpsuit
   - TramDriverOuterClothing #Vest and such
