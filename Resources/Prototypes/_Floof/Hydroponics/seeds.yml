@@ -2,6 +2,7 @@
   parent: BasePlant
   id: HumpShroom
   name: humpshroom
+  categories: [HideSpawnMenu]
   components:
     - type: Sprite
       sprite: _Floof/Objects/Specific/Hydroponics/humpshroom.rsi
@@ -9,6 +10,7 @@
       name: seeds-humpshroom-name
       packetPrototype: HumpShroomSeeds
       productPrototypes: [ FoodHumpShroom ]
+      mutationPrototypes: [ BreedShroom ]
     - type: Plant
       lifespan: 25
       maturation: 12
@@ -38,6 +40,7 @@
   parent: BasePlant
   id: BreedShroom
   name: breedshroom
+  categories: [HideSpawnMenu]
   components:
     - type: Sprite
       sprite: _Floof/Objects/Specific/Hydroponics/breedshroom.rsi
@@ -79,6 +82,7 @@
   parent: BasePlant
   id: Pomegranate
   name: pomegranate
+  categories: [HideSpawnMenu]
   components:
     - type: Sprite
       sprite: _Floof/Objects/Specific/Hydroponics/pomegranate.rsi
