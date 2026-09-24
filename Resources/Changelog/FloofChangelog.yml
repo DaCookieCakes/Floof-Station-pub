@@ -417,3 +417,9 @@ Entries:
       message: Fixed breedshroom and humpshroom textures
   id: 55
   time: '2026-09-24T02:09:57.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: Chatstacking
+  id: 56
+  time: '2026-09-24T17:34:39.0000000+00:00'
