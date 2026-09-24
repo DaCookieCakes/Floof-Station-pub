@@ -1,6 +1,3 @@
-using Content.Shared._Starlight.Language.Components.Translators;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
-
 namespace Content.Shared._Starlight.Language.Components;
 
 /// <summary>

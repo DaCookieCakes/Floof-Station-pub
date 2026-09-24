@@ -1,5 +1,6 @@
 using System.Collections.Frozen;
 using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 using Content.Shared._Starlight.Language;
 using Content.Shared._Starlight.Language.Systems;
@@ -59,6 +60,7 @@ public abstract partial class SharedChatSystem : EntitySystem
     [Dependency] private EntityWhitelistSystem _whitelist = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedLanguageSystem _language = default!; // Starlight
 
     /// <summary>
     /// Cache of the keycodes for faster lookup.
@@ -552,6 +554,27 @@ public abstract partial class SharedChatSystem : EntitySystem
         Color? colorOverride = null,
         string? signature = null)
     { }
+
+    // FLOOF: Moved here from server-side code.
+    public string ObfuscateMessageReadability(string message, float chance)
+    {
+        var modifiedMessage = new StringBuilder(message);
+
+        for (var i = 0; i < message.Length; i++)
+        {
+            if (char.IsWhiteSpace((modifiedMessage[i])))
+            {
+                continue;
+            }
+
+            if (Random.Prob(1 - chance))
+            {
+                modifiedMessage[i] = '~';
+            }
+        }
+
+        return modifiedMessage.ToString();
+    }
 }
 
 /// <summary>

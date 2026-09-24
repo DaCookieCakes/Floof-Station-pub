@@ -49,7 +49,7 @@
   effects:
   - !type:AddCompsEffect
     components:
-    - type: Muted
+    - type: MutedStatusEffect
 
 - type: trait
   id: FrenchAccent

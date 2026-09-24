@@ -47,11 +47,7 @@ public sealed partial class TraitSystemTest
   cost: 0
   conditions:
   - !type:HasCompCondition
-    component: Hunger
-  effects:
-  - !type:AddCompsEffect
-    components:
-    - type: Test
+    component: Satiation
 
 
 # Test Traits - Effects
@@ -65,7 +61,12 @@ public sealed partial class TraitSystemTest
   - !type:AddCompsEffect
     components:
     - type: Test
-    - type: Hunger
+    - type: Satiation
+      satiations:
+        Hunger:
+          prototype: NormalSatiationHunger
+        Thirst:
+          prototype: NormalSatiationThirst
 
 - type: trait
   id: TestTraitOverrideComps
@@ -76,7 +77,12 @@ public sealed partial class TraitSystemTest
   effects:
   - !type:OverrideCompsEffect
     components:
-    - type: Hunger
+    - type: Satiation
+      satiations:
+        Hunger:
+          prototype: NormalSatiationHunger
+        Thirst:
+          prototype: NormalSatiationThirst
 
 - type: trait
   id: TestTraitRemComps
@@ -87,8 +93,7 @@ public sealed partial class TraitSystemTest
   effects:
   - !type:RemCompsEffect
     components:
-    - Hunger
-    - Thirst
+    - Satiation
 
 - type: trait
   id: TestTraitSpawnItem
@@ -176,9 +181,9 @@ public sealed partial class TraitSystemTest
         await server.WaitAssertion(() =>
         {
             var player = entMan.SpawnEntity(null, MapCoordinates.Nullspace);
-            entMan.AddComponent<HungerComponent>(player);
+            entMan.AddComponent<SatiationComponent>(player);
 
-            var condition = new HasCompCondition { Component = "Hunger" };
+            var condition = new HasCompCondition { Component = "Satiation" };
             var ctx = CreateContext(entMan, protoMan, factory, player);
 
             Assert.That(condition.Evaluate(ctx), Is.True, "HasCompCondition should return true when component exists");
@@ -202,7 +207,7 @@ public sealed partial class TraitSystemTest
         {
             var player = entMan.SpawnEntity(null, MapCoordinates.Nullspace);
 
-            var condition = new HasCompCondition { Component = "Hunger" };
+            var condition = new HasCompCondition { Component = "Satiation" };
             var ctx = CreateContext(entMan, protoMan, factory, player);
 
             Assert.That(condition.Evaluate(ctx),
@@ -227,9 +232,9 @@ public sealed partial class TraitSystemTest
         await server.WaitAssertion(() =>
         {
             var player = entMan.SpawnEntity(null, MapCoordinates.Nullspace);
-            entMan.AddComponent<HungerComponent>(player);
+            entMan.AddComponent<SatiationComponent>(player);
 
-            var condition = new HasCompCondition { Component = "Hunger", Invert = true };
+            var condition = new HasCompCondition { Component = "Satiation", Invert = true };
             var ctx = CreateContext(entMan, protoMan, factory, player);
 
             Assert.That(condition.Evaluate(ctx),
@@ -408,7 +413,7 @@ public sealed partial class TraitSystemTest
         await server.WaitAssertion(() =>
         {
             var player = entMan.SpawnEntity(null, MapCoordinates.Nullspace);
-            Assert.That(entMan.HasComponent<HungerComponent>(player),
+            Assert.That(entMan.HasComponent<SatiationComponent>(player),
                 Is.False,
                 "Player should not start with HungerComponent");
 
@@ -420,7 +425,7 @@ public sealed partial class TraitSystemTest
                 effect.Apply(ctx);
             }
 
-            Assert.That(entMan.HasComponent<HungerComponent>(player),
+            Assert.That(entMan.HasComponent<SatiationComponent>(player),
                 Is.True,
                 "AddCompsEffect should add HungerComponent");
 
@@ -442,7 +447,7 @@ public sealed partial class TraitSystemTest
         await server.WaitAssertion(() =>
         {
             var player = entMan.SpawnEntity(null, MapCoordinates.Nullspace);
-            var hungerBefore = entMan.AddComponent<HungerComponent>(player);
+            var hungerBefore = entMan.AddComponent<SatiationComponent>(player);
 
             var trait = protoMan.Index(new ProtoId<TraitPrototype>("TestTraitAddComps"));
             var ctx = CreateEffectContext(entMan, protoMan, factory, player);
@@ -452,7 +457,7 @@ public sealed partial class TraitSystemTest
                 effect.Apply(ctx);
             }
 
-            var hungerAfter = entMan.GetComponent<HungerComponent>(player);
+            var hungerAfter = entMan.GetComponent<SatiationComponent>(player);
             Assert.That(hungerAfter,
                 Is.SameAs(hungerBefore),
                 "AddCompsEffect should not replace existing component instance");
@@ -475,7 +480,7 @@ public sealed partial class TraitSystemTest
         await server.WaitAssertion(() =>
         {
             var player = entMan.SpawnEntity(null, MapCoordinates.Nullspace);
-            var hungerBefore = entMan.AddComponent<HungerComponent>(player);
+            var hungerBefore = entMan.AddComponent<SatiationComponent>(player);
 
             var trait = protoMan.Index(new ProtoId<TraitPrototype>("TestTraitOverrideComps"));
             var ctx = CreateEffectContext(entMan, protoMan, factory, player);
@@ -485,7 +490,7 @@ public sealed partial class TraitSystemTest
                 effect.Apply(ctx);
             }
 
-            var hungerAfter = entMan.GetComponent<HungerComponent>(player);
+            var hungerAfter = entMan.GetComponent<SatiationComponent>(player);
             Assert.That(hungerAfter,
                 Is.Not.SameAs(hungerBefore),
                 "OverrideCompsEffect should replace existing component instance");
@@ -508,15 +513,11 @@ public sealed partial class TraitSystemTest
         await server.WaitAssertion(() =>
         {
             var player = entMan.SpawnEntity(null, MapCoordinates.Nullspace);
-            entMan.AddComponent<HungerComponent>(player);
-            entMan.AddComponent<ThirstComponent>(player);
+            entMan.AddComponent<SatiationComponent>(player);
 
-            Assert.That(entMan.HasComponent<HungerComponent>(player),
+            Assert.That(entMan.HasComponent<SatiationComponent>(player),
                 Is.True,
                 "Player should start with HungerComponent");
-            Assert.That(entMan.HasComponent<ThirstComponent>(player),
-                Is.True,
-                "Player should start with ThirstComponent");
 
             var trait = protoMan.Index(new ProtoId<TraitPrototype>("TestTraitRemComps"));
             var ctx = CreateEffectContext(entMan, protoMan, factory, player);
@@ -526,12 +527,9 @@ public sealed partial class TraitSystemTest
                 effect.Apply(ctx);
             }
 
-            Assert.That(entMan.HasComponent<HungerComponent>(player),
+            Assert.That(entMan.HasComponent<SatiationComponent>(player),
                 Is.False,
                 "RemCompsEffect should remove HungerComponent");
-            Assert.That(entMan.HasComponent<ThirstComponent>(player),
-                Is.False,
-                "RemCompsEffect should remove ThirstComponent");
 
             entMan.DeleteEntity(player);
         });
@@ -693,7 +691,7 @@ public sealed partial class TraitSystemTest
         await server.WaitAssertion(() =>
         {
             var player = entMan.SpawnEntity(null, MapCoordinates.Nullspace);
-            entMan.AddComponent<HungerComponent>(player);
+            entMan.AddComponent<SatiationComponent>(player);
 
             // Trait requires HungerComponent
             var selectedTraits = new HashSet<ProtoId<TraitPrototype>>

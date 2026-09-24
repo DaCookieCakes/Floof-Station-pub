@@ -12,7 +12,7 @@ namespace Content.Server._DV.Speech.EntitySystems;
 public sealed partial class SyllableObfuscationAccentSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _proto = default!;
-    [Dependency] private SharedGameTicker _ticker = default!;
+    [Dependency] private GameTicker _ticker = default!;
 
     public override void Initialize()
     {

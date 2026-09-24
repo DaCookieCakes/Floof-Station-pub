@@ -12,14 +12,12 @@ public abstract partial class SharedLanguageSystem : EntitySystem
     /// <summary>
     ///     The language used as a fallback in cases where an entity suddenly becomes a Language Speaker (e.g. the usage of make-sentient).
     /// </summary>
-    [ValidatePrototypeId<LanguagePrototype>]
-    public static readonly string FallbackLanguagePrototype = "GalacticCommon";
+    public static readonly ProtoId<LanguagePrototype> FallbackLanguagePrototype = "GalacticCommon";
 
     /// <summary>
     ///     The language whose speakers are assumed to understand and speak every language. Should never be added directly.
     /// </summary>
-    [ValidatePrototypeId<LanguagePrototype>]
-    public static readonly string UniversalPrototype = "Universal";
+    public static readonly ProtoId<LanguagePrototype> UniversalPrototype = "Universal";
 
     /// <summary>
     ///     A cached instance of <see cref="UniversalPrototype"/>
@@ -27,7 +25,7 @@ public abstract partial class SharedLanguageSystem : EntitySystem
     public static LanguagePrototype Universal { get; private set; } = default!;
 
     [Dependency] protected IPrototypeManager _prototype = default!;
-    [Dependency] protected SharedGameTicker _ticker = default!;
+    [Dependency] protected GameTicker _ticker = default!;
 
     public override void Initialize()
     {

@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._Starlight.Language.Systems;
 using Content.Shared.Chat;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
@@ -24,6 +25,7 @@ public abstract partial class SharedRadioDeviceSystem : EntitySystem
     [Dependency] private SharedRadioSystem _radio = default!;
     [Dependency] private SharedPowerReceiverSystem _power = default!;
     [Dependency] private SharedInteractionSystem _interaction = default!;
+    [Dependency] private SharedLanguageSystem _language = default!; // Starlight
 
     // Used to prevent a shitter from using a bunch of radios to spam chat.
     private readonly HashSet<(string, EntityUid, RadioChannelPrototype)> _recentlySent = [];
@@ -263,12 +265,9 @@ public abstract partial class SharedRadioDeviceSystem : EntitySystem
             ("originalName", nameEv.VoiceName));
 
         // log to chat so people can identity the speaker/source, but avoid clogging ghost chat if there are many radios
-        _chat.TrySendInGameICMessage(ent.Owner,
-            args.Message,
-            InGameICChatType.Whisper,
-            ChatTransmitRange.GhostRangeLimit,
-            nameOverride: name,
-            checkRadioPrefix: false);
+        var message = args.OriginalChatMsg.Message; // Starlight-edit: The chat system will handle the rest and re-obfuscate if needed.
+        _chat.TrySendInGameICMessage(ent.Owner, message, InGameICChatType.Whisper, ChatTransmitRange.GhostRangeLimit,
+            nameOverride: name, checkRadioPrefix: false, languageOverride: args.Language); // Starlight
     }
 
     [SubscribeLocalEvent]

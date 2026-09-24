@@ -35,9 +35,9 @@
         - MobMask
         layer:
         - MobLayer
-  - type: EggLayer
-    eggSpawn:
-    - id: FoodBananaBaby
+  - type: EntityProducer
+    table:
+      id: FoodBananaBaby
   - type: Speech
     speechSounds: Duck
     speechVerb: SmallMob

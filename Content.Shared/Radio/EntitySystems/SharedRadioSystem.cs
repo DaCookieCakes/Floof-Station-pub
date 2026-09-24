@@ -1,3 +1,4 @@
+using Content.Shared._Starlight.Language;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 
@@ -34,6 +35,7 @@ public abstract partial class SharedRadioSystem : EntitySystem
         string message,
         RadioChannelPrototype channel,
         EntityUid radioSource,
+        LanguagePrototype? language = null, // Starlight
         bool escapeMarkup = true)
     {
 
