@@ -12,6 +12,7 @@
       productPrototypes: [ FoodHumpShroom ]
       mutationPrototypes: [ BreedShroom ]
     - type: Plant
+      growthStages: 2
       lifespan: 25
       maturation: 12
       production: 3
@@ -49,6 +50,7 @@
       packetPrototype: BreedShroomSeeds
       productPrototypes: [ FoodBreedShroom ]
     - type: Plant
+      growthStages: 2
       lifespan: 25
       maturation: 12
       production: 3

@@ -411,3 +411,9 @@ Entries:
       message: Fix markings disappearing on roundstart
   id: 54
   time: '2026-09-19T12:25:20.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Fix
+      message: Fixed breedshroom and humpshroom textures
+  id: 55
+  time: '2026-09-24T02:09:57.0000000+00:00'
