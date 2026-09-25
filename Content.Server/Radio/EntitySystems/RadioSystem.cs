@@ -16,7 +16,6 @@ using Robust.Shared.Utility;
 // Starlight - Start
 using Content.Shared._Starlight.Language;
 using Content.Server._Starlight.Language;
-using Robust.Shared.Prototypes;
 // Starlight - End
 
 namespace Content.Server.Radio.EntitySystems;
@@ -54,7 +53,6 @@ public sealed partial class RadioSystem : SharedRadioSystem
     {
         if (TryComp(uid, out ActorComponent? actor))
         {
-            _netMan.ServerSendMessage(args.ChatMsg, actor.PlayerSession.Channel);
             // Starlight - Start
             var listener = component.Owner;
             var chatMsg = args.OriginalChatMsg;
@@ -66,14 +64,9 @@ public sealed partial class RadioSystem : SharedRadioSystem
             // Starlight - End
         }
     }
-    
-    /// <summary>
-    /// Send radio message to all active radio listeners
-    /// </summary>
-    /// <param name="messageSource">Entity that spoke the message</param>
-    /// <param name="radioSource">Entity that picked up the message and will send it, e.g. headset</param>
-    public override void SendRadioMessage(
-        EntityUid messageSource,
+
+    /// <inheritdoc/>
+    public override void SendRadioMessage(EntityUid messageSource,
         string message,
         RadioChannelPrototype channel,
         EntityUid radioSource,
@@ -116,8 +109,7 @@ public sealed partial class RadioSystem : SharedRadioSystem
         var obfuscated = _language.ObfuscateSpeech(content, language);
         var obfuscatedWrapped = WrapRadioMessage(messageSource, channel, name, obfuscated, language, true);
         var notUdsMsg = new ChatMessage(ChatChannel.Radio, obfuscated, obfuscatedWrapped, NetEntity.Invalid, null);
-        var chatMsg = new MsgChatMessage { Message = msg };
-        var ev = new RadioReceiveEvent(messageSource, channel, msg, notUdsMsg, language, radioSource, [], chatMsg);
+        var ev = new RadioReceiveEvent(messageSource, channel, msg, notUdsMsg, language, radioSource, []);
         // Starlight - End
         var sendAttemptEv = new RadioSendAttemptEvent(channel, radioSource);
         RaiseLocalEvent(ref sendAttemptEv);

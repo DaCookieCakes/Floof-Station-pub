@@ -488,7 +488,7 @@ public enum LogType
     /// Silicon law changes.
     /// </summary>
     SiliconLaw = 105,
-    
+
     /// <summary> Floof
     /// Events related to players consent.
     /// </summary>

@@ -53,7 +53,6 @@ public sealed partial class TraitSystemTest
     components:
     - type: Test
 
-
 # Test Traits - Effects
 - type: trait
   id: TestTraitAddComps

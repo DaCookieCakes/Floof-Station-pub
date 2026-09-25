@@ -1,5 +1,6 @@
 using System.Collections.Frozen;
 using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 using Content.Shared._Starlight.Language;
 using Content.Shared._Starlight.Language.Systems;
@@ -550,6 +551,27 @@ public abstract partial class SharedChatSystem : EntitySystem
         SoundSpecifier? announcementSound = null,
         Color? colorOverride = null)
     { }
+
+    // FLOOF: Moved from server.
+    public string ObfuscateMessageReadability(string message, float chance)
+    {
+        var modifiedMessage = new StringBuilder(message);
+
+        for (var i = 0; i < message.Length; i++)
+        {
+            if (char.IsWhiteSpace((modifiedMessage[i])))
+            {
+                continue;
+            }
+
+            if (Random.Prob(1 - chance))
+            {
+                modifiedMessage[i] = '~';
+            }
+        }
+
+        return modifiedMessage.ToString();
+    }
 }
 
 /// <summary>

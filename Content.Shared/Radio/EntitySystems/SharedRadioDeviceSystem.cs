@@ -24,7 +24,7 @@ public abstract partial class SharedRadioDeviceSystem : EntitySystem
     [Dependency] private SharedRadioSystem _radio = default!;
     [Dependency] private SharedPowerReceiverSystem _power = default!;
     [Dependency] private SharedInteractionSystem _interaction = default!;
-    
+
     // Used to prevent a shitter from using a bunch of radios to spam chat.
     private readonly HashSet<(string, EntityUid, RadioChannelPrototype)> _recentlySent = [];
 
