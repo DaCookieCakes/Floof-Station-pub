@@ -31,7 +31,6 @@ chat-manager-sender-announcement-wrap-message = [font size=14][bold]{$sender} An
 chat-manager-sender-announcement-wrap-message-signed = [font size=14][bold]{$sender} Announcement:[/bold][/font][font size=12]
                                                        {$message}[bold]
                                                        Sent by {$signature}[/bold][/font]
-
 # Starlight-start: Languages
 chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent][font="{$fontType}" size={$fontSize}][color={$color}]{$message}[/color][/font][/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
 chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent][font="{$fontType}" size={$fontSize}][bold][color={$color}]{$message}[/color][/font][/bold][/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]

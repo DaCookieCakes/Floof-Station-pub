@@ -4,8 +4,8 @@ using Content.Shared._Starlight.Language;
 using Content.Shared.Chat;
 using Content.Shared.Ghost.Components;
 using Content.Shared.Players;
-using Content.Shared.Popups;
 using Content.Shared.Speech.Prototypes;
+using Content.Shared.Popups;
 using Robust.Shared.Console;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -77,10 +77,7 @@ public sealed partial class ChatSystem
             return;
         }
         // Starlight - End
-
-        // Floof: Added 'ghostsCanHear'
-        var ghostsCanHear = channel != ChatChannel.Whisper && channel != ChatChannel.Subtle && channel != ChatChannel.SubtleOOC;
-        foreach (var (session, data) in GetRecipients(source, VoiceRange, ghostsCanHear))
+        foreach (var (session, data) in GetRecipients(source, VoiceRange))
         {
             var entRange = MessageRangeCheck(session, data, range);
             if (entRange == MessageRangeCheckResult.Disallowed)
@@ -211,10 +208,9 @@ public sealed partial class ChatSystem
     }
 
     /// <summary>
-    ///     FLOOF: Added ghostsCanHear
     ///     Returns list of players and ranges for all players withing some range. Also returns observers with a range of -1.
     /// </summary>
-    private Dictionary<ICommonSession, ICChatRecipientData> GetRecipients(EntityUid source, float voiceGetRange, bool ghostsCanHear = true)
+    private Dictionary<ICommonSession, ICChatRecipientData> GetRecipients(EntityUid source, float voiceGetRange)
     {
         // TODO proper speech occlusion
 
@@ -236,7 +232,7 @@ public sealed partial class ChatSystem
 
             var observer = _ghostHearingQuery.HasComponent(playerEntity);
 
-            if (observer && !ghostsCanHear && !_adminManager.IsAdmin(playerEntity)) // Floof - All non-aghosts are completely deaf to local chat.
+            if (observer && !Comp<GhostHearingComponent>(playerEntity).CanHearLocal) // Floof - All non-aghosts are completely deaf to local chat.
                 continue;
 
             // even if they are a ghost hearer, in some situations we still need the range
@@ -258,7 +254,9 @@ public sealed partial class ChatSystem
     {
     }
 
-    public string ObfuscateMessageReadability(string message, float chance)
+    // FLOOF: Moved to shared
+    /*
+    private string ObfuscateMessageReadability(string message, float chance)
     {
         var modifiedMessage = new StringBuilder(message);
 
@@ -277,6 +275,7 @@ public sealed partial class ChatSystem
 
         return modifiedMessage.ToString();
     }
+    */
 
     public string BuildGibberishString(IReadOnlyList<char> charOptions, int length)
     {

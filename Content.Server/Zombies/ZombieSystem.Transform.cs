@@ -160,7 +160,7 @@ public sealed partial class ZombieSystem
         //var accentType = "zombie";
         //if (TryComp<ZombieAccentOverrideComponent>(target, out var accent)) Floof - Let's not give it the accent by force, we have a zombie language.
         //    accentType = accent.Accent;
-      
+
         // Starlight-start: Add Zombie Language - Starlight
         RemComp<UniversalLanguageSpeakerComponent>(target);
         EnsureComp<LanguageKnowledgeComponent>(target, out var knowledge);

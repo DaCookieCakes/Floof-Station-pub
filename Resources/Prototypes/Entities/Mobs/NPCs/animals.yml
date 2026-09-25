@@ -61,8 +61,6 @@
       reagents:
       - ReagentId: Blood
         Quantity: 50
-  - type: ReplacementAccent
-    accent: mouse
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Effects/bite.ogg
@@ -302,8 +300,6 @@
   - type: ActionGrant
     actions:
     - ActionAnimalLayEgg
-  - type: ReplacementAccent
-    accent: chicken
   - type: LeashAnchor # Floof
     kind: Intrinsic
   - type: SentienceTarget
@@ -624,8 +620,6 @@
       amount: 2
   - type: Extractable
     grindableSolutionName: food
-  - type: ReplacementAccent
-    accent: mothroach
   - type: ZombieAccentOverride
     accent: zombieMoth
   - type: Vocal
@@ -786,8 +780,6 @@
   - type: ActionGrant
     actions:
     - ActionAnimalLayEgg
-  - type: ReplacementAccent
-    accent: duck
   - type: LeashAnchor # Floof
     kind: Intrinsic
   - type: SentienceTarget
