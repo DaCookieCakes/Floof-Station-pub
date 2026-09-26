@@ -21,7 +21,7 @@ public sealed partial class ShuttleComponent : Component
     /// </summary>
     [DataField]
     public float BaseMaxLinearVelocity = 60f;
-    
+
     public const float MaxAngularVelocity = 4f;
 
     /// <summary>
@@ -76,4 +76,3 @@ public sealed partial class ShuttleComponent : Component
     [DataField]
     public TimeSpan? FTLCooldownOverride = null;
 }
-

@@ -4,7 +4,6 @@ using Content.Server.DeviceNetwork.Systems;
 using Content.Server.Popups;
 using Content.Server.RoundEnd;
 using Content.Server.Shuttles.Systems;
-using Content.Server.Station.Systems;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.AlertLevel;
@@ -19,7 +18,6 @@ using Content.Shared.Screens;
 using Content.Shared.Station.Systems;
 using Robust.Server.GameObjects;
 using Robust.Shared.Configuration;
-using Robust.Shared.Prototypes;
 
 namespace Content.Server.Communications
 {
@@ -249,6 +247,12 @@ namespace Content.Server.Communications
 
         private void OnBroadcastMessage(EntityUid uid, CommunicationsConsoleComponent component, CommunicationsConsoleBroadcastMessage message)
         {
+            if (message.Actor is { Valid: true } mob && !CanUse(mob, uid))
+            {
+                _popupSystem.PopupEntity(Loc.GetString("comms-console-permission-denied"), uid, mob);
+                return;
+            }
+
             if (!TryComp<DeviceNetworkComponent>(uid, out var net))
                 return;
 

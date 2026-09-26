@@ -10,12 +10,11 @@ namespace Content.Shared.Radio;
 public readonly record struct RadioReceiveEvent(
     EntityUid MessageSource,
     RadioChannelPrototype Channel,
-    ChatMessage OriginalChatMsg, // Starlight
-    ChatMessage LanguageObfuscatedChatMsg, // Starlight
+    ChatMessage OriginalChatMsg,
+    ChatMessage LanguageObfuscatedChatMsg,
     LanguagePrototype Language,
     EntityUid RadioSource,
-    List<EntityUid> Receivers,
-    MsgChatMessage ChatMsg
+    List<EntityUid> Receivers
 ); // Starlight
 
 /// <summary>

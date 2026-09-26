@@ -1,7 +1,7 @@
 using Robust.Shared.Prototypes;
 
 
-namespace Content.Shared._Starlight.Language.Components.Translators;
+namespace Content.Shared._Starlight.Language.Components;
 
 public abstract partial class BaseTranslatorComponent : Component
 {

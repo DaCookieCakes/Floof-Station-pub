@@ -258,6 +258,8 @@ public sealed partial class ChatSystem
     {
     }
 
+    // FLOOF: Moved to shared.
+    /*
     public string ObfuscateMessageReadability(string message, float chance)
     {
         var modifiedMessage = new StringBuilder(message);
@@ -276,7 +278,7 @@ public sealed partial class ChatSystem
         }
 
         return modifiedMessage.ToString();
-    }
+    }*/
 
     public string BuildGibberishString(IReadOnlyList<char> charOptions, int length)
     {
