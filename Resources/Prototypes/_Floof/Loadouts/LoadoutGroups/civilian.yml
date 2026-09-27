@@ -35,3 +35,44 @@
   id: TramDriverNeck
   name: loadout-group-tramdriver-neck
   minLimit: 0
+
+# Shoes
+- type: loadoutGroup
+  id: LibrarianShoes
+  name: loadout-group-librarian-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LaceupShoes
+
+- type: loadoutGroup
+  id: MimeShoes
+  name: loadout-group-mime-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - WhiteShoes
+
+- type: loadoutGroup
+  id: MusicianShoes
+  name: loadout-group-musician-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LaceupShoes
+
+- type: loadoutGroup
+  id: ReporterShoes
+  name: loadout-group-reporter-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - WhiteShoes
+
+- type: loadoutGroup
+  id: TramDriverShoes
+  name: loadout-group-tramdriver-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LaceupShoes

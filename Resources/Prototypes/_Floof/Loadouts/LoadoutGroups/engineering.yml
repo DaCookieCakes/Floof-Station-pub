@@ -15,3 +15,11 @@
   id: AtmosphericTechnicianNeck
   name: loadout-group-atmospheric-technician-neck
   minLimit: 0
+
+- type: loadoutGroup
+  id: TechnicalAssistantShoes
+  name: loadout-group-technical-assistant-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - WorkBoots

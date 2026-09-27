@@ -1,3 +1,4 @@
+# Neck
 - type: loadoutGroup
   parent: CommonCollars
   id: BartenderNeck
@@ -38,3 +39,46 @@
   - BartenderJumpsuitPurple
   - ChefJumpsuit
   - ChefJumpskirt
+
+# Shoes
+- type: loadoutGroup
+  id: BartenderShoes
+  name: loadout-group-bartender-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - BlackShoes
+
+- type: loadoutGroup
+  id: BotanistShoes
+  name: loadout-group-botanist-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - BrownShoes
+
+- type: loadoutGroup
+  id: ChefShoes
+  name: loadout-group-chef-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - BlackShoes
+  - ClothingShoesChef
+
+- type: loadoutGroup
+  id: JanitorShoes
+  name: loadout-group-janitor-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - Galoshes
+
+- type: loadoutGroup
+  id: ServiceWorkerShoes
+  name: loadout-group-service-worker-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - BlackShoes
+  - ClothingShoesChef

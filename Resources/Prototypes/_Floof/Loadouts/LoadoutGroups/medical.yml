@@ -27,3 +27,12 @@
   id: MedicalInternNeck
   name: loadout-group-medical-intern-neck
   minLimit: 0
+
+# Shoes
+- type: loadoutGroup
+  id: PsychologistShoes
+  name: loadout-group-psychologist-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LeatherShoes

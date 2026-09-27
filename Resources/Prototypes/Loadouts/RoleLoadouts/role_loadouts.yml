@@ -7,6 +7,7 @@
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
+  - CaptainShoes # FLOOF
   - AssistiveItems
   - Survival
   - Trinkets
@@ -22,6 +23,7 @@
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
+  - HoPShoes # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -68,6 +70,7 @@
   - BartenderJumpsuit
   - CommonBackpack
   - BartenderOuterClothing
+  - BartenderShoes # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -81,6 +84,7 @@
   - GroupTankHarness
   - ServiceWorkerNeck # FLOOF
   - ServiceWorkerJumpsuit # FLOOF: 'BartenderJumpsuit'
+  - ServiceWorkerShoes # FLOOF
   - CommonBackpack
   - Glasses
   - AssistiveItems
@@ -99,6 +103,7 @@
   - ChefJumpsuit
   - CommonBackpack
   - ChefOuterClothing
+  - ChefShoes # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -113,6 +118,7 @@
   - LibrarianNeck # FLOOF
   - LibrarianJumpsuit
   - CommonBackpack
+  - LibrarianShoes # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -127,6 +133,7 @@
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
+  - LawyerShoes # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -164,6 +171,7 @@
   - JanitorGloves
   - CommonBackpack
   - JanitorOuterClothing
+  - JanitorShoes # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -180,6 +188,7 @@
   - BotanistJumpsuit
   - BotanistBackpack
   - BotanistOuterClothing
+  - BotanistShoes # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -216,6 +225,7 @@
   - MimeBackpack
   - MimeOuterClothing
   - MimeBelt
+  - MimeShoes # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -231,6 +241,7 @@
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
+  - MusicianShoes # FLOOF
   - Instruments
   - Glasses
   - AssistiveItems
@@ -314,6 +325,7 @@
   - TechnicalAssistantNeck # FLOOF
   - TechnicalAssistantJumpsuit
   - StationEngineerBackpack
+  - TechnicalAssistantShoes # FLOOF
   - AssistiveItems
   - SurvivalExtended
   - Trinkets
@@ -397,6 +409,7 @@
   - ResearchAssistantNeck # FLOOF
   - ResearchAssistantJumpsuit
   - ScientistBackpack
+  - ResearchAssistantShoes # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -490,6 +503,7 @@
   - ReporterHead
   - ReporterNeck # FLOOF
   - ReporterOuterClothing
+  - ReporterShoes # FLOOF
   - CommonBackpack
   - Glasses
   - AssistiveItems
@@ -505,6 +519,7 @@
   - PsychologistNeck # FLOOF
   - PsychologistJumpsuit
   - MedicalBackpack
+  - PsychologistShoes # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -522,6 +537,7 @@
   - TramDriverOuterClothing #Vest and such
   - TramDriverHat
   - TramDriverGloves
+  - TramDriverShoes # FLOOF
   - Glasses
   - Survival
   - Trinkets

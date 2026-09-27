@@ -19,3 +19,12 @@
   id: WardenNeck
   name: loadout-group-warden-neck
   minLimit: 0
+
+# Shoes
+- type: loadoutGroup
+  id: LawyerShoes
+  name: loadout-group-lawyer-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LaceupShoes
