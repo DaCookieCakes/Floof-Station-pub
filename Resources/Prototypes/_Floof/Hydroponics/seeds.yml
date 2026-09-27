@@ -2,6 +2,7 @@
   parent: BasePlant
   id: HumpShroom
   name: humpshroom
+  categories: [HideSpawnMenu]
   components:
     - type: Sprite
       sprite: _Floof/Objects/Specific/Hydroponics/humpshroom.rsi
@@ -9,12 +10,17 @@
       name: seeds-humpshroom-name
       packetPrototype: HumpShroomSeeds
       productPrototypes: [ FoodHumpShroom ]
+      mutationPrototypes: [ BreedShroom ]
     - type: Plant
       lifespan: 25
       maturation: 12
       production: 3
       yield: 4
       potency: 10
+      growthStages: 2
+    - type: PlantAtmospheric
+      lowHeatTolerance: 288 # 15°C
+      highHeatTolerance: 308 # 35°C
     - type: PlantChemicals
       chemicals:
         Philterex:
@@ -28,12 +34,13 @@
         Nutriment:
           min: 1
           max: 5
-          potencyDivisor: 20 
+          potencyDivisor: 20
 
 - type: entity
   parent: BasePlant
   id: BreedShroom
   name: breedshroom
+  categories: [HideSpawnMenu]
   components:
     - type: Sprite
       sprite: _Floof/Objects/Specific/Hydroponics/breedshroom.rsi
@@ -47,6 +54,10 @@
       production: 3
       yield: 3
       potency: 10
+      growthStages: 2
+    - type: PlantAtmospheric
+      lowHeatTolerance: 288 # 15°C
+      highHeatTolerance: 308 # 35°C
     - type: PlantChemicals
       chemicals:
         Libidozenithizine:
@@ -71,6 +82,7 @@
   parent: BasePlant
   id: Pomegranate
   name: pomegranate
+  categories: [HideSpawnMenu]
   components:
     - type: Sprite
       sprite: _Floof/Objects/Specific/Hydroponics/pomegranate.rsi
@@ -86,6 +98,10 @@
       production: 6
       yield: 3
       potency: 10
+      growthStages: 6
+    - type: PlantAtmospheric
+      lowHeatTolerance: 288 # 15°C
+      highHeatTolerance: 308 # 35°C
     - type: PlantChemicals
       chemicals:
         Pomelustine:

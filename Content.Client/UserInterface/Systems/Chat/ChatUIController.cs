@@ -67,6 +67,7 @@ public sealed partial class ChatUIController : UIController
     [UISystemDependency] private readonly MindSystem? _mindSystem = default!;
     [UISystemDependency] private readonly RoleCodewordSystem? _roleCodewordSystem = default!;
 
+    private SharedChatSystem? _sharedChatSys;
     private static readonly ProtoId<ColorPalettePrototype> ChatNamePalette = "ChatNames";
     private string[] _chatNameColors = default!;
     private bool _chatNameColorsEnabled;
@@ -433,7 +434,7 @@ public sealed partial class ChatUIController : UIController
     {
         UpdateChannelPermissions();
         UpdateAutoFillHighlights();
-        Repopulate();
+        UpdateLinkLabels();
     }
 
     private void AddSpeechBubble(ChatMessage msg, SpeechBubble.SpeechType speechType)
@@ -947,6 +948,16 @@ public sealed partial class ChatUIController : UIController
         foreach (var chat in _chats)
         {
             chat.Repopulate();
+        }
+    }
+
+    private void UpdateLinkLabels()
+    {
+        _sharedChatSys ??= _ent.System<SharedChatSystem>();
+
+        foreach (var chat in _chats)
+        {
+            chat.UpdateTextLinkLabelProperties(_sharedChatSys);
         }
     }
 
