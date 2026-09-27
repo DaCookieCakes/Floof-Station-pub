@@ -429,3 +429,17 @@ Entries:
       message: Fixed a number of issues with the horny plants
   id: 57
   time: '2026-09-24T17:36:25.0000000+00:00'
+- author: DaCookieCakes
+  changes:
+    - type: Add
+      message: Librarians can now select red ties.
+    - type: Tweak
+      message: Every job now has a collar selection.
+    - type: Tweak
+      message: Made most jobs shoe-optional.
+    - type: Tweak
+      message: Service workers now have Chef and Bartender outfit selections.
+    - type: Tweak
+      message: Most job loadout options are now grouped together.
+  id: 58
+  time: '2026-09-27T13:03:07.0000000+00:00'
