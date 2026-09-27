@@ -453,3 +453,9 @@ Entries:
       message: Added Harpy-specific jumpskirt sprites.
   id: 59
   time: '2026-09-27T21:50:03.0000000+00:00'
+- author: DaCookieCakes
+  changes:
+    - type: Fix
+      message: Fixed Harpy displacements.
+  id: 60
+  time: '2026-09-27T23:25:06.0000000+00:00'
