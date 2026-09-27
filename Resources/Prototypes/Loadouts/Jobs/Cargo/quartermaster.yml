@@ -70,7 +70,6 @@
 
 - type: startingGear
   id: QuartermasterMantle
-  groupBy: QuartermasterGear # FLOOF
   equipment:
     neck: ClothingNeckMantleQM
 

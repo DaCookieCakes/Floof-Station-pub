@@ -56,7 +56,6 @@
 
 - type: startingGear
   id: HoPMantle
-  groupBy: HoPGear # FLOOF
   equipment:
     neck: ClothingNeckMantleHOP
 
