@@ -443,3 +443,13 @@ Entries:
       message: Most job loadout options are now grouped together.
   id: 58
   time: '2026-09-27T13:03:07.0000000+00:00'
+- author: DaCookieCakes
+  changes:
+    - type: Add
+      message: >-
+        Added Harpies, they have ulravision, can fly for a limited time, and can
+        sing.
+    - type: Add
+      message: Added Harpy-specific jumpskirt sprites.
+  id: 59
+  time: '2026-09-27T21:50:03.0000000+00:00'
