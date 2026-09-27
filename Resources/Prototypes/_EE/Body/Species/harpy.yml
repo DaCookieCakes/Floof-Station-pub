@@ -63,7 +63,7 @@
   - type: Inventory
     speciesId: harpy
     templateId: InventoryTemplateHarpy # FLOOF
-    displacement:
+    displacements:
       jumpsuit:
         sizeMaps:
           32:
@@ -141,7 +141,6 @@
       "Piano": { 1: 0 }
       "Church Organ": { 19: 0 }
       "Harp": { 46: 0 }
-    onlySetBySelf: true # Frontier
   - type: MeleeWeapon
     animation: WeaponArcClaw
     soundHit:
@@ -176,6 +175,7 @@
   components:
   - type: Action
     itemIconStyle: BigAction
+    checkCanInteract: false
   - type: Sprite
     sprite: _EE/Interface/Actions/flight.rsi
     layers:
@@ -184,6 +184,5 @@
     - state: flight_on
       map: [ "enum.ActionVisuals.IconToggled" ]
       visible: false
-    checkCanInteract: false
   - type: InstantAction
     event: !type:ToggleFlightEvent

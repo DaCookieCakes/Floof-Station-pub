@@ -205,7 +205,7 @@
 - type: soundCollection
   id: HarpyChirps
   files:
-  - /Audio/DeltaV/Voice/Harpy/chirp1.ogg
+  - /Audio/_DV/Voice/Harpy/chirp1.ogg
   - /Audio/Voice/Talk/pai.ogg
   - /Audio/Voice/Talk/pai_ask.ogg
   - /Audio/Voice/Talk/pai_exclaim.ogg
