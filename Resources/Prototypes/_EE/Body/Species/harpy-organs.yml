@@ -2,14 +2,14 @@
   parent: OrganBaseOrganic
   id: OrganHarpy
   abstract: true
-  suffix: human
+  suffix: harpy
 
 - type: entity
   id: OrganHarpyMetabolizer
   abstract: true
   components:
   - type: Metabolizer
-    metabolizerTypes: [ Human ]
+    metabolizerTypes: [ Harpy ]
 
 - type: entity
   parent: OrganHarpy
