@@ -17,7 +17,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Arachnid, MetabolizerFeroxi, Harpy ] # FLOOF, DeltaV
+          type: [ Human, Animal, Rat, Plant, Arachnid, MetabolizerFeroxi, Harpy, Shadekin ] # FLOOF, DeltaV
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -48,7 +48,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, MetabolizerFeroxi, Harpy ] # FLOOF, DeltaV
+          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, MetabolizerFeroxi, Harpy, Shadekin ] # FLOOF, DeltaV
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
