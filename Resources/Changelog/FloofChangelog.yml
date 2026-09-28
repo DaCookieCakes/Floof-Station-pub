@@ -459,3 +459,9 @@ Entries:
       message: Fixed Harpy displacements.
   id: 60
   time: '2026-09-27T23:25:06.0000000+00:00'
+- author: DaCookieCakes
+  changes:
+    - type: Tweak
+      message: Shadekin and Harpies can now digest raw animal proteins. (Aka mice)
+  id: 61
+  time: '2026-09-28T04:11:57.0000000+00:00'
