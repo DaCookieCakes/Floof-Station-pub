@@ -465,3 +465,11 @@ Entries:
       message: Shadekin and Harpies can now digest raw animal proteins. (Aka mice)
   id: 61
   time: '2026-09-28T04:11:57.0000000+00:00'
+- author: DaCookieCakes
+  changes:
+    - type: Tweak
+      message: >-
+        The back slot for shotguns, instruments, .etc now requires a JUMPSUIT
+        than outer clothing.
+  id: 62
+  time: '2026-09-28T04:13:00.0000000+00:00'
