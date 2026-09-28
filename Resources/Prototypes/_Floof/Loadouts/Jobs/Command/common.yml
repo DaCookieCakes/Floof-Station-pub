@@ -1,0 +1,9 @@
+- type: loadout
+  id: ClothingNeckCollarCmd
+  equipment:
+    neck: ClothingNeckCollarCmd
+
+- type: loadout
+  id: LaceupShoes
+  equipment:
+    shoes: ClothingShoesBootsLaceup
