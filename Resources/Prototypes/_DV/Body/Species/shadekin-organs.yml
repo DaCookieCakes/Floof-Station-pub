@@ -9,7 +9,7 @@
   abstract: true
   components:
   - type: Metabolizer
-    metabolizerTypes: [ Human ]
+    metabolizerTypes: [ Shadekin ]
 
 - type: entity
   parent: OrganShadekin
@@ -116,6 +116,7 @@
 - type: entity
   parent: [ OrganBaseStomach, OrganSpriteHumanInternal, OrganShadekinInternal, OrganShadekinMetabolizer ]
   id: OrganShadekinStomach
+
 
 - type: entity
   parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganShadekinInternal, OrganShadekinMetabolizer ]
