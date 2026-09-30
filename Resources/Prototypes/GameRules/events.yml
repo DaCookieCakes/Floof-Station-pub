@@ -42,7 +42,7 @@
     - id: NinjaSpawn
     - id: ParadoxCloneSpawn
     - id: SleeperAgents
-    - id: ZombieOutbreak
+    #- id: ZombieOutbreak # Floof - lame always ends in the same way
     - id: LoneOpsSpawn
     - id: WizardSpawn
     - id: SpaceChangelingSpawn
@@ -156,7 +156,7 @@
   - type: StationEvent
     weight: 7
     duration: 1
-    minimumPlayers: 15
+    minimumPlayers: 0 # Floof - no more minimum player count
   - type: BreakerFlipRule
     blacklist:
       components:
@@ -170,7 +170,7 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-bureaucratic-error-announcement
-    minimumPlayers: 25
+    minimumPlayers: 0 # Floof - no more minimum player count
     weight: 3
     duration: 1
   - type: BureaucraticErrorRule
@@ -189,7 +189,7 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-clerical-error-announcement
-    minimumPlayers: 15
+    minimumPlayers: 0 # Floof - no more minimum player count
     weight: 5
     duration: 1
   - type: ClericalErrorRule
@@ -204,7 +204,7 @@
     weight: 5
     duration: 1
     occursDuringRoundEnd: false
-    minimumPlayers: 10
+    minimumPlayers: 0 # Floof - no more minimum player count
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
   - type: DynamicRuleCost
@@ -218,7 +218,7 @@
     weight: 6.5
     earliestStart: 40
     reoccurrenceDelay: 20
-    minimumPlayers: 20
+    minimumPlayers: 0 # Floof - no more minimum player count
     duration: null
     occursDuringRoundEnd: false
   - type: SpaceSpawnRule
@@ -246,7 +246,7 @@
     weight: 6
     earliestStart: 20 # can start early since lings need time to start doing stuff
     reoccurrenceDelay: 40
-    minimumPlayers: 20
+    minimumPlayers: 0 # Floof - no more minimum player count
     duration: null
     occursDuringRoundEnd: false
   - type: SpaceSpawnRule
@@ -281,7 +281,7 @@
     occursDuringRoundEnd: false
     earliestStart: 30
     reoccurrenceDelay: 20
-    minimumPlayers: 30
+    minimumPlayers: 0 # Floof - no more minimum player count
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
   - type: AntagObjectives
@@ -310,7 +310,7 @@
     occursDuringRoundEnd: false
     earliestStart: 20
     reoccurrenceDelay: 20
-    minimumPlayers: 15
+    minimumPlayers: 0 # Floof - no more minimum player count
   - type: ParadoxCloneRule
     objectiveBlacklist:
       tags:
@@ -337,7 +337,7 @@
     duration: 1
     occursDuringRoundEnd: false
     earliestStart: 45
-    minimumPlayers: 20
+    minimumPlayers: 0 # Floof - no more minimum player count
   - type: RandomSpawnRule
     prototype: MobRevenant
   - type: DynamicRuleCost
@@ -353,7 +353,7 @@
     occursDuringRoundEnd: false
     earliestStart: 30
     reoccurrenceDelay: 60
-    minimumPlayers: 30
+    minimumPlayers: 0 # Floof - no more minimum player count
 
 # disabled until event is rewritten to be more interesting
 #- type: entity
@@ -385,7 +385,7 @@
   components:
   - type: StationEvent
     earliestStart: 15
-    minimumPlayers: 15
+    minimumPlayers: 0 # Floof - no more minimum player count
     weight: 7
     duration: 240
   - type: KudzuGrowthRule
@@ -449,7 +449,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 15
-    minimumPlayers: 15
+    minimumPlayers: 0 # Floof - no more minimum player count
     weight: 5
     duration: 60
   - type: VentClogRule
@@ -467,7 +467,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 20
-    minimumPlayers: 15
+    minimumPlayers: 0 # Floof - no more minimum player count
     weight: 5
     duration: 5
     maxDuration: 20
@@ -490,7 +490,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 20
-    minimumPlayers: 15
+    minimumPlayers: 0 # Floof - no more minimum player count
     weight: 5
     duration: 5
     maxDuration: 20
@@ -513,7 +513,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 20
-    minimumPlayers: 15
+    minimumPlayers: 0 # Floof - no more minimum player count
     weight: 5
     duration: 5
     maxDuration: 20
@@ -538,7 +538,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 20
-    minimumPlayers: 20
+    minimumPlayers: 0 # Floof - no more minimum player count
     weight: 1.5
     duration: 5
     maxDuration: 20
@@ -556,7 +556,7 @@
   components:
   - type: StationEvent
     earliestStart: 45
-    minimumPlayers: 40
+    minimumPlayers: 0 # Floof - no more minimum player count
     weight: 1
     duration: 1
     occursDuringRoundEnd: false
@@ -578,7 +578,7 @@
   - type: StationEvent
     earliestStart: 35
     weight: 5.5
-    minimumPlayers: 20
+    minimumPlayers: 0 # Floof - no more minimum player count
     duration: null # LoneOpsSpawn needs an infinite duration so that it inherits the NukeOpsRule things of an actually appropriate end screen (not always "Neutral outcome!") and... ending the game if the station is nuked.
     occursDuringRoundEnd: false
   - type: RuleGrids
@@ -600,7 +600,7 @@
   - type: StationEvent
     earliestStart: 30
     weight: 8
-    minimumPlayers: 15
+    minimumPlayers: 0 # Floof - no more minimum player count
     maxOccurrences: 1 # can only happen once per round
     startAnnouncement: station-event-communication-interception
     startAudio:
@@ -656,7 +656,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     weight: 5
-    minimumPlayers: 25
+    minimumPlayers: 0 # Floof - no more minimum player count
     reoccurrenceDelay: 20
   - type: GreytideVirusRule
     accessGroups:
@@ -692,7 +692,7 @@
     weight: 2.5
     earliestStart: 15
     reoccurrenceDelay: 20
-    minimumPlayers: 4
+    minimumPlayers: 0 # Floof - no more minimum player count
     duration: null
     occursDuringRoundEnd: false
   - type: SpaceSpawnRule
@@ -761,7 +761,7 @@
   components:
   - type: StationEvent
     earliestStart: 25
-    minimumPlayers: 15
+    minimumPlayers: 0 # Floof - no more minimum player count
   - type: AntagSpawner
     prototype: PlayerBorgSyndicateDerelictGhostRole
   - type: AntagSelection

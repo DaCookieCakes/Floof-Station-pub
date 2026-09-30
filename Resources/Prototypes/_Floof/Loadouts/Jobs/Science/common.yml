@@ -1,0 +1,13 @@
+# Glasses
+- type: loadout
+  id: PrescriptionDiagnosticHud
+  groupBy: "ScienceGlasses"
+  equipment:
+    eyes: ClothingEyesPrescriptionDiagHud
+
+
+# Collars
+- type: loadout
+  id: ClothingNeckCollarSci
+  equipment:
+    neck: ClothingNeckCollarSci

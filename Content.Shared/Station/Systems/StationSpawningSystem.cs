@@ -3,6 +3,8 @@ using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Body;
 using Content.Shared.CCVar;
+using Content.Shared._Floof.Body;
+using Content.Shared._Floof.Consent;
 using Content.Shared.Clothing;
 using Content.Shared.DetailExaminable;
 using Content.Shared.Hands.Components;
@@ -366,9 +368,19 @@ public sealed partial class StationSpawningSystem : EntitySystem
             _humanoidProfile.ApplyProfileTo(entity.Value, profile);
             _metadata.SetEntityName(entity.Value, profile.Name);
 
+            EnsureComp<ProfileTrackerComponent>(entity.Value, out var profileTracker);
+            profileTracker.Markings = profile.Appearance.Markings;
+                
+                
             if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
             {
                 AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText;
+            }
+
+            // FLOOF: Added Consent.
+            if (profile.ConsentText != "")
+            {
+                AddComp<ConsentExaminableComponent>(entity.Value).Content = profile.ConsentText;
             }
         }
 
