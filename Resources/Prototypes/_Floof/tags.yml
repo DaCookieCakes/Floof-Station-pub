@@ -1,5 +1,14 @@
 # PUT YOUR TAGS IN ALPHABETICAL ORDER
 # ALSO DOCUMENT WHAT THE HELL THEY DO
+# STARTING WITH 'TAG' IS EXEMPT FROM THIS!
+## B ##
+
+- type: Tag
+  id: BeltSlotNotBelt
+  
+- type: Tag
+  id: BorgSecurityArmour  
+  
 ## C ##
 
 - type: Tag
@@ -23,12 +32,23 @@
   id: Fleshlight
 
 - type: Tag
-  id: ShirtlessClothing
+  id: ForensicBeltEquip
 
 ## H ##
 
 - type: Tag
   id: HighHeelBoots
+  
+- type: Tag
+  id: HandLabeler  
+  
+- type: Tag
+  id: Hoodie
+
+## K ##
+
+- type: Tag
+  id: Katana
 
 ## J ##
 
@@ -43,4 +63,12 @@
 ## S ##
 
 - type: Tag
+  id: ShirtlessClothing
+  
+- type: Tag
   id: Skirt
+  
+## W ##
+- type: Tag
+  id: Wakizashi
+
