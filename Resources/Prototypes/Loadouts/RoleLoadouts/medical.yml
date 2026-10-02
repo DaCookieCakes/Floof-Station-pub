@@ -11,7 +11,7 @@
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
-  - Glasses
+  - MedicalGlasses # FLOOF: 'Glasses'
   - AssistiveItems
   - SurvivalMedical
   - Trinkets
@@ -24,12 +24,13 @@
   - GroupTankHarness
   - MedicalDoctorHead
   - MedicalMask
+  - MedicalDoctorNeck # FLOOF
   - MedicalDoctorJumpsuit
   - MedicalBackpack
   - MedicalDoctorOuterClothing
   - MedicalShoes
   - MedicalDoctorPDA
-  - Glasses
+  - MedicalGlasses # FLOOF: 'Glasses'
   - AssistiveItems
   - SurvivalMedical
   - Trinkets
@@ -40,8 +41,10 @@
   id: JobMedicalIntern
   groups:
   - GroupTankHarness
+  - MedicalInternNeck # FLOOF
   - MedicalInternJumpsuit
   - MedicalBackpack
+  - MedicalShoes # FLOOF
   - Glasses
   - AssistiveItems
   - SurvivalMedical
@@ -54,11 +57,12 @@
   groups:
   - GroupTankHarness
   - MedicalMask
+  - ChemistNeck # FLOOF
   - ChemistJumpsuit
   - ChemistBackpack
   - ChemistOuterClothing
   - MedicalShoes
-  - Glasses
+  - ChemistGlasses # FLOOF: 'Glasses'
   - AssistiveItems
   - SurvivalMedical
   - Trinkets
@@ -71,11 +75,12 @@
   - GroupTankHarness
   - ParamedicHead
   - MedicalMask
+  - ParamedicNeck # FLOOF
   - ParamedicJumpsuit
   - MedicalBackpack
   - ParamedicOuterClothing
   - ParamedicShoes
-  - Glasses
+  - MedicalGlasses # FLOOF: 'Glasses'
   - AssistiveItems
   - SurvivalMedical
   - Trinkets
