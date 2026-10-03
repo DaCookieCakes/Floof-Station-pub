@@ -38,7 +38,7 @@
   equipment:
   #  shoes: ClothingShoesBootsLaceup # FLOOF
     eyes: ClothingEyesGlassesCommand
-    gloves: ClothingHandsGlovesCaptain
+  #  gloves: ClothingHandsGlovesCaptain # FLOOF
     id: CaptainPDA
     ears: ClothingHeadsetAltCommand
   storage:

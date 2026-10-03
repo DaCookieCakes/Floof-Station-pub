@@ -57,9 +57,9 @@
       path: /Audio/Effects/packetrip.ogg
 
 - type: entity
-  name: avocado
-  parent: FoodProduceBase
+  parent: [ FoodProduceBase, BaseSlicingRefinableFood ]
   id: FoodAvocado
+  name: avocado
   description: Like delicious buttery grass.
   components:
   - type: FlavorProfile
@@ -80,8 +80,8 @@
     plantId: avocado
   - type: ToolRefinable
     refineResult:
-      - id: FoodAvocadoSlice
-        amount: 2    
+    - id: FoodAvocadoSlice
+      amount: 2
   - type: Extractable
     grindableSolutionName: food
     juiceSolution:
@@ -125,7 +125,7 @@
 
 - type: entity
   name: cucumber
-  parent: FoodProduceBase
+  parent: [ FoodProduceBase, BaseSlicingRefinableFood ]
   id: FoodCucumber
   description: Like fresh crispy water.
   components:
@@ -192,7 +192,7 @@
 
 - type: entity
   name: pickle
-  parent: FoodProduceBase
+  parent: [ FoodProduceBase, BaseSlicingRefinableFood ]
   id: FoodPickle
   description: Like tangy crispy water.
   components:
@@ -215,8 +215,8 @@
     state: pickle
   - type: ToolRefinable
     refineResult:
-      - id: FoodPickleSlice
-        amount: 4
+    - id: FoodPickleSlice
+      amount: 4
   - type: Extractable
     grindableSolutionName: food
     juiceSolution:

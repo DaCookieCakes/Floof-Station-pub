@@ -5,8 +5,10 @@
   - CaptainHead
   - CaptainNeck
   - CaptainJumpsuit
+  - CaptainGloves # FLOOF
   - CaptainBackpack
   - CaptainOuterClothing
+  - CaptainSocks # FLOOF
   - CaptainShoes # FLOOF
   - AssistiveItems
   - Survival
@@ -23,8 +25,10 @@
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
-  - HoPBelts # FLOOF
-  - HoPShoes # FLOOF
+  - HoPGloves # FLOOF
+  - HoPBelts  # FLOOF
+  - HoPSocks  # FLOOF
+  - HoPShoes  # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -54,6 +58,7 @@
   - PassengerFace
   - PassengerGloves
   - PassengerOuterClothing
+  - PassengerSocks # FLOOF
   - PassengerShoes
   - Glasses
   - AssistiveItems
@@ -71,7 +76,9 @@
   - BartenderJumpsuit
   - CommonBackpack
   - BartenderOuterClothing
-  - BartenderShoes # FLOOF
+  - BartenderGloves # FLOOF
+  - BartenderSocks  # FLOOF
+  - BartenderShoes  # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -86,6 +93,8 @@
   - ServiceWorkerNeck           # FLOOF
   - ServiceWorkerJumpsuit       # FLOOF: 'BartenderJumpsuit'
   - ServiceWorkerOuterClothing  # FLOOF
+  - ServiceWorkerGloves         # FLOOF
+  - ServiceWorkerSocks          # FLOOF
   - ServiceWorkerShoes          # FLOOF
   - CommonBackpack
   - Glasses
@@ -105,7 +114,9 @@
   - ChefJumpsuit
   - CommonBackpack
   - ChefOuterClothing
-  - ChefShoes # FLOOF
+  - ChefGloves  # FLOOF
+  - ChefSocks   # FLOOF
+  - ChefShoes   # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -120,7 +131,9 @@
   - LibrarianNeck # FLOOF
   - LibrarianJumpsuit
   - CommonBackpack
-  - LibrarianShoes # FLOOF
+  - CommonGloves    # FLOOF
+  - CommonSocks     # FLOOF
+  - LibrarianShoes  # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -135,7 +148,9 @@
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
-  - LawyerShoes # FLOOF
+  - CommonGloves  # FLOOF
+  - CommonSocks   # FLOOF
+  - LawyerShoes   # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -154,6 +169,8 @@
   - ChaplainJumpsuit
   - CommonBackpack
   - ChaplainOuterClothing
+  - ChaplainGloves  # FLOOF
+  - ChaplainSocks   # FLOOF
   - ChaplainShoes
   - ChaplainBible
   - Glasses
@@ -173,7 +190,8 @@
   - JanitorGloves
   - CommonBackpack
   - JanitorOuterClothing
-  - JanitorShoes # FLOOF
+  - JanitorSocks  # FLOOF
+  - JanitorShoes  # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -190,7 +208,9 @@
   - BotanistJumpsuit
   - BotanistBackpack
   - BotanistOuterClothing
-  - BotanistShoes # FLOOF
+  - BotanistGloves  # FLOOF
+  - CommonSocks     # FLOOF
+  - BotanistShoes   # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -208,6 +228,8 @@
   - ClownJumpsuit
   - ClownBackpack
   - ClownOuterClothing
+  - ClownGloves # FLOOF
+  - ClownSocks  # FLOOF
   - ClownShoes
   - Glasses
   - AssistiveItems
@@ -227,7 +249,9 @@
   - MimeBackpack
   - MimeOuterClothing
   - MimeBelt
-  - MimeShoes # FLOOF
+  - MimeGloves  # FLOOF
+  - MimeSocks   # FLOOF
+  - MimeShoes   # FLOOF
   - Glasses
   - AssistiveItems
   - Survival
@@ -243,7 +267,9 @@
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
-  - MusicianShoes # FLOOF
+  - MusicianGloves  # FLOOF
+  - MusicianSocks   # FLOOF
+  - MusicianShoes   # FLOOF
   - Instruments
   - Glasses
   - AssistiveItems
@@ -262,6 +288,8 @@
   - QuartermasterJumpsuit
   - CargoTechnicianBackpack
   - QuartermasterOuterClothing
+  - QuartermasterGloves # FLOOF
+  - QuartermasterSocks  # FLOOF
   - QuartermasterShoes
   - Glasses
   - AssistiveItems
@@ -279,6 +307,8 @@
   - CargoTechnicianJumpsuit
   - CargoTechnicianBackpack
   - CargoTechnicianOuterClothing
+  - CargoTechnicianGloves # FLOOF
+  - CargoTechnicianSocks  # FLOOF
   - CargoTechnicianShoes
   - CargoTechnicianID
   - Glasses
@@ -295,6 +325,8 @@
   - SalvageSpecialistNeck # FLOOF
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
+  - SalvageSpecialistGloves # FLOOF
+  - SalvageSpecialistSocks  # FLOOF
   - SalvageSpecialistShoes
   - Glasses
   - AssistiveItems
@@ -313,6 +345,8 @@
   - StationEngineerBackpack
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
+  - ChiefEngineerGloves   # FLOOF
+  - ChiefEngineerSocks    # FLOOF
   - ChiefEngineerShoes
   - AssistiveItems
   - SurvivalExtended
@@ -343,6 +377,8 @@
   - StationEngineerJumpsuit
   - StationEngineerBackpack
   - StationEngineerOuterClothing
+  - StationEngineerGloves # FLOOF
+  - StationEngineerSocks  # FLOOF
   - StationEngineerShoes
   - StationEngineerID
   - AssistiveItems
@@ -359,6 +395,8 @@
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
+  - AtmosphericTechnicianGloves # FLOOF
+  - AtmosphericTechnicianSocks  # FLOOF
   - AtmosphericTechnicianShoes
   - AssistiveItems
   - SurvivalExtended
@@ -376,7 +414,8 @@
   - ResearchDirectorJumpsuit
   - ScientistBackpack
   - ResearchDirectorOuterClothing
-  - ScientistGloves
+  - ResearchDirectorGloves  # FLOOF: 'ScientistGloves'
+  - ResearchDirectorSocks   # FLOOF
   - ResearchDirectorShoes
   - ScientistGlasses # FLOOF: 'Glasses'
   - AssistiveItems
@@ -397,7 +436,8 @@
   - ScientistGloves
   - ScientistShoes
   - ScientistPDA
-  - ScientistGlasses # FLOOF: 'Glasses'
+  - ScientistSocks    # FLOOF
+  - ScientistGlasses  # FLOOF: 'Glasses'
   - AssistiveItems
   - Survival
   - Trinkets
@@ -431,6 +471,8 @@
   - SecurityBackpack
   - SecurityBelt
   - HeadofSecurityOuterClothing
+  - HoSGloves # FLOOF
+  - HoSSocks # FLOOF
   - SecurityShoes
   - AssistiveItems
   - SurvivalSecurity
@@ -449,6 +491,8 @@
   - SecurityBackpack
   - SecurityBelt
   - WardenOuterClothing
+  - SecurityOfficerGloves # FLOOF
+  - SecurityOfficerSocks # FLOOF
   - SecurityShoes
   - AssistiveItems
   - SurvivalSecurity
@@ -466,6 +510,8 @@
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing
+  - SecurityOfficerGloves # FLOOF
+  - SecurityOfficerSocks # FLOOF
   - SecurityShoes
   - SecurityPDA
   - SecurityBelt
@@ -485,6 +531,8 @@
   - DetectiveJumpsuit
   - SecurityBackpack
   - DetectiveOuterClothing
+  - DetectiveGloves # FLOOF
+  - DetectiveSocks  # FLOOF
   - SecurityShoes
   - AssistiveItems
   - SurvivalSecurity
@@ -513,6 +561,8 @@
   - ReporterHead
   - ReporterNeck # FLOOF
   - ReporterOuterClothing
+  - CommonGloves  # FLOOF
+  - CommonSocks   # FLOOF
   - ReporterShoes # FLOOF
   - CommonBackpack
   - Glasses
@@ -529,6 +579,8 @@
   - PsychologistNeck # FLOOF
   - PsychologistJumpsuit
   - MedicalBackpack
+  - CommonGloves      # FLOOF
+  - CommonSocks       # FLOOF
   - PsychologistShoes # FLOOF
   - Glasses
   - AssistiveItems
@@ -547,6 +599,7 @@
   - TramDriverOuterClothing #Vest and such
   - TramDriverHat
   - TramDriverGloves
+  - CommonSocks     # FLOOF
   - TramDriverShoes # FLOOF
   - Glasses
   - Survival

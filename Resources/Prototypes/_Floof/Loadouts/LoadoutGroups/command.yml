@@ -6,6 +6,40 @@
   loadouts:
   - BeltPaperwork
 
+# Gloves
+- type: loadoutGroup
+  id: CaptainGloves
+  name: loadout-group-captain-gloves
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - CaptainGloves
+  - CaptainArmWarmers
+
+- type: loadoutGroup
+  id: HoPGloves
+  name: loadout-group-hop-gloves
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - PapercutProofGloves
+  - CommandArmWarmers # FLOOF
+
+# Socks
+- type: loadoutGroup
+  id: CaptainSocks
+  name: loadout-group-captain-socks
+  minLimit: 0
+  loadouts:
+  - CaptainThighHighs
+
+- type: loadoutGroup
+  id: HoPSocks
+  name: loadout-group-hop-socks
+  minLimit: 0
+  loadouts:
+  - CommandThighHighs
+
 # Shoes
 - type: loadoutGroup
   id: CaptainShoes

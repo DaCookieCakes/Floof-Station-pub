@@ -147,7 +147,7 @@
 # Gloves
 - type: loadout
   id: LatexGloves
-  groupBy: ScientistGear # FLOOF
+  groupBy: CommonGear # FLOOF
   equipment:
     gloves: ClothingHandsGlovesLatex
 

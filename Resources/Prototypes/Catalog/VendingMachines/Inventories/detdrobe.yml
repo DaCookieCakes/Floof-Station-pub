@@ -15,6 +15,11 @@
     ClothingHandsGlovesColorBlack: 2
     ClothingHandsGlovesLatex: 2
     ClothingHeadsetSecurity: 2
-    ClothingNeckCollarSec: 1 # Floofstation
+    # FLOOF: Start
+    ClothingNeckCollarSec: 2
+    ClothingHandsDetectiveWarmers: 2
+    ClothingUnderSocksDetective: 2
+    ClothingUniformDetectiveThong: 2
+    # FLOOF: End
   contrabandInventory:
     ToyFigurineDetective: 1

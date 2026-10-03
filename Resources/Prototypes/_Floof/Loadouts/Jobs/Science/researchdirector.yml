@@ -4,3 +4,17 @@
   groupBy: RDGear
   equipment:
     outerClothing: ClothingLongcoatRD
+
+# Gloves
+- type: loadout
+  id: RDArmWarmers
+  groupBy: RDGear
+  equipment:
+    gloves: ClothingHandsEpiHeadWarmers
+
+# Socks
+- type: loadout
+  id: RDThighHighs
+  groupBy: RDGear
+  equipment:
+    undergarmentSocks: ClothingUnderSocksEpiHead

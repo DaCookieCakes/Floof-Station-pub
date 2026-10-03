@@ -42,6 +42,8 @@
     WheatSeeds: 5
     WatermelonSeeds: 5
     PomegranateSeeds: 3 # Floof
+    PearSeeds: 5 # FLOOF
+    CoffeeSeeds: 5 # FLOOF
   contrabandInventory:
     TobaccoSeeds: 2
     HumpShroomSeeds: 3 # Floof

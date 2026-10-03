@@ -133,6 +133,7 @@
       - Pill
       - Crayon
       - Paper
+      - IceCream
 
 - type: entity
   parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganFeroxiInternal, OrganFeroxiMetabolizer ]

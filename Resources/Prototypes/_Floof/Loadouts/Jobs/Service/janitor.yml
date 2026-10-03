@@ -3,3 +3,17 @@
   groupBy: JanitorGear
   equipment:
     shoes: ClothingShoesGaloshes
+
+# Gloves
+- type: loadout
+  id: RubberArmWarmers
+  groupBy: JanitorGear
+  equipment:
+    gloves: ClothingHandsJanitorWarmers
+
+# Socks
+- type: loadout
+  id: RubberThighHighs
+  groupBy: JanitorGear
+  equipment:
+    undergarmentSocks: ClothingUnderSocksJanitor

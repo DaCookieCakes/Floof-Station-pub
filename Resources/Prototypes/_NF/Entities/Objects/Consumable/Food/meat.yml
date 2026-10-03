@@ -3,7 +3,7 @@
 
 - type: entity
   name: honey glazed ham
-  parent: FoodMeatBase
+  parent: [ FoodMeatBase, BaseSlicingRefinableFood ]
   id: FoodMeatGlazedHam
   description: A slow-cooked ham, glazed in caramelized honey and cured with salt.
   components:

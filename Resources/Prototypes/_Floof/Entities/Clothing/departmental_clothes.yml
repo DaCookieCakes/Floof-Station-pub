@@ -44,7 +44,7 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsCommandWarmers
-  name: command's arm-warmers
+  name: head of personnel's arm-warmers
   description: A pair of rather nice arm-warmers, styled for command roles.
   components:
   - type: Sprite
@@ -59,7 +59,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksCommand
-  name: command's thigh-high socks
+  name: head of personnel's thigh-high socks
   description: A pair of thigh-high socks, styled for command roles.
   components:
   - type: Sprite
@@ -70,7 +70,7 @@
 - type: entity
   parent: ClothingUndergarmentBottomBase
   id: ClothingUniformCommandThong
-  name: command's thong
+  name: head of personnel's thong
   description: Styled for a commanding officer, but is this even considered a piece of clothing?
   components:
   - type: Sprite
@@ -162,8 +162,8 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsEpiWarmers
-  name: epistemics arm-warmers
-  description: A pair of rather nice arm-warmers, styled for Epistemic roles.
+  name: scientist arm-warmers
+  description: A pair of rather nice arm-warmers, styled for a scientist.
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Departmental/Epistemics/epiwarmer.rsi
@@ -181,8 +181,8 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksEpi
-  name: epistemics thigh-high socks
-  description: A pair of thigh-high socks, styled for Epistemic roles.
+  name: scientist thigh-high socks
+  description: A pair of thigh-high socks, styled for a scientist.
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Departmental/Epistemics/episocks.rsi
@@ -192,8 +192,8 @@
 - type: entity
   parent: ClothingUndergarmentBottomBase
   id: ClothingUniformEpiThong
-  name: epistemics thong
-  description: Styled for a Epistemics, but is this even considered a piece of clothing?
+  name: scientist thong
+  description: Styled for a scientist, but is this even considered a piece of clothing?
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Departmental/Epistemics/epithong.rsi
@@ -346,7 +346,7 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsLogisWarmers
-  name: logistics arm-warmers
+  name: cargo arm-warmers
   description: A pair of rather nice arm-warmers, styled for Logistic roles.
   components:
   - type: Sprite
@@ -361,7 +361,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksLogis
-  name: logistics thigh-high socks
+  name: cargo thigh-high socks
   description: A pair of thigh-high socks, styled for Logistic roles.
   components:
   - type: Sprite
@@ -372,7 +372,7 @@
 - type: entity
   parent: ClothingUndergarmentBottomBase
   id: ClothingUniformLogisThong
-  name: logistics thong
+  name: cargo thong
   description: Styled for a Logistics, but is this even considered a piece of clothing?
   components:
   - type: Sprite
@@ -387,7 +387,7 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsLOLogisWarmers
-  name: logistics officer arm-warmers
+  name: quartermaster arm-warmers
   description: A pair of rather nice arm-warmers, styled for Logistic roles.
   components:
   - type: Sprite
@@ -402,7 +402,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksLOLogis
-  name: logistics officer thigh-high socks
+  name: quartermaster thigh-high socks
   description: A pair of thigh-high socks, styled for Logistic roles.
   components:
   - type: Sprite
@@ -413,7 +413,7 @@
 - type: entity
   parent: ClothingUndergarmentBottomBase
   id: ClothingUniformLOLogisThong
-  name: logistics officer thong
+  name: quartermaster thong
   description: Styled for a Logistics, but is this even considered a piece of clothing?
   components:
   - type: Sprite
@@ -469,7 +469,7 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
-    
+
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesCourierDevy
@@ -480,7 +480,7 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
-    
+
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingOuterDevy
@@ -491,7 +491,7 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
-    
+
 #Medical Outfits
 #
 #General Medical
@@ -612,7 +612,7 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsCMOWarmers
-  name: chief med officer's arm-warmers
+  name: chief medical officer's arm-warmers
   description: A pair of rather nice arm-warmers, styled for the CMO.
   components:
   - type: Sprite
@@ -627,7 +627,7 @@
 - type: entity
   parent: ClothingUndergarmentSocksBase
   id: ClothingUnderSocksCMO
-  name: chief med officer's thigh-high socks
+  name: chief medical officer's thigh-high socks
   description: A pair of thigh-high socks, styled for the CMO.
   components:
   - type: Sprite
@@ -638,7 +638,7 @@
 - type: entity
   parent: ClothingUndergarmentBottomBase
   id: ClothingUniformCMOThong
-  name: chief med officer's thong
+  name: chief medical officer's thong
   description: Styled for the CMO, but is this even considered a piece of clothing?
   components:
   - type: Sprite

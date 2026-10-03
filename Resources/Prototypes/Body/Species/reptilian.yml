@@ -304,6 +304,7 @@
       - Pill
       - Crayon
       - Paper
+      - IceCream # FLOOF
 
 - type: entity
   parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganReptilianInternal, OrganReptilianMetabolizer ]

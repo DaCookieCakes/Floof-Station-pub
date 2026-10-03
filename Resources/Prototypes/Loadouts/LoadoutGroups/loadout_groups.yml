@@ -301,6 +301,8 @@
   minLimit: 0
   loadouts:
   - PassengerGloves
+  - PassengerArmWarmers # FLOOF
+  - PlainArmWarmers # FLOOF
 
 - type: loadoutGroup
   id: CommonBackpack
@@ -503,6 +505,7 @@
   minLimit: 0
   loadouts:
   - ChaplainNeck
+  - ChaplainMantle # FLOOF
 
 - type: loadoutGroup
   id: ChaplainShoes
@@ -554,6 +557,8 @@
   - JanitorRubberGloves
   - OrangeGloves
   - PurpleGloves
+  - RubberArmWarmers  # FLOOF
+  - ServiceArmWarmers # FLOOF
 
 - type: loadoutGroup
   id: JanitorOuterClothing
@@ -845,6 +850,7 @@
   loadouts:
   - CargoTechnicianJumpsuit
   - CargoTechnicianJumpskirt
+  - ExpressSpaceCourierUniform # FLOOF
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -869,6 +875,7 @@
   loadouts:
   - BlackShoes
   - CargoWinterBoots
+  - ExpressSpaceCourierBoots # FLOOF
 
 - type: loadoutGroup
   id: CargoTechnicianID
@@ -1200,6 +1207,7 @@
   - LatexGloves
   - PurpleGloves
   - RobohandsGloves
+  - ScienceArmWarmers # FLOOF
 
 - type: loadoutGroup
   id: ScientistPDA
@@ -1508,6 +1516,7 @@
   loadouts:
   - TramDriverGlovesWhite
   - TramDriverGlovesBlack
+  - PlainArmWarmers # FLOOF
 
 # Other
 

@@ -532,6 +532,9 @@
     - Bedsheets
     # Floofstation section
     - CollarsFloofstation
+    - ArmWarmersRecipePack
+    - ThighHighsRecipePack
+    - ThongsRecipePack
     # Floofstation section end
   - type: EmagLatheRecipes
     emagStaticPacks:

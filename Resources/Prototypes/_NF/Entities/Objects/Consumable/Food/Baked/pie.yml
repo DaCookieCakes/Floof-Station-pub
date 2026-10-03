@@ -1,6 +1,6 @@
 ﻿- type: entity
   name: applecrisp pie
-  parent: FoodPieBase
+  parent: [ FoodPieBase, BaseSlicingRefinableFood ]
   id: FoodPieAppleHoney
   description: A pie full of honey-laced apples baked under a crumbly oat streusel topping.
   components:

@@ -4,8 +4,7 @@
   limits:
     enum.HumanoidVisualLayers.HeadTop:
       limit: 3
-      required: true
-      default: [ HarpyEarsDefault ]
+      required: false
     enum.HumanoidVisualLayers.HeadSide:
       limit: 6
       required: false
@@ -18,18 +17,17 @@
       required: false
     enum.HumanoidVisualLayers.Chest:
       limit: 6
-      required: true
-      default: [ HarpyChestDefault ]
+      required: false
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: false
     enum.HumanoidVisualLayers.LArm:
-      limit: 2
+      limit: 1
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 2
+      limit: 1
       required: true
-      default: [ HarpyWingDefaultHuescale ]
+      default: [ HarpyWingFoldedHuescale ]
     enum.HumanoidVisualLayers.LHand:
       limit: 2
       required: false

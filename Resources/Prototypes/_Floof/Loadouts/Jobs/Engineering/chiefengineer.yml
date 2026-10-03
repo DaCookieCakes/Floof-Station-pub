@@ -4,3 +4,17 @@
   groupBy: ChiefEngineerGear
   equipment:
     outerClothing: ClothingLongcoatCE
+
+# Gloves
+- type: loadout
+  id: CEArmWarmers
+  groupBy: ChiefEngineerGear
+  equipment:
+    gloves: ClothingHandsChiefEngiWarmers
+
+# Socks
+- type: loadout
+  id: CEThighHighs
+  groupBy: CaptainGear
+  equipment:
+    undergarmentSocks: ClothingUnderSocksChiefEngi
