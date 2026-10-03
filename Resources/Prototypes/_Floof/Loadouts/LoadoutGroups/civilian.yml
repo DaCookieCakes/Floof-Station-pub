@@ -1,3 +1,4 @@
+# NECK #
 - type: loadoutGroup
   parent: CommonCollars
   id: ClownNeck
@@ -36,7 +37,90 @@
   name: loadout-group-tramdriver-neck
   minLimit: 0
 
-# Shoes
+
+# GLOVES #
+- type: loadoutGroup
+  id: ChaplainGloves
+  name: loadout-group-chaplain-gloves
+  minLimit: 0
+  loadouts:
+  - ChaplainArmWarmers
+
+- type: loadoutGroup
+  id: ClownGloves
+  name: loadout-group-clown-gloves
+  minLimit: 0
+  loadouts:
+  - RainbowArmWarmers
+
+- type: loadoutGroup
+  id: CommonGloves
+  name: loadout-group-common-gloves
+  minLimit: 0
+  loadouts:
+  - PlainArmWarmers
+
+- type: loadoutGroup
+  id: MimeGloves
+  name: loadout-group-mime-gloves
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - WhiteGloves # FLOOF
+  - MimeArmWarmers
+
+- type: loadoutGroup
+  id: MusicianGloves
+  name: loadout-group-musician-gloves
+  minLimit: 0
+  loadouts:
+  - MusicianArmWarmers
+
+# SOCKS #
+- type: loadoutGroup
+  id: ChaplainSocks
+  name: loadout-group-chaplain-socks
+  minLimit: 0
+  loadouts:
+  - ChaplainThighHighs
+
+- type: loadoutGroup
+  id: ClownSocks
+  name: loadout-group-clown-socks
+  minLimit: 0
+  loadouts:
+  - RainbowThighHighs
+
+- type: loadoutGroup
+  id: CommonSocks
+  name: loadout-group-common-socks
+  minLimit: 0
+  loadouts:
+  - PlainThighHighs
+
+- type: loadoutGroup
+  id: MimeSocks
+  name: loadout-group-mime-socks
+  minLimit: 0
+  loadouts:
+  - MimeThighHighs
+
+- type: loadoutGroup
+  id: MusicianSocks
+  name: loadout-group-musician-socks
+  minLimit: 0
+  loadouts:
+  - MusicianThighHighs
+
+- type: loadoutGroup
+  id: PassengerSocks
+  name: loadout-group-passenger-socks
+  minLimit: 0
+  loadouts:
+  - PlainThighHighs
+  - PassengerThighHighs
+
+# SHOES #
 - type: loadoutGroup
   id: LibrarianShoes
   name: loadout-group-librarian-shoes

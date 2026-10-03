@@ -1,6 +1,6 @@
 ﻿- type: entity
   name: avocado sushi
-  parent: FoodMealBase
+  parent: [FoodMealBase, BaseSlicingRefinableFood]
   id: FoodMealAvocadoSushi
   description: Where did the seaweed come from?
   components:
@@ -54,7 +54,7 @@
 
 - type: entity
   name: carp sushi
-  parent: FoodMealBase
+  parent: [FoodMealBase, BaseSlicingRefinableFood]
   id: FoodMealCarpSushi
   description: Certainly worth the risk.
   components:

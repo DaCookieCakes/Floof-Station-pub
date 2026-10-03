@@ -1,3 +1,6 @@
+# BASE #
+
+
 # Neck
 - type: loadoutGroup
   parent: CommonCollars
@@ -39,6 +42,78 @@
   - BartenderJumpsuitPurple
   - ChefJumpsuit
   - ChefJumpskirt
+
+# Gloves
+- type: loadoutGroup
+  id: BartenderGloves
+  name: loadout-group-bartender-gloves
+  minLimit: 0
+  loadouts:
+  - FingerlessGloves
+  - BartenderArmWarmers
+  - ServiceArmWarmers
+
+- type: loadoutGroup
+  id: BotanistGloves
+  name: loadout-group-botanist-gloves
+  minLimit: 0
+  loadouts:
+  - LeatherGloves
+  - ServiceArmWarmers
+
+- type: loadoutGroup
+  id: ChefGloves
+  name: loadout-group-chef-gloves
+  minLimit: 0
+  loadouts:
+  - NitrileGloves
+  - LatexGloves
+  - ChefArmWarmers
+  - ServiceArmWarmers
+
+- type: loadoutGroup
+  id: ServiceWorkerGloves
+  name: loadout-group-service-worker-gloves
+  minLimit: 0
+  loadouts:
+  - FingerlessGloves
+  - ServiceArmWarmers
+  - BartenderArmWarmers
+  - ChefArmWarmers
+
+# Socks
+- type: loadoutGroup
+  id: BartenderSocks
+  name: loadout-group-bartender-socks
+  minLimit: 0
+  loadouts:
+  - BartenderThighHighs
+  - ServiceThighHighs
+
+- type: loadoutGroup
+  id: ChefSocks
+  name: loadout-group-chef-socks
+  minLimit: 0
+  loadouts:
+  - ChefThighHighs
+  - ServiceThighHighs
+
+- type: loadoutGroup
+  id: JanitorSocks
+  name: loadout-group-janitor-socks
+  minLimit: 0
+  loadouts:
+  - RubberThighHighs
+  - ServiceThighHighs
+
+- type: loadoutGroup
+  id: ServiceWorkerSocks
+  name: loadout-group-service-worker-socks
+  minLimit: 0
+  loadouts:
+  - ServiceThighHighs # FLOOF
+  - BartenderThighHighs
+  - ChefThighHighs
 
 # Shoes
 - type: loadoutGroup

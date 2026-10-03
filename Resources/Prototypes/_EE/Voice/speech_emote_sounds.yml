@@ -60,6 +60,8 @@
       collection: HarpyMews
     Gasp:
       collection: HarpyGasp
+    Whine:
+      collection: HarpyWhines
     DefaultDeathgasp:
       collection: HarpyDeathGasp
 

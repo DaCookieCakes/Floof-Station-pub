@@ -39,3 +39,16 @@
   equipment:
     outerClothing: ClothingOuterApronChemist
 
+# Gloves
+- type: loadout
+  id: ChemistArmWarmers
+  groupBy: ChemistGear
+  equipment:
+    gloves: ClothingHandsChemistsWarmers
+
+# Socks
+- type: loadout
+  id: ChemistThighHighs
+  groupBy: ChemistGear
+  equipment:
+    undergarmentSocks: ClothingUnderSocksChemists

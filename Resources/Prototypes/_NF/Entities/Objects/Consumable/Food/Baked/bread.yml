@@ -1,6 +1,6 @@
 ﻿- type: entity
   name: honey challah
-  parent: FoodBreadBase
+  parent: [ FoodBreadBase, BaseSlicingRefinableFood ]
   id: FoodBreadChallah
   description: Twisted bread sprinkled with poppy seeds.
   components:
@@ -14,7 +14,7 @@
   - type: ToolRefinable
     refineResult:
       - id: FoodBreadChallahSlice
-        amount: 3    
+        amount: 3
   - type: Solution
     id: food
     solution:

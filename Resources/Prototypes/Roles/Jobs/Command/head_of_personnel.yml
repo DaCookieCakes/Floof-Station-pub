@@ -64,7 +64,7 @@
   equipment:
   #  shoes: ClothingShoesColorBrown # FLOOF
     id: HoPPDA
-    gloves: ClothingHandsGlovesHop
+  #  gloves: ClothingHandsGlovesHop # FLOOF
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboardThreePapers
     eyes: ClothingEyesHudCommand

@@ -10,6 +10,8 @@
   - MedicalBackpack
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
+  - CMOGloves # FLOOF
+  - CMOSocks  # FLOOF
   - ChiefMedicalOfficerShoes
   - MedicalGlasses # FLOOF: 'Glasses'
   - AssistiveItems
@@ -28,6 +30,8 @@
   - MedicalDoctorJumpsuit
   - MedicalBackpack
   - MedicalDoctorOuterClothing
+  - MedicalDoctorGloves # FLOOF
+  - MedicalDoctorSocks  # FLOOF
   - MedicalShoes
   - MedicalDoctorPDA
   - MedicalGlasses # FLOOF: 'Glasses'
@@ -61,6 +65,8 @@
   - ChemistJumpsuit
   - ChemistBackpack
   - ChemistOuterClothing
+  - ChemistGloves # FLOOF
+  - ChemistSocks  # FLOOF
   - MedicalShoes
   - ChemistGlasses # FLOOF: 'Glasses'
   - AssistiveItems
@@ -79,6 +85,8 @@
   - ParamedicJumpsuit
   - MedicalBackpack
   - ParamedicOuterClothing
+  - ParamedicGloves # FLOOF
+  - ParamedicSocks  # FLOOF
   - ParamedicShoes
   - MedicalGlasses # FLOOF: 'Glasses'
   - AssistiveItems

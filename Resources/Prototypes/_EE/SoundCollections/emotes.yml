@@ -201,6 +201,7 @@
   files:
   - /Audio/Voice/Moth/moth_squeak.ogg
   - /Audio/Animals/mouse_squeak.ogg
+  - /Audio/Animals/fox_squeak.ogg
 
 - type: soundCollection
   id: HarpyChirps
@@ -260,3 +261,22 @@
   files:
   - /Audio/Voice/Human/male_yawn_1.ogg
   - /Audio/Voice/Human/female_yawn_1.ogg
+
+- type: soundCollection
+  id: HarpyWhines
+  files:
+  - /Audio/Voice/Vulpkanin/dog_whine.ogg
+  - /Audio/Animals/fox1.ogg
+  - /Audio/Animals/fox2.ogg
+  - /Audio/Animals/fox3.ogg
+  - /Audio/Animals/fox4.ogg
+  - /Audio/Animals/fox5.ogg
+  - /Audio/Animals/fox6.ogg
+  - /Audio/Animals/fox7.ogg
+  - /Audio/Animals/fox8.ogg
+  - /Audio/Animals/fox9.ogg
+  - /Audio/Animals/fox10.ogg
+  - /Audio/Animals/fox11.ogg
+  - /Audio/Animals/fox12.ogg
+  - /Audio/Animals/fox13.ogg
+  - /Audio/Animals/fox14.ogg

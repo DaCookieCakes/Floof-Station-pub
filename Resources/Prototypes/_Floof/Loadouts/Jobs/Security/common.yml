@@ -28,10 +28,24 @@
   id: SecurityGasMask
   groupBy: "SecurityGear"
   equipment:
-    eyes: ClothingMaskGasSecurityDV
+    mask: ClothingMaskGasSecurityDV
 
 # Collars
 - type: loadout
   id: ClothingNeckCollarSec
   equipment:
     neck: ClothingNeckCollarSec
+
+# Gloves
+- type: loadout
+  id: SecurityArmWarmers
+  groupBy: SecurityGear
+  equipment:
+    gloves: ClothingHandsSecurityWarmers
+
+# Socks
+- type: loadout
+  id: SecurityThighHighs
+  groupBy: SecurityGear
+  equipment:
+    undergarmentSocks: ClothingUnderSocksSecurity

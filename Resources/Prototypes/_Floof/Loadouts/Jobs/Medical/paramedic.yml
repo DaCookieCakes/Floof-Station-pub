@@ -4,3 +4,17 @@
   groupBy: ParamedicGear
   equipment:
     outerClothing: ClothingOuterCoatParamedicJacket
+
+# Gloves
+- type: loadout
+  id: ParamedicArmWarmers
+  groupBy: ParamedicGear
+  equipment:
+    gloves: ClothingHandsParaMedicWarmers
+
+# Socks
+- type: loadout
+  id: ParamedicThighHighs
+  groupBy: ParamedicGear
+  equipment:
+    undergarmentSocks: ClothingUnderSocksParaMedic

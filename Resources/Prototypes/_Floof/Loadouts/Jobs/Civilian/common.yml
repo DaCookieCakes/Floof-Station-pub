@@ -39,6 +39,20 @@
   equipment:
     neck: ClothingNeckTieRed
 
+# Gloves
+- type: loadout
+  id: PlainArmWarmers
+  groupBy: CommonGear
+  equipment:
+    gloves: ClothingHandsPlainWarmers
+
+# Socks
+- type: loadout
+  id: PlainThighHighs
+  groupBy: CommonGear
+  equipment:
+    undergarmentSocks: ClothingUnderSocksPlain
+
 # Shoes
 - type: loadout
   id: LeatherShoes
