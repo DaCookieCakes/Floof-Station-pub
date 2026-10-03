@@ -487,3 +487,19 @@ Entries:
       message: Added more food types such as bees/honey, cucumbers, fruits, .etc.
   id: 64
   time: '2026-09-30T21:08:28.0000000+00:00'
+- author: DaCookieCakes
+  changes:
+    - type: Add
+      message: Added thigh-highs and arm warmers to all of the job loadouts.
+    - type: Add
+      message: Added thigh-highs, arm warmers, and thongs to job drobes.
+    - type: Add
+      message: Added thigh-highs, arm warmers, and thongs to the head dressers.
+    - type: Tweak
+      message: Lizards, Moths, and Feroxi can now enjoy ice-cream.
+    - type: Fix
+      message: New fruits/veggies no longer require a welder to cut.
+    - type: Fix
+      message: Newly added crops now appear in the seed vend.
+  id: 65
+  time: '2026-10-03T14:36:46.0000000+00:00'
