@@ -27,4 +27,5 @@
   - type: Computer
     board: SalvageShuttleConsoleCircuitboard
   - type: StealTarget
-    stealGroup: SalvageShuttleConsoleCircuitboard
+    stealGroup:
+    - SalvageShuttleConsoleCircuitboard
