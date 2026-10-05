@@ -503,3 +503,9 @@ Entries:
       message: Newly added crops now appear in the seed vend.
   id: 65
   time: '2026-10-03T14:36:46.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added Ding Dong, your comfy travel companion.
+  id: 66
+  time: '2026-10-05T07:47:04.0000000+00:00'
