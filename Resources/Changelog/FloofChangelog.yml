@@ -525,3 +525,9 @@ Entries:
       message: Doubled vent release pressure.
   id: 68
   time: '2026-10-06T12:54:41.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Fix
+      message: fix marking overlay
+  id: 69
+  time: '2026-10-06T13:07:03.0000000+00:00'
