@@ -1,7 +1,7 @@
 ﻿#Singular blood pack recipe
 - type: microwaveMealRecipe
   id: RecipeBloodPack1
-  name: single blood pack recipe
+  name: microwave-meal-recipe-blood-pack1-name
   result: Bloodpack1
   time: 5
   solids:
@@ -12,7 +12,7 @@
 #Single hybrid blood pack recipe
 - type: microwaveMealRecipe
   id: RecipeHybridBloodPack1
-  name: single hybrid blood pack recipe
+  name: microwave-meal-recipe-hybrid-blood-pack1-name
   result: Bloodpack1
   time: 5
   solids:
@@ -24,7 +24,7 @@
 #Five blood pack recipe
 - type: microwaveMealRecipe
   id: RecipeBloodPack5
-  name: five blood pack recipe
+  name: microwave-meal-recipe-blood-pack5-name
   result: Bloodpack5
   time: 5
   solids:
@@ -35,7 +35,7 @@
 #Five hybrid blood pack recipe
 - type: microwaveMealRecipe
   id: RecipeHybridBloodPack5
-  name: five hybrid blood pack recipe
+  name: microwave-meal-recipe-hybrid-blood-pack5-name
   result: Bloodpack5
   time: 5
   solids:
@@ -47,7 +47,7 @@
 #Ten blood pack recipe
 - type: microwaveMealRecipe
   id: RecipeBloodPack10
-  name: ten blood pack recipe
+  name: microwave-meal-recipe-blood-pack10-name
   result: Bloodpack10
   time: 5
   solids:
@@ -58,7 +58,7 @@
 #Ten hybrid blood pack recipe
 - type: microwaveMealRecipe
   id: RecipeHybridBloodPack10
-  name: ten hybrid blood pack recipe
+  name: microwave-meal-recipe-hybrid-blood-pack10-name
   result: Bloodpack10
   time: 5
   solids:
@@ -70,7 +70,7 @@
 #Full blood pack recipe
 - type: microwaveMealRecipe
   id: RecipeBloodPack
-  name: full blood pack recipe
+  name: microwave-meal-recipe-blood-pack-name
   result: Bloodpack
   time: 5
   solids:
@@ -81,7 +81,7 @@
 #Full hybrid blood pack recipe
 - type: microwaveMealRecipe
   id: RecipeHybridBloodPack
-  name: full hybrid blood pack recipe
+  name: microwave-meal-recipe-hybrid-blood-pack-name
   result: Bloodpack
   time: 5
   solids:
@@ -93,7 +93,7 @@
 #PFC based blood substitute recipe
 - type: microwaveMealRecipe
   id: RecipePFCSubstitute
-  name: PFC blood substitute recipe
+  name: microwave-meal-recipe-pfc-substitute-name
   result: Bloodpack
   time: 10
   solids:

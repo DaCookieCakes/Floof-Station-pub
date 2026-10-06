@@ -2,7 +2,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeAvocadoToast
-  name: avocado toast recipe
+  name: microwave-meal-recipe-avocado-toast-name
   result: FoodBreadAvocadoToast
   time: 5
   solids:
@@ -11,7 +11,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeBreakfastBagel
-  name: breakfast bagel recipe
+  name: microwave-meal-recipe-breakfast-bagel-name
   result: FoodMealBreakfastBagel
   time: 5
   solids:
@@ -22,7 +22,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeBreakfastBagelPoppy
-  name: poppyseed breakfast bagel recipe
+  name: microwave-meal-recipe-breakfast-bagel-poppy-name
   result: FoodMealBreakfastBagelPoppy
   time: 5
   solids:
@@ -33,7 +33,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeCucumberSandwich
-  name: cucumber sandwich recipe
+  name: microwave-meal-recipe-cucumber-sandwich-name
   result: FoodMealCucumberSandwich
   time: 5
   solids:
@@ -47,7 +47,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeAvocadoSushi
-  name: avocado sushi recipe
+  name: microwave-meal-recipe-avocado-sushi-name
   result: FoodMealAvocadoSushi
   time: 5
   solids:
@@ -60,7 +60,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeCarpSushi
-  name: carp sushi recipe
+  name: microwave-meal-recipe-carp-sushi-name
   result: FoodMealCarpSushi
   time: 5
   solids:
@@ -75,7 +75,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeGreekSalad
-  name: greek salad recipe
+  name: microwave-meal-recipe-greek-salad-name
   result: FoodSaladGreek
   time: 5
   reagents:
@@ -88,7 +88,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeAvocadoSalad
-  name: avocado salad recipe
+  name: microwave-meal-recipe-avocado-salad-name
   result: FoodSaladAvocado
   time: 5
   reagents:
@@ -104,7 +104,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeRaisins
-  name: raisins recipe
+  name: microwave-meal-recipe-raisins-name
   result: ReagentContainerRaisin # A little bit cursed, spawning a bag
   time: 30
   solids:
@@ -112,7 +112,7 @@
 
 - type: microwaveMealRecipe
   id: RecipePickle
-  name: pickle recipe
+  name: microwave-meal-recipe-pickle-name
   result: FoodPickle
   time: 5
   solids:
@@ -122,7 +122,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeHoneyBun
-  name: honey bun recipe
+  name: microwave-meal-recipe-honey-bun-name
   result: FoodBakedBunHoney
   group: Dessert
   time: 5
@@ -133,7 +133,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeHoneyChallah
-  name: honey challah recipe
+  name: microwave-meal-recipe-honey-challah-name
   result: FoodBreadChallah
   group: Dessert
   time: 15
@@ -145,7 +145,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeGlazedHam
-  name: honey glazed ham recipe
+  name: microwave-meal-recipe-glazed-ham-name
   result: FoodMeatGlazedHam
   time: 15
   solids:
@@ -156,7 +156,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeAppleHoneyDutchBaby
-  name: honey apple streusel pie
+  name: microwave-meal-recipe-apple-honey-dutch-baby-name
   result: FoodPieAppleHoney
   time: 15
   solids:
@@ -169,7 +169,7 @@
 
 - type: microwaveMealRecipe
   id: RecipePoachedPears
-  name: poached pears recipe
+  name: microwave-meal-recipe-poached-pears-name
   result: FoodMealPoachedPears
   time: 10
   solids:
@@ -181,7 +181,7 @@
 
 - type: microwaveMealRecipe
   id: RecipePearsBelleHelene
-  name: pears belle helene recipe
+  name: microwave-meal-recipe-pears-belle-helene-name
   result: FoodMealPearsBelleHelene
   time: 10
   solids:
@@ -194,7 +194,7 @@
 
 - type: microwaveMealRecipe
   id: RecipePearMuffin
-  name: pear muffin recipe
+  name: microwave-meal-recipe-pear-muffin-name
   result: FoodBakedMuffinPear
   time: 10
   solids:
@@ -207,7 +207,7 @@
 
 - type: microwaveMealRecipe
   id: RecipePearCheeseTart
-  name: pear and cheese tart recipe
+  name: microwave-meal-recipe-pear-cheese-tart-name
   result: FoodTartPearCheese
   time: 15
   solids:

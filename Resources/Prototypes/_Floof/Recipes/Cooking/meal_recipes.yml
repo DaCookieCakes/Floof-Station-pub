@@ -3,7 +3,7 @@
 # BANANA DUCK RECIPE
 - type: microwaveMealRecipe
   id: RecipeBananaDuck
-  name: Banana duck recipe
+  name: microwave-meal-recipe-banana-duck-name
   result: MobBananaDuck
   time: 15
   reagents:
@@ -16,7 +16,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamBloodDrop
-  name: blood drop ice cream recipe
+  name: microwave-meal-recipe-ice-cream-blood-drop-name
   result: IceCreamBloodDrop
   group: Dessert
   time: 5
@@ -29,7 +29,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamCaramel
-  name: caramel ice cream recipe
+  name: microwave-meal-recipe-ice-cream-caramel-name
   result: IceCreamCaramel
   group: Dessert
   time: 5
@@ -43,7 +43,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamCoffee
-  name: coffee ice cream recipe
+  name: microwave-meal-recipe-ice-cream-coffee-name
   result: IceCreamCoffee
   group: Dessert
   time: 5
@@ -55,7 +55,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamGreenTea
-  name: green tea ice cream recipe
+  name: microwave-meal-recipe-ice-cream-green-tea-name
   result: IceCreamGreenTea
   group: Dessert
   time: 5
@@ -67,7 +67,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamLemon
-  name: lemon tea ice cream recipe
+  name: microwave-meal-recipe-ice-cream-lemon-name
   result: IceCreamLemon
   group: Dessert
   time: 5
@@ -79,7 +79,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamOrange
-  name: orange ice cream recipe
+  name: microwave-meal-recipe-ice-cream-orange-name
   result: IceCreamOrange
   group: Dessert
   time: 5
@@ -91,7 +91,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamRainbow
-  name: rainbow ice cream recipe
+  name: microwave-meal-recipe-ice-cream-rainbow-name
   result: IceCreamRainbow
   group: Dessert
   time: 5
@@ -105,7 +105,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamSaltedCaramel
-  name: salted caramel ice cream recipe
+  name: microwave-meal-recipe-ice-cream-salted-caramel-name
   result: IceCreamSaltedCaramel
   group: Dessert
   time: 5
@@ -118,7 +118,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamSpaghetti
-  name: spaghetti ice cream recipe
+  name: microwave-meal-recipe-ice-cream-spaghetti-name
   result: IceCreamSpaghetti
   group: Dessert
   time: 5
@@ -131,7 +131,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamStrawberry
-  name: strawberry ice cream recipe
+  name: microwave-meal-recipe-ice-cream-strawberry-name
   result: IceCreamStrawberry
   group: Dessert
   time: 5
@@ -144,7 +144,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamBananaSplit
-  name: banana split ice cream recipe
+  name: microwave-meal-recipe-ice-cream-banana-split-name
   result: IceCreamBananaSplit
   group: Dessert
   time: 5
@@ -159,7 +159,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamChoco
-  name: chocolate ice cream recipe
+  name: microwave-meal-recipe-ice-cream-choco-name
   result: IceCreamChoco
   group: Dessert
   time: 5
@@ -172,7 +172,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamCoconut
-  name: coconut ice cream recipe
+  name: microwave-meal-recipe-ice-cream-coconut-name
   result: IceCreamCoconut
   group: Dessert
   time: 5
@@ -184,7 +184,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamCosmos
-  name: cosmos ice cream recipe
+  name: microwave-meal-recipe-ice-cream-cosmos-name
   result: IceCreamCosmos
   group: Dessert
   time: 5
@@ -197,7 +197,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamGilded
-  name: gilded ice cream recipe
+  name: microwave-meal-recipe-ice-cream-gilded-name
   result: IceCreamGilded
   group: Dessert
   time: 5
@@ -209,7 +209,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamLoversDelight
-  name: gilded ice cream recipe
+  name: microwave-meal-recipe-ice-cream-lovers-delight-name
   result: IceCreamLoversDelight
   group: Dessert
   time: 5
@@ -221,7 +221,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamMintChoco
-  name: mint chocolate ice cream recipe
+  name: microwave-meal-recipe-ice-cream-mint-choco-name
   result: IceCreamMintChoco
   group: Dessert
   time: 5
@@ -234,7 +234,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamSolar
-  name: napalm ice cream recipe
+  name: microwave-meal-recipe-ice-cream-solar-name
   result: IceCreamSolar
   group: Dessert
   time: 5
@@ -247,7 +247,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamNebula
-  name: Nebula ice cream recipe
+  name: microwave-meal-recipe-ice-cream-nebula-name
   result: IceCreamNebula
   group: Dessert
   time: 5
@@ -260,7 +260,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamNeapolitan
-  name: neapolitan ice cream recipe
+  name: microwave-meal-recipe-ice-cream-neapolitan-name
   result: IceCreamNeapolitan
   group: Dessert
   time: 5
@@ -273,7 +273,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamWatermelon
-  name: neapolitan ice cream recipe
+  name: microwave-meal-recipe-ice-cream-watermelon-name
   result: IceCreamWatermelon
   group: Dessert
   time: 5
@@ -285,7 +285,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeIceCreamVanilla
-  name: neapolitan ice cream recipe
+  name: microwave-meal-recipe-ice-cream-vanilla-name
   result: IceCreamVanilla
   group: Dessert
   time: 5
@@ -297,7 +297,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeRicePudding2
-  name: rice pudding recipe
+  name: microwave-meal-recipe-rice-pudding2-name
   result: FoodRicePudding
   time: 15
   reagents:
@@ -308,7 +308,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeHotX
-  name: hotcross bun recipe
+  name: microwave-meal-recipe-hot-x-name
   result: FoodBakedBunHotX
   #resultCount: 2 #MicrowaveSystem must be modified to allow for multiple products from the same recipe
   time: 10
@@ -320,7 +320,7 @@
 
 - type: microwaveMealRecipe
   id: RecipeMeatBun
-  name: meat bun recipe
+  name: microwave-meal-recipe-meat-bun-name
   result: FoodBakedBunMeat
   #resultCount: 2
   time: 10
