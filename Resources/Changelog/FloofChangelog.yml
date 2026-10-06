@@ -509,3 +509,13 @@ Entries:
       message: Added Ding Dong, your comfy travel companion.
   id: 66
   time: '2026-10-05T07:47:04.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: You can now chose your genitals in the character setup.
+    - type: Add
+      message: New character have matching genitals to their sex.
+    - type: Remove
+      message: the cock, boobs and vagina traits have been removed.
+  id: 67
+  time: '2026-10-06T10:37:43.0000000+00:00'
