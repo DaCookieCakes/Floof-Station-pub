@@ -519,3 +519,9 @@ Entries:
       message: the cock, boobs and vagina traits have been removed.
   id: 67
   time: '2026-10-06T10:37:43.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Doubled vent release pressure.
+  id: 68
+  time: '2026-10-06T12:54:41.0000000+00:00'
