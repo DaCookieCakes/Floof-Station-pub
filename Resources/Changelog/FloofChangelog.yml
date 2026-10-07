@@ -531,3 +531,9 @@ Entries:
       message: fix marking overlay
   id: 69
   time: '2026-10-06T13:07:03.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Fix
+      message: Fix Harpies crashing on round join.
+  id: 70
+  time: '2026-10-07T02:26:34.0000000+00:00'
