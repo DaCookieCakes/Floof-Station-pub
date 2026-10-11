@@ -124,6 +124,9 @@
     unlitIdleState: unlit
     unlitRunningState: unlit-building
     staticPacks:
+    # Begin DeltaV Additions
+    - CutterMachineStaticDen
+    # End DeltaV Additions
     - ToolsStatic
     - PartsStatic
     - AtmosStatic
@@ -139,6 +142,9 @@
     - PowerCellsStatic
     - ElectronicsStatic
     - HydroponicsStatic
+    # Floofstation section
+    - CollarsAutolatheFloofstation
+    # Floofstation section end
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SecurityAmmoStatic
@@ -526,6 +532,12 @@
     - Scarves
     - Carpets
     - Bedsheets
+    # Floofstation section
+    - CollarsFloofstation
+    - ArmWarmersRecipePack
+    - ThighHighsRecipePack
+    - ThongsRecipePack
+    # Floofstation section end
   - type: EmagLatheRecipes
     emagStaticPacks:
     - ClothingCentComm
