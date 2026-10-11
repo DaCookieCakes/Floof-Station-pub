@@ -141,6 +141,7 @@
     - ServiceStatic
     - PowerCellsStatic
     - ElectronicsStatic
+    - HydroponicsStatic
     # Floofstation section
     - CollarsAutolatheFloofstation
     # Floofstation section end
