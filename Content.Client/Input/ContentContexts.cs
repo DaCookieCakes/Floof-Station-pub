@@ -53,6 +53,7 @@ namespace Content.Client.Input
 
             // actions should be common (for ghosts, mobs, etc)
             common.AddFunction(ContentKeyFunctions.OpenActionsMenu);
+            common.AddFunction(ContentKeyFunctions.OpenConsentWindow); // Floof - Make consent work
 
             foreach (var boundKey in ContentKeyFunctions.GetHotbarBoundKeys())
             {
@@ -117,6 +118,8 @@ namespace Content.Client.Input
             }
             human.AddFunction(ContentKeyFunctions.ToggleKnockdown);
             human.AddFunction(ContentKeyFunctions.OpenEmotesMenu);
+            human.AddFunction(ContentKeyFunctions.ToggleCrawlingUnder); // Floofstation - under-table crawling
+            human.AddFunction(ContentKeyFunctions.OpenLanguageMenu); // Starlight
 
             var ghost = contexts.New("ghost", "human");
             ghost.AddFunction(EngineKeyFunctions.MoveUp);
