@@ -51,15 +51,29 @@ jobs:
         uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 10.0.x
-      - name: Cache NuGet packages
-        uses: actions/cache@v4
+      - name: Restore build cache
+        id: build-cache
+        uses: actions/cache/restore@v4
         with:
-          path: ~/.nuget/packages
-          key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj', '**/Directory.Packages.props') }}
-          restore-keys: nuget-${{ runner.os }}-
+          path: |
+            bin
+            RobustToolbox/bin
+            **/obj
+          key: yamllinter-${{ runner.os }}-${{ hashFiles('**/*.cs', '**/*.csproj', '**/*.props', '**/*.targets', '**/*.xaml', '*.slnx') }}
       - name: Install dependencies
-        run: dotnet restore
+        if: steps.build-cache.outputs.cache-hit != 'true'
+        run: dotnet restore Content.YAMLLinter/Content.YAMLLinter.csproj
       - name: Build
-        run: dotnet build --configuration Release --no-restore /p:WarningsAsErrors= /m
+        if: steps.build-cache.outputs.cache-hit != 'true'
+        run: dotnet build Content.YAMLLinter/Content.YAMLLinter.csproj --configuration Release --no-restore /p:WarningsAsErrors= /m
+      - name: Save build cache
+        if: steps.build-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            bin
+            RobustToolbox/bin
+            **/obj
+          key: ${{ steps.build-cache.outputs.cache-primary-key }}
       - name: Run Linter
         run: dotnet run --project Content.YAMLLinter/Content.YAMLLinter.csproj --no-build
