@@ -19,6 +19,7 @@ jobs:
       lint: ${{ github.event_name != 'pull_request' || steps.filter.outputs.lint == 'true' }}
     steps:
       - uses: dorny/paths-filter@v3
+        if: github.event_name == 'pull_request'
         id: filter
         with:
           filters: |
