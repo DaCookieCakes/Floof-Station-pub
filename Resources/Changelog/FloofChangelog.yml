@@ -543,3 +543,62 @@ Entries:
       message: Goob tech tree
   id: 71
   time: '2026-10-07T19:48:13.0000000+00:00'
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added height and width sliders to the character editor.
+    - type: Tweak
+      message: Character size now affects hitbox, blood volume and flight.
+  id: 72
+  time: '2026-10-08T10:23:23.0000000+00:00'
+- author: portfiend Ghost Dirius77 and Alex C
+  changes:
+    - type: Add
+      message: Ported the Autotailor, a lathe that prints cosmetic clothing and rings!
+    - type: Add
+      message: >-
+        Ported costume bundles and bunny suits, sold in the AutoDrobe and
+        unwrapped in hand.
+    - type: Add
+      message: >-
+        Ported quick construction, use sheets in hand to pick what to build from
+        a radial menu.
+    - type: Add
+      message: >-
+        Ported silent cryo, alt-click a cryopod to leave without an announcement
+        or hide others' in the options.
+    - type: Add
+      message: Ported new landmines and floor traps, not yet added to maps.
+    - type: Tweak
+      message: Updated the mindshield icon.
+  id: 73
+  time: '2026-10-16T08:19:15.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/266
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Ported sleeping bags! Craft one from cloth, it fits two.
+  id: 74
+  time: '2026-10-16T09:04:24.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/273
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added Gator Aid, now you too can death roll your coworkers!
+  id: 75
+  time: '2026-10-16T19:21:10.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/276
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: Added roasted crickets to the snack vendor, a reptilian favorite!
+  id: 76
+  time: '2026-10-16T19:44:21.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/277
+- author: Pachat-Kas
+  changes:
+    - type: Tweak
+      message: Doubled anomaly research point output.
+  id: 77
+  time: '2026-10-18T10:27:41.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/280

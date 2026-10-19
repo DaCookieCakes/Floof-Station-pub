@@ -180,11 +180,7 @@
           - id: ClothingMaskMime
           - id: ClothingBeltSuspendersRed
           - id: ClothingBeltSuspendersBlack
-        - !type:AllSelector # Performer starter kit
-          children:
-          - id: ClothingUniformJumpskirtPerformer
-          - id: ClothingShoesBootsPerformer
-          - id: ClothingHeadPerformerWig
+        - id: CostumeBundlePerformer # Floof - Costume bundles, add new performer items to the bundle instead
 
 - type: entity
   parent: CrateGenericSteel

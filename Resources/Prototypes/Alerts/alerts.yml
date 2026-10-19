@@ -28,6 +28,7 @@
     - alertType: Rooted
     - alertType: Pacified
     - alertType: Stealthy
+    - alertType: Offer # Floof - item offering
 
 - type: entity
   id: AlertSpriteView

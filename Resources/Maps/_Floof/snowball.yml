@@ -58105,7 +58105,6 @@ entities:
       pos: 79.5,38.5
     - type: FaxMachine
       name: Library
-      destinationAddress: Library
   - uid: 10601
     components:
     - type: Transform
@@ -58120,7 +58119,6 @@ entities:
       pos: 63.5,16.5
     - type: FaxMachine
       name: AI
-      destinationAddress: AI
   - uid: 12333
     components:
     - type: Transform
@@ -92621,7 +92619,7 @@ entities:
     - type: Transform
       parent: 1
       pos: 19.5,54.5
-- proto: PosterLegitNoERP
+- proto: PosterLegitYesERP
   entities:
   - uid: 8945
     components:

@@ -7,6 +7,7 @@ using Content.Server.Afk;
 using Content.Server.Database;
 using Content.Shared._Floof.Traits;
 using Content.Shared.Body;
+using Content.Shared.Chat.Prototypes;
 using Content.Shared.CCVar;
 using Content.Shared.Construction.Prototypes;
 using Content.Shared.Humanoid;
@@ -121,7 +122,7 @@ namespace Content.Server.Preferences.Managers
             }
 
             var voice = profile.Voice ?? speciesPrototype.DefaultSoundsBySex[(int)sex];
-            if (!_prototypeManager.HasIndex(voice))
+            if (!_prototypeManager.HasIndex<EmoteSoundsPrototype>(voice))
                 voice = speciesPrototype.DefaultSoundsBySex[(int)sex];
 
             if (profile.OrganMarkings?.RootElement is { } element)
@@ -194,6 +195,8 @@ namespace Content.Server.Preferences.Managers
                 profile.ConsentText, // Floof: Added consent.
                 genitals, // Floof - Genitals
                 species,
+                profile.Height, // Goobstation: port EE height/width sliders
+                profile.Width, // Goobstation: port EE height/width sliders
                 profile.Age,
                 sex,
                 voice,

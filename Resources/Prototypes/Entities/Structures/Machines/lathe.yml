@@ -141,6 +141,7 @@
     - ServiceStatic
     - PowerCellsStatic
     - ElectronicsStatic
+    - HydroponicsStatic
     # Floofstation section
     - CollarsAutolatheFloofstation
     # Floofstation section end
@@ -265,6 +266,7 @@
     - CargoBoardsStatic
     - MedicalBoardsStatic
     - EngineeringBoardsStatic
+    - DenBoardsStatic # DEN
     dynamicPacks:
     - EngineeringBoards
     - CargoBoards
@@ -399,6 +401,7 @@
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
+    - MedicalStaticFloof # Floof
     dynamicPacks:
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
@@ -484,6 +487,7 @@
     - MedicalClothingStatic
     - EmptyMedkitsStatic
     - SurgeryStatic
+    - MedicalStaticFloof # Floof
     dynamicPacks:
     - Chemistry
   - type: Machine
@@ -521,6 +525,7 @@
     - ClothingCivilian
     - ClothingCargo
     - ClothingCommand
+    - ClothingDresses
     - ClothingEngineering
     - ClothingMedical
     - ClothingScience
@@ -537,6 +542,7 @@
     - ThighHighsRecipePack
     - ThongsRecipePack
     # Floofstation section end
+    - DenClothingJob #DEN
   - type: EmagLatheRecipes
     emagStaticPacks:
     - ClothingCentComm

@@ -277,6 +277,9 @@ binds:
   type: State
   key: V
   mod1: Shift
+- function: OfferItem # Floof - item offering
+  type: State
+  key: O # F is FlipObject
 - function: ShowDebugConsole
   type: State
   key: Tilde
@@ -292,10 +295,6 @@ binds:
   type: State
   key: c
   mod1: Alt
-- function: MouseMiddle
-  type: State
-  key: MouseMiddle
-  canFocus: true
 - function: RotateObjectClockwise
   type: State
   key: R
