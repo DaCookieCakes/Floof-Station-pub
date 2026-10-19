@@ -49,7 +49,7 @@ jobs:
 
       - name: Commit Changelog
         run: |
-          git add *.yml
+          git add "$CHANGELOG_DIR"
           git commit -m "${{ vars.CHANGELOG_MESSAGE }} (#${{ env.PR_NUMBER }})"
           git push
         shell: bash
