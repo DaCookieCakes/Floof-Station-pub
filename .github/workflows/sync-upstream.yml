@@ -2,7 +2,7 @@ name: Daily Upstream Sync
 
 on:
   schedule:
-    - cron: "0 3 * * *"  # every day at 03:00 UTC
+    - cron: "0 2 * * *"  # every day at 02:00 UTC (03:00 CET)
   workflow_dispatch:
 
 jobs:
