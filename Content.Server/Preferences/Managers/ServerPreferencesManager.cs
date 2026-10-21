@@ -1,3 +1,4 @@
+using Content.Server._Floof.Persistence; // Floof - Persistence
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text.Json;
@@ -5,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Afk;
 using Content.Server.Database;
+using Content.Shared._Floof.Traits;
 using Content.Shared.Body;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.CCVar;
@@ -24,6 +26,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Utility;
+using Genitals = Content.Shared.Preferences.Genitals; // Floof - Genitals
 
 namespace Content.Server.Preferences.Managers
 {
@@ -177,10 +180,24 @@ namespace Content.Server.Preferences.Managers
                 loadouts[role.RoleName] = loadout;
             }
 
+            // Floof Section - Genitals
+            var genitals = new Genitals();
+            if (profile.Genitals != null)
+            {
+                genitals.Penis = profile.Genitals.Penis;
+                genitals.Breasts = profile.Genitals.Breasts;
+                genitals.Vagina = profile.Genitals.Vagina;
+            }
+            // End Floof Section - Genitals
+
             return new HumanoidCharacterProfile(
                 profile.CharacterName,
                 profile.FlavorText,
+                profile.ConsentText, // Floof: Added consent.
+                genitals, // Floof - Genitals
                 species,
+                profile.Height, // Goobstation: port EE height/width sliders
+                profile.Width, // Goobstation: port EE height/width sliders
                 profile.Age,
                 sex,
                 voice,
@@ -335,6 +352,7 @@ namespace Content.Server.Preferences.Managers
 
             prefsData.Prefs = new PlayerPreferences(arr, nextSlot ?? curPrefs.SelectedCharacterIndex, curPrefs.AdminOOCColor, curPrefs.ConstructionFavorites);
             _afkManager.PlayerDidAction(message.MsgChannel);
+            _dependencies.Resolve<IEntityManager>().System<LiveCharacterSystem>().Forget(userId, slot); // Floof - Persistence
 
             if (ShouldStorePrefs(message.MsgChannel.AuthType))
             {
