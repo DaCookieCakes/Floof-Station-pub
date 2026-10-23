@@ -18,6 +18,7 @@ public sealed partial class FancyResearchConsoleItem : LayoutContainer
     public TechnologyPrototype Prototype;
     public Action<TechnologyPrototype, ResearchAvailability>? SelectAction;
     public ResearchAvailability Availability;
+    public Vector2i TreePosition; // Floof - Tech tree positions moved to TechnologyPositionPrototype
 
     // Some visuals
     public static readonly Color DefaultColor = Color.FromHex("#141F2F");

@@ -15,11 +15,6 @@
   - OreProcessorIndustrialMachineCircuitboard
   - ClothingMaskWeldingGas
   - ClothingShoesBootsJump
-  # Goobstation R&D Console rework start
-  position: 0,-4
-  technologyPrerequisites:
-  - SpaceScanning
-  # Goobstation R&D Console rework end
 
 - type: technology
   id: SpaceScanning
@@ -33,11 +28,6 @@
   recipeUnlocks:
   - RadarConsoleCircuitboard
   - HandHeldMassScanner
-  # Goobstation R&D Console rework start
-  position: 0,-3
-  technologyPrerequisites:
-  - PowerGeneration
-  # Goobstation R&D Console rework end
 
 - type: technology
   id: AdvancedPowercells
@@ -52,11 +42,6 @@
   - PowerCellHigh
   - TurboItemRechargerCircuitboard
   - SMESAdvancedMachineCircuitboard
-  # Goobstation R&D Console rework start
-  position: 1,-6
-  technologyPrerequisites:
-  - IndustrialEngineering
-  # Goobstation R&D Console rework end
 
 - type: technology
   id: MechanicalCompression
@@ -69,11 +54,6 @@
   cost: 10000
   recipeUnlocks:
   - FlatpackerMachineCircuitboard
-  # Goobstation R&D Console rework start
-  position: 1,-4
-  technologyPrerequisites:
-  - SpaceScanning
-  # Goobstation R&D Console rework end
 
 - type: technology
   id: IndustrialEngineering
@@ -89,11 +69,6 @@
   - ProtolatheHyperConvectionMachineCircuitboard
   - CircuitImprinterHyperConvectionMachineCircuitboard
   - SheetifierMachineCircuitboard
-  # Goobstation R&D Console rework start
-  position: 1,-5
-  technologyPrerequisites:
-  - MechanicalCompression
-  # Goobstation R&D Console rework end
 
 - type: technology
   id: PowerGeneration
@@ -111,7 +86,6 @@
   - SolarControlComputerCircuitboard
   - SolarTrackerElectronics
   - EmitterCircuitboard
-  position: 0,-2
 
 - type: technology
   id: AtmosphericTech
@@ -125,11 +99,6 @@
   recipeUnlocks:
   - ThermomachineFreezerMachineCircuitBoard
   - GasRecyclerMachineCircuitboard
-  # Goobstation R&D Console rework start
-  position: -2,-4
-  technologyPrerequisites:
-  - SpaceScanning
-  # Goobstation R&D Console rework end
 
 - type: technology
   id: RipleyAPLU
@@ -149,11 +118,6 @@
   - RipleyCentralElectronics
   - RipleyPeripheralsElectronics
   - MechEquipmentGrabber
-  # Goobstation R&D Console rework start
-  position: 0,-5
-  technologyPrerequisites:
-  - SalvageEquipment
-  # Goobstation R&D Console rework end
 
 # Tier 2
 
@@ -171,11 +135,6 @@
   - ThrusterMachineCircuitboard
   - GyroscopeMachineCircuitboard
   - MiniGravityGeneratorCircuitboard
-  # Goobstation R&D Console rework start
-  position: 2,-4
-  technologyPrerequisites:
-  - MechanicalCompression
-  # Goobstation R&D Console rework end
 
 - type: technology
   id: AdvancedAtmospherics
@@ -192,9 +151,6 @@
   - HolofanProjector
   technologyPrerequisites:
   - AtmosphericTech
-  # Goobstation R&D Console rework start
-  position: -2,-5
-  # Goobstation R&D Console rework end
 
 - type: technology
   id: AdvancedToolsTechnology
@@ -212,11 +168,6 @@
     - BorgModuleAdvancedTool
     - Fulton
     - FultonBeacon
-  # Goobstation R&D Console rework start
-  position: 2,-5
-  technologyPrerequisites:
-  - Shuttlecraft
-  # Goobstation R&D Console rework end
 
 - type: technology
   id: MassExcavation
@@ -232,11 +183,6 @@
     - MiningDrillDiamond
     - AdvancedMineralScannerEmpty
     - BorgModuleAdvancedMining
-  # Goobstation R&D Console rework start
-  position: 0,-6
-  technologyPrerequisites:
-  - RipleyAPLU
-  # Goobstation R&D Console rework end
 
 # Tier 3
 
@@ -253,12 +199,6 @@
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
   - ClothingBackpackDuffelHolding
-  # Goobstation R&D Console rework start
-  position: 2,-7
-  technologyPrerequisites:
-  - AdvancedToolsTechnology # Floof - Tech Tree
-  - AdvancedPowercells # Floof - Tech Tree
-  # Goobstation R&D Console rework end
 
 - type: technology
   id: OptimizedMicrogalvanism
@@ -273,7 +213,4 @@
   - PowerCellMicroreactor
   - PowerCellHyper
   technologyPrerequisites:
-  - AdvancedToolsTechnology  # Goobstation R&D Console rework
-  - AdvancedPowercells  # Goobstation R&D Console rework
-  position: 2,-6
-
+  - AdvancedPowercells
