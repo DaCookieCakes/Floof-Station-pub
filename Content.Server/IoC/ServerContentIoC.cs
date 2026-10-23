@@ -1,3 +1,5 @@
+using Content.Server._Floof.Consent.Managers;
+using Content.Server._Floof.Persistence; // Floof - Persistence
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
@@ -83,5 +85,7 @@ internal static class ServerContentIoC
         deps.Register<ServerFeedbackManager>();
         deps.Register<ISharedFeedbackManager, ServerFeedbackManager>();
         deps.Register<WhitelistManager>();
+        deps.Register<IServerConsentManager, ServerConsentManager>(); // Floof - Consent System
+        deps.Register<LiveCharacterManager>(); // Floof - Persistence
     }
 }
