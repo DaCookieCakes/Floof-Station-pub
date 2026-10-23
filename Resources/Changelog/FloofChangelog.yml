@@ -616,3 +616,12 @@ Entries:
   id: 79
   time: '2026-10-21T15:00:33.0000000+00:00'
   url: https://github.com/Floof-Station-SS14/Floof-Station/pull/296
+- author: Memeji
+  changes:
+    - type: Add
+      message: >-
+        Ported wallets from Frontier! They go in their own inventory slot and
+        hold cash, coins and paper, available in loadouts and the ClothesMate.
+  id: 80
+  time: '2026-10-23T02:57:06.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/298
