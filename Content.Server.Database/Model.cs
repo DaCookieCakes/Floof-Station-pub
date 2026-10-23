@@ -86,6 +86,15 @@ namespace Content.Server.Database
             modelBuilder.Entity<Genitals>()
                 .HasKey(g => g.ProfileId);
             // End Floof Section - Genitals
+            // Floof Section - Bank
+            modelBuilder.Entity<Profile>()
+                .HasOne(p => p.BankAccount)
+                .WithOne(b => b.Profile)
+                .HasForeignKey<BankAccount>(b => b.ProfileId)
+                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<BankAccount>()
+                .HasKey(b => b.ProfileId);
+            // Floof Section End - Bank
             // Floof Section - Persistence
             modelBuilder.Entity<Profile>()
                 .HasOne(p => p.LiveCharacter)
@@ -364,6 +373,7 @@ namespace Content.Server.Database
         public string FlavorText { get; set; } = null!;
         public string ConsentText { get; set; } = null!; // Floof: Added consent.
         public Genitals? Genitals { get; set; } = null!; // Floof - Genitals
+        public BankAccount? BankAccount { get; set; } // Floof - Bank
         public LiveCharacter? LiveCharacter { get; set; } // Floof - Persistence
         public List<LiveCharacterHistory> LiveCharacterHistory { get; } = new(); // Floof - Persistence
         public int Age { get; set; }
@@ -403,6 +413,14 @@ namespace Content.Server.Database
         public Profile Profile { get; set; } = null!;
     }
     // End Floof Section - Genitals
+    // Floof Section - Bank
+    public class BankAccount
+    {
+        public int ProfileId { get; set; }
+        public int Balance { get; set; }
+        public Profile Profile { get; set; } = null!;
+    }
+    // Floof Section End - Bank
     // Floof Section - Persistence
     public class LiveCharacter
     {
