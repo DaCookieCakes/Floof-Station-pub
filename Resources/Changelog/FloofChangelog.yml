@@ -625,3 +625,16 @@ Entries:
   id: 80
   time: '2026-10-23T02:57:06.0000000+00:00'
   url: https://github.com/Floof-Station-SS14/Floof-Station/pull/298
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: >-
+        Added bank accounts that carry over between rounds, with paydays based
+        on your job and time alive!
+    - type: Add
+      message: >-
+        Added ATMs for withdrawing spesos, and your PDA now shows your balance.
+        ATMs aren't on maps yet.
+  id: 81
+  time: '2026-10-23T15:45:09.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/301
