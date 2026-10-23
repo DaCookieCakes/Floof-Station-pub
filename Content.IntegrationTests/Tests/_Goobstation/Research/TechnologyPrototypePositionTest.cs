@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Numerics;
-using Content.Shared.Research.Prototypes;
+using Content.Shared._Floof.Research; // Floof - Tech tree positions moved to TechnologyPositionPrototype
 using Robust.Shared.Prototypes;
 
 namespace Content.IntegrationTests.Tests._Goobstation.Research;
@@ -21,7 +21,7 @@ public sealed class TechnologyPrototypePositionTests
 
         await server.WaitAssertion(() =>
         {
-            foreach (var techProto in protoManager.EnumeratePrototypes<TechnologyPrototype>())
+            foreach (var techProto in protoManager.EnumeratePrototypes<TechnologyPositionPrototype>()) // Floof
             {
                 Vector2 position = techProto.Position;
 
@@ -32,7 +32,7 @@ public sealed class TechnologyPrototypePositionTests
 
         if (fails.Count > 0)
         {
-            var msg = string.Join("\n", fails) + "\n" + "Found duplicate positions for following" + nameof(TechnologyPrototype);
+            var msg = string.Join("\n", fails) + "\n" + "Found duplicate positions for following" + nameof(TechnologyPositionPrototype); // Floof
             Assert.Fail(msg);
         }
 

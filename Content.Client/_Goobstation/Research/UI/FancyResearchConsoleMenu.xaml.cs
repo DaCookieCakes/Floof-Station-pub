@@ -4,6 +4,7 @@ using System.Linq;
 using System.Numerics;
 using Content.Client.Research;
 using Content.Client.UserInterface.Controls;
+using Content.Shared._Floof.Research; // Floof
 using Content.Shared._Goobstation.Research;
 using Content.Shared.Access.Systems;
 using Content.Shared.Research.Components;
@@ -33,6 +34,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
     private readonly ResearchSystem _research;
     private readonly SpriteSystem _sprite;
     private readonly AccessReaderSystem _accessReader;
+    private readonly TechnologyTreeSystem _techTree; // Floof
 
     /// <summary>
     /// Console entity
@@ -77,6 +79,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         _research = _entity.System<ResearchSystem>();
         _sprite = _entity.System<SpriteSystem>();
         _accessReader = _entity.System<AccessReaderSystem>();
+        _techTree = _entity.System<TechnologyTreeSystem>(); // Floof
         StaticSprite.SetFromSpriteSpecifier(new SpriteSpecifier.Rsi(new("_Goobstation/Interface/rnd-static.rsi"), "static"));
         StaticSprite.DisplayRect.CanShrink = true;
         StaticSprite.DisplayRect.Stretch = TextureRect.StretchMode.Scale;
@@ -102,11 +105,15 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         {
             var proto = _prototype.Index<TechnologyPrototype>(tech.Key);
 
-            var control = new FancyResearchConsoleItem(proto, _sprite, tech.Value);
+            // Floof - Tech tree positions moved to TechnologyPositionPrototype
+            if (!_techTree.TryGetPosition(proto.ID, out var treePosition))
+                continue;
+
+            var control = new FancyResearchConsoleItem(proto, _sprite, tech.Value) { TreePosition = treePosition.Position };
             DragContainer.AddChild(control);
 
             // Set position for all tech, relating to _position
-            LayoutContainer.SetPosition(control, _position + proto.Position * 150 * _zoom);
+            LayoutContainer.SetPosition(control, _position + control.TreePosition * 150 * _zoom); // Floof
             control.SetScale(_zoom); // Floof - Tech Tree
             control.SelectAction += SelectTech;
 
@@ -202,7 +209,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
             if (child is not FancyResearchConsoleItem research)
                 continue;
 
-            var pos = research.Prototype.Position * 150;
+            var pos = research.TreePosition * 150; // Floof
             LayoutContainer.SetPosition(child, _position + pos * _zoom);
             research.SetScale(_zoom);
         }
@@ -259,8 +266,8 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         var items = DragContainer.Children.OfType<FancyResearchConsoleItem>().ToList();
         if (items.Count > 0 && DragContainer.Size != Vector2.Zero)
         {
-            var min = items.Select(i => (Vector2) i.Prototype.Position).Aggregate(Vector2.Min);
-            var max = items.Select(i => (Vector2) i.Prototype.Position).Aggregate(Vector2.Max);
+            var min = items.Select(i => (Vector2) i.TreePosition).Aggregate(Vector2.Min);
+            var max = items.Select(i => (Vector2) i.TreePosition).Aggregate(Vector2.Max);
             var center = (min + max) / 2 * 150 * _zoom + new Vector2(40 * _zoom);
             _position = DragContainer.Size / 2 - center;
         }
@@ -271,7 +278,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
             if (item is not FancyResearchConsoleItem research)
                 continue;
 
-            LayoutContainer.SetPosition(item, _position + research.Prototype.Position * 150 * _zoom);
+            LayoutContainer.SetPosition(item, _position + research.TreePosition * 150 * _zoom); // Floof
         }
     }
 
