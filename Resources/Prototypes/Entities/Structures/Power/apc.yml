@@ -53,10 +53,10 @@
     examinable: true
     nodes:
       input:
-        !type:CableDeviceNode
+        !type:CableTerminalPortNode # ES: 'CableDeviceNode'
         nodeGroupID: MVPower
       output:
-        !type:CableDeviceNode
+        !type:CableTerminalPortNode # ES: 'CableDeviceNode'
         nodeGroupID: Apc
   - type: PowerMonitoringDevice
     group: APC

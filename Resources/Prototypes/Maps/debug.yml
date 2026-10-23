@@ -16,7 +16,7 @@
 - type: gameMap
   id: Dev
   mapName: Dev
-  mapPath: /Maps/Test/dev_map.yml
+  mapPath: /Maps/_Floof/dev_map.yml # FLOOF: '/Maps/Test/dev_map.yml'
   minPlayers: 0
   stations:
     Dev:

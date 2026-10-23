@@ -52,7 +52,7 @@
   - type: DeviceLinkSink
     ports:
     - On
-  - type: WirelessNetworkConnection
+  - type: WirelessNetwork
     range: 200
   - type: ContainerContainer
     containers:

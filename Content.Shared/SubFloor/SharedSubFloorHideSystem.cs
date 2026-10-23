@@ -49,8 +49,10 @@ namespace Content.Shared.SubFloor
             // No teleporting entities through floor tiles when anchoring them.
             var xform = Transform(uid);
 
+            // FLOOF: Added an AGhost check for mapping purposes.
             if (TryComp<MapGridComponent>(xform.GridUid, out var grid)
-                && HasFloorCover(xform.GridUid.Value, grid, Map.TileIndicesFor(xform.GridUid.Value, grid, xform.Coordinates)))
+                && HasFloorCover(xform.GridUid.Value, grid, Map.TileIndicesFor(xform.GridUid.Value, grid, xform.Coordinates))
+                && !HasComp<BypassInteractionChecksComponent>(args.User))
             {
                 _popup.PopupEntity(Loc.GetString("subfloor-anchor-failure", ("entity", uid)), args.User, args.User);
                 args.Cancel();
@@ -61,7 +63,8 @@ namespace Content.Shared.SubFloor
         {
             // No un-anchoring things under the floor. Only required for something like vents, which are still interactable
             // despite being partially under the floor.
-            if (component.IsUnderCover)
+            // FLOOF: Added an AGhost check for mapping purposes.
+            if (component.IsUnderCover && !HasComp<BypassInteractionChecksComponent>(args.User))
             {
                 _popup.PopupEntity(Loc.GetString("subfloor-unanchor-failure", ("entity", uid)), args.User, args.User);
                 args.Cancel();

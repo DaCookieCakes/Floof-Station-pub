@@ -1,4 +1,6 @@
 using Content.Client.UserInterface.Systems.Sandbox;
+using Content.Client._Floof.SubFloor; // FLOOF
+using Content.Shared.Atmos.Components; // FLOOF
 using Content.Shared.SubFloor;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
@@ -11,8 +13,39 @@ public sealed partial class SubFloorHideSystem : SharedSubFloorHideSystem
     [Dependency] private SharedAppearanceSystem _appearance = default!;
     [Dependency] private SpriteSystem _sprite = default!;
     [Dependency] private IUserInterfaceManager _ui = default!;
+    [Dependency] private SubFloorFilterSystem _subFloorFilter = default!; // FLOOF
 
     private bool _showAll;
+
+    // FLOOF: Filters for the new layer command.
+    private SubFloorFilterMode _showAllMode = SubFloorFilterMode.All;
+    private AtmosPipeLayer? _showAllPipeLayer;
+
+    [ViewVariables(VVAccess.ReadWrite)]
+    public SubFloorFilterMode ShowAllMode
+    {
+        get => _showAllMode;
+        set
+        {
+            _showAllMode = value;
+            UpdateAll();
+        }
+    }
+
+    /// <summary>
+    ///     If set, only pipes on this layer are shown. Things without pipe layers (cables, disposals) are unaffected.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite)]
+    public AtmosPipeLayer? ShowAllPipeLayer
+    {
+        get => _showAllPipeLayer;
+        set
+        {
+            _showAllPipeLayer = value;
+            UpdateAll();
+        }
+    }
+    // FLOOF end
 
     [ViewVariables(VVAccess.ReadWrite)]
     public bool ShowAll
@@ -55,9 +88,11 @@ public sealed partial class SubFloorHideSystem : SharedSubFloorHideSystem
         args.TryGetData<bool>(SubFloorVisuals.Covered, out var covered);
         args.TryGetData<bool>(SubFloorVisuals.ScannerRevealed, out var scannerRevealed);
 
-        scannerRevealed &= !ShowAll; // no transparency for show-subfloor mode.
+        var showAll = ShowAll && _subFloorFilter.Matches(uid, _showAllMode, _showAllPipeLayer); // FLOOF - filter show-subfloor mode
 
-        var revealed = !covered || ShowAll || scannerRevealed;
+        scannerRevealed &= !showAll; // no transparency for show-subfloor mode. // FLOOF - ShowAll -> showAll
+
+        var revealed = !covered || showAll || scannerRevealed; // FLOOF - ShowAll -> showAll
 
         // set visibility & color of each layer
         foreach (var layer in args.Sprite.AllLayers)
@@ -81,7 +116,8 @@ public sealed partial class SubFloorHideSystem : SharedSubFloorHideSystem
 
         _sprite.SetVisible((uid, args.Sprite), hasVisibleLayer || revealed);
 
-        if (ShowAll)
+        // FLOOF: Added modes.
+        if (showAll)
         {
             // Allows sandbox mode to make wires visible over other stuff.
             component.OriginalDrawDepth ??= args.Sprite.DrawDepth;
