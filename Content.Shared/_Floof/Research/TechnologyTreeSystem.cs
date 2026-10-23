@@ -9,7 +9,7 @@ namespace Content.Shared._Floof.Research;
 /// The tree's prerequisites are written onto the technology prototypes themselves,
 /// so every upstream research check (availability, unlocking, descriptions) follows the tree without base edits.
 /// </summary>
-public sealed class TechnologyTreeSystem : EntitySystem
+public sealed partial class TechnologyTreeSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _prototype = default!;
 
