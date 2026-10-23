@@ -645,3 +645,10 @@ Entries:
   id: 82
   time: '2026-10-23T16:11:53.0000000+00:00'
   url: https://github.com/Floof-Station-SS14/Floof-Station/pull/302
+- author: DaCookieCakes
+  changes:
+    - type: Tweak
+      message: The Goob research UI positioning/prerequisites is now separated.
+  id: 83
+  time: '2026-10-23T16:33:46.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/299
