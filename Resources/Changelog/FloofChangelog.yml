@@ -652,3 +652,12 @@ Entries:
   id: 83
   time: '2026-10-23T16:33:46.0000000+00:00'
   url: https://github.com/Floof-Station-SS14/Floof-Station/pull/299
+- author: Pachat-Kas
+  changes:
+    - type: Fix
+      message: >-
+        Latejoiners are now announced when they reach the station, not when they
+        board the arrivals shuttle.
+  id: 84
+  time: '2026-10-26T13:13:22.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/308
