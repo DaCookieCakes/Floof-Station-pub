@@ -661,3 +661,10 @@ Entries:
   id: 84
   time: '2026-10-26T13:13:22.0000000+00:00'
   url: https://github.com/Floof-Station-SS14/Floof-Station/pull/308
+- author: Pachat-Kas
+  changes:
+    - type: Tweak
+      message: Pet carriers can now fit people too.
+  id: 85
+  time: '2026-10-26T13:33:42.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/309
