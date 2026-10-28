@@ -779,6 +779,22 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.ToTable("ban_template", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.BankAccount", b =>
+                {
+                    b.Property<int>("ProfileId")
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_id");
+
+                    b.Property<int>("Balance")
+                        .HasColumnType("integer")
+                        .HasColumnName("balance");
+
+                    b.HasKey("ProfileId")
+                        .HasName("PK_bank_account");
+
+                    b.ToTable("bank_account", (string)null);
+                });
+
             modelBuilder.Entity("Content.Server.Database.Blacklist", b =>
                 {
                     b.Property<Guid>("UserId")
@@ -1029,6 +1045,81 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasFilter("priority = 3");
 
                     b.ToTable("job", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.LiveCharacter", b =>
+                {
+                    b.Property<int>("ProfileId")
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_id");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("created_at");
+
+                    b.Property<string>("Data")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("data");
+
+                    b.Property<DateTime>("LastSavedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("last_saved_at");
+
+                    b.Property<int?>("LastSavedRound")
+                        .HasColumnType("integer")
+                        .HasColumnName("last_saved_round");
+
+                    b.Property<int>("SchemaVersion")
+                        .HasColumnType("integer")
+                        .HasColumnName("schema_version");
+
+                    b.HasKey("ProfileId")
+                        .HasName("PK_live_character");
+
+                    b.ToTable("live_character", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.LiveCharacterHistory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("live_character_history_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Data")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("data");
+
+                    b.Property<int>("ProfileId")
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_id");
+
+                    b.Property<int>("Reason")
+                        .HasColumnType("integer")
+                        .HasColumnName("reason");
+
+                    b.Property<DateTime>("SavedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("saved_at");
+
+                    b.Property<int?>("SavedRound")
+                        .HasColumnType("integer")
+                        .HasColumnName("saved_round");
+
+                    b.Property<int>("SchemaVersion")
+                        .HasColumnType("integer")
+                        .HasColumnName("schema_version");
+
+                    b.HasKey("Id")
+                        .HasName("PK_live_character_history");
+
+                    b.HasIndex("ProfileId", "SavedAt");
+
+                    b.ToTable("live_character_history", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.PlayTime", b =>
@@ -1925,6 +2016,18 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Navigation("Round");
                 });
 
+            modelBuilder.Entity("Content.Server.Database.BankAccount", b =>
+                {
+                    b.HasOne("Content.Server.Database.Profile", "Profile")
+                        .WithOne("BankAccount")
+                        .HasForeignKey("Content.Server.Database.BankAccount", "ProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_bank_account_profile_profile_id");
+
+                    b.Navigation("Profile");
+                });
+
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {
                     b.HasOne("Content.Server.Database.Server", "Server")
@@ -2018,6 +2121,30 @@ namespace Content.Server.Database.Migrations.Postgres
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_job_profile_profile_id");
+
+                    b.Navigation("Profile");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.LiveCharacter", b =>
+                {
+                    b.HasOne("Content.Server.Database.Profile", "Profile")
+                        .WithOne("LiveCharacter")
+                        .HasForeignKey("Content.Server.Database.LiveCharacter", "ProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_live_character_profile_profile_id");
+
+                    b.Navigation("Profile");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.LiveCharacterHistory", b =>
+                {
+                    b.HasOne("Content.Server.Database.Profile", "Profile")
+                        .WithMany("LiveCharacterHistory")
+                        .HasForeignKey("ProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_live_character_history_profile_profile_id");
 
                     b.Navigation("Profile");
                 });
@@ -2276,9 +2403,15 @@ namespace Content.Server.Database.Migrations.Postgres
                 {
                     b.Navigation("Antags");
 
+                    b.Navigation("BankAccount");
+
                     b.Navigation("Genitals");
 
                     b.Navigation("Jobs");
+
+                    b.Navigation("LiveCharacter");
+
+                    b.Navigation("LiveCharacterHistory");
 
                     b.Navigation("Loadouts");
 

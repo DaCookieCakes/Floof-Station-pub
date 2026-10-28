@@ -319,11 +319,13 @@
     - RoboticsStatic
     - BorgModulesStatic
     - BorgLimbsStatic
+    - PowerCellsStatic
     dynamicPacks:
     - Robotics
     - BorgModules
     - MechParts
     - MechEquipment
+    - PowerCells
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
   - type: OreSiloClient
@@ -543,6 +545,7 @@
     - ThongsRecipePack
     # Floofstation section end
     - DenClothingJob #DEN
+    - NFWallets # Frontier
   - type: EmagLatheRecipes
     emagStaticPacks:
     - ClothingCentComm
