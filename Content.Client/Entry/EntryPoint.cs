@@ -1,3 +1,4 @@
+using Content.Client._Floof.Consent.Managers;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -79,9 +80,14 @@ namespace Content.Client.Entry
         [Dependency] private ClientsidePlaytimeTrackingManager _clientsidePlaytimeManager = default!;
         [Dependency] private ClientFeedbackManager _feedbackManager = null!;
 
+        [Dependency] private IClientConsentManager _clientConsentManager = default!; // Floof - Consent system
+
         public override void PreInit()
         {
             ClientContentIoC.Register(Dependencies);
+
+            // Floof - power-of-two atlas, the 12288 default makes sprite layers jitter by a pixel
+            Dependencies.Resolve<IConfigurationManager>().OverrideDefault(CVars.ResRSIAtlasSize, 8192);
 
             foreach (var callback in TestingCallbacks)
             {
@@ -170,6 +176,8 @@ namespace Content.Client.Entry
             _documentParsingManager.Initialize();
             _titleWindowManager.Initialize();
             _feedbackManager.Initialize();
+
+            _clientConsentManager.Initialize(); // Floof - Consent system
 
             _baseClient.RunLevelChanged += (_, args) =>
             {
