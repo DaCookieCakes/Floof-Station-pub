@@ -1,0 +1,186 @@
+# Floof-specific map migrations, loaded by FloofMapMigrationSystem (Content.Server/_Floof/Maps).
+# Same format as Resources/migration.yml: maps old entity prototype ids to new ids.
+# An empty or "null" value deletes the entity. Entries here override migration.yml.
+
+# e.g.
+# OldPrototypeId: NewPrototypeId
+# RemovedPrototypeId: null
+
+
+## 2026-10-28 - Saltern Port ##
+# Justice/court
+AirlockJustice: AirlockSecurity
+AirlockJusticeLocked: AirlockLawyerLocked
+AirlockChiefJusticeLocked: AirlockLawyerLocked
+AirlockProsecutorLocked: AirlockLawyerLocked
+AirlockMaintJusticeLocked: AirlockMaintLawyerLocked
+AirlockMaintChiefJusticeLocked: AirlockMaintLawyerLocked
+AirlockMaintProsecutorLocked: AirlockMaintLawyerLocked
+WindoorSecureJusticeLocked: WindoorSecurityLawyerLocked
+WindoorSecureProsecutorLocked: WindoorSecurityLawyerLocked
+SpawnPointChiefJustice: SpawnPointLawyer
+SpawnPointProsecutor: SpawnPointLawyer
+SpawnPointClerk: SpawnPointLawyer
+LockerChiefJusticeFilled: LockerSteel
+LockerClerkFilled: LockerSteel
+TrialTimer: SignalTimer
+GavelBlock: null
+ClothingNeckCloakCJ: null
+EncryptionKeyJustice: null
+SignDirectionaCourt: null
+
+# Mail/Logistics
+AirlockMailLocked: AirlockCargoLocked
+AirlockExternalSalvageLocked: AirlockExternalCargoLocked
+MailTeleporter: CargoMailTeleporter
+SpawnPointMailCarrier: SpawnPointCargoTechnician
+SpawnPointInventorySpecialist: SpawnPointCargoTechnician
+VendingMachineCourierDrobe: VendingMachineCargoDrobe
+CargoTechFab: Autolathe
+CargoTechFabCircuitboard: AutolatheMachineCircuitboard
+WeaponMailLake: null
+
+# Other Departments
+PrinterDoc: null
+AirlockCorpsmanLocked: AirlockSecurityLocked
+SuitStorageCorpsman: SuitStorageSec
+AirlockMantisGlassLocked: AirlockScienceGlassLocked
+LockerForensicMantisFilled: LockerScienceFilled
+SpawnPointForensicMantis: SpawnPointScientist
+SpawnPointRoboticist: SpawnPointScientist
+AirlockPsychologistLocked: AirlockMedicalLocked
+AirlockMaintPsychologistLocked: AirlockMaintMedLocked
+AirlockReporterLocked: AirlockServiceLocked
+AirlockMaintReporterLocked: AirlockMaintServiceLocked
+AirlockLibraryLocked: AirlockServiceLocked
+LockerBartenderFilled: LockerBoozeFilled
+LockerJanitorFilled: ClosetJanitorFilled
+LockerClownFilled: LockerClown
+LockerMimeFilled: LockerMime
+LockerParamedicFilledHardsuit: LockerParamedicFilled
+DoorElectronicsClown: DoorElectronicsTheatre
+DefaultStationBeaconPsychologist: DefaultStationBeaconPsychology
+DefaultStationBeaconCorpsman: DefaultStationBeaconBrigMed
+
+# Borgs
+SpawnPointMedicalBorg: SpawnPointBorg
+SpawnPointMedicalQuadborg: SpawnPointBorg
+SpawnPointServiceQuadborg: SpawnPointBorg
+Quadborgendoskeleton: CyborgEndoskeleton
+
+# Prison (no prisoner job)
+SpawnPointPrisoner: null
+SpawnPointPrisonGuard: SpawnPointSecurityOfficer
+CryogenicSleepUnitSpawnerPrisoner: CryogenicSleepUnit
+BoxPDAPrisoner: null
+BoxEncryptionKeyPrisoner: null
+EncryptionKeyPrison: null
+
+# Furniture
+TableWoodReinforced: TableWood
+BenchSofaLeft: BenchRedComfy
+BenchSofaMiddle: BenchRedComfy
+BenchSofaRight: BenchRedComfy
+BenchSofaCorner: BenchRedComfy
+BenchSofaCorpLeft: BenchComfy
+BenchSofaCorpMiddle: BenchComfy
+BenchSofaCorpRight: BenchComfy
+BenchSofaCorpCorner: BenchComfy
+BenchPewLeft: WoodenBench
+BenchPewMiddle: WoodenBench
+BenchPewRight: WoodenBench
+BenchParkLeft: WoodenBench
+BenchParkRight: WoodenBench
+BenchSteelLeft: SteelBench
+BenchSteelMiddle: SteelBench
+BenchSteelRight: SteelBench
+N14Bed: Bed
+N14ChairArmchair: ComfyChair
+N14ChairMetalRed: Chair
+N14ChairOfficeErgonomic: ChairOfficeDark
+N14ClosetCabinetWood: LockerSteel
+N14NoticeBoard2: NoticeBoard
+N14TableDeskWood2: TableWood
+N14DecorFloorPaper: null
+N14DecorFloorPaper1: null
+N14DecorFloorPaper3: null
+SignConspiracyBoard: NoticeBoard
+
+# Paper (keeps any written content)
+PaperStickyNote: Paper
+PaperStickyNoteBlue: Paper
+PaperStickyNoteGreen: Paper
+PaperStickyNotePink: Paper
+PaperStickyNoteStackFilled: PaperBin5
+PaperStickyNoteStackFilledBlue: PaperBin5
+PaperStickyNoteStackFilledGreen: PaperBin5
+PaperStickyNoteStackFilledPink: PaperBin5
+
+# Machines/vending
+SurveillanceCameraWirelessRouterBase: null
+PoweredSmallLightMaintenance: PoweredDimSmallLight
+PoweredSmallLightMaintenanceRed: PoweredDimSmallLight
+PoweredLightColoredRed: PoweredlightRed
+AlwaysPoweredLightPostSmallRed: LightPostSmallRed
+PoweredLightColoredBlack: PoweredlightBlack
+KitchenDeepFryer: null
+VendingMachineBoozeUnlocked: VendingMachineBooze
+VendingMachineSolsnack: VendingMachineSnack
+VendingMachineMNKDrobe: VendingMachineClothing
+VendingMachineBoxingDrobe: VendingMachineClothing
+WashingMachine: null
+GeigerCounterWallMount: null
+
+# Items
+DarkTile: FloorTileItemDark
+JetpackMicroFilled: JetpackMiniFilled
+DoubleEmergencyWaterVaporTankFilled: EmergencyDoubleTankWaterVaporFilled
+ExtendedEmergencyWaterVaporTankFilled: EmergencyTankWaterVaporFilled
+MagazineLightRifleLowCapacity: MagazineLightRifle
+MagazineLightRifleLowCapacityEmpty: MagazineLightRifleEmpty
+GunSafeVulcanRifle: GunSafeRifleLecter
+WeaponSniperGrand: WeaponSniperMosin
+SecBreachingHammer: Sledgehammer
+RightFootSkeleton: OrganSkeletonPersonFootRight
+RightLegSkeleton: OrganSkeletonPersonLegRight
+DrinkKoboldKorkscrewGlass: DrinkGlass
+BoxSoapsAssortedOmega: RandomSoap
+CrateFoodDonkpocketSavory: DonkpocketBoxSpawner
+CrateFoodDonkpocketSweet: DonkpocketBoxSpawner
+FoodLollipop: FoodSnackSwirlLollipop
+CrateServiceReplacementColoredLights: CrateJanitorialColorfulLights
+CardBoxBlack: null
+CardBoxNanotrasen: null
+Amphora: null
+PillMindbreakerToxin: null
+LunchboxEngineeringFilledRandom: null
+LunchboxEpistemics: null
+SpareIdCabinetFilled: null
+
+# Spawners/Markers
+SpawnPointLocationMidRoundAntag: null
+BoardGameSpawner: BoardGameSpawner100
+RandomBoards: RandomBoard
+RandomBox: null
+RandomCrystalSpawner: CrystalSpawner
+RandomItem: null
+AntiAnomalyZone: null
+AntiAnomalyZone20: null
+SpawnPointAdminAssistant: null
+SpawnPointNanotrasenRepresentative: null
+SpawnMobSecDogLaika: null
+
+# Posters
+PosterContrabandAyaya: RandomPosterContraband
+PosterContrabandBreadLies: RandomPosterContraband
+PosterContrabandSafetyMothSyndie: RandomPosterContraband
+PosterLegitBotanyFood: RandomPosterLegit
+PosterLegitDejaVu: RandomPosterLegit
+PosterLegitHotDonkExplosion: RandomPosterLegit
+
+# Psionics/Epistemics
+GlimmerProber: null
+MetempsychoticMachine: null
+OracleSpawner: null
+SophicScribeSpawner: null
+PortalShadowkinSpawner: null

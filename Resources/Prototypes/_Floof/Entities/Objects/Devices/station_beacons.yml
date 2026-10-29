@@ -1,0 +1,57 @@
+# Station beacons recreated for ported maps.
+
+- type: entity
+  parent: DefaultStationBeaconSecurity
+  id: DefaultStationBeaconChiefJustice
+  suffix: Chief Justice
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-floof-chief-justice
+
+- type: entity
+  parent: DefaultStationBeaconSecurity
+  id: DefaultStationBeaconProsecutor
+  suffix: Prosecutor
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-floof-prosecutor
+
+- type: entity
+  parent: DefaultStationBeaconSupply
+  id: DefaultStationBeaconMailroom
+  suffix: Mailroom
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-floof-mailroom
+
+- type: entity
+  parent: DefaultStationBeaconEngineering
+  id: DefaultStationBeaconEngiOutpost
+  suffix: Engi Outpost
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-floof-engi-outpost
+
+- type: entity
+  parent: DefaultStationBeaconCommand
+  id: DefaultStationBeaconConferenceRoom
+  suffix: Conference Room
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-floof-conference-room
+
+- type: entity
+  parent: DefaultStationBeaconScience
+  id: DefaultStationBeaconMantis
+  suffix: Mantis
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-floof-mantis
+
+- type: entity
+  parent: DefaultStationBeaconScience
+  id: DefaultStationBeaconProber
+  suffix: Prober
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-floof-prober

@@ -1,0 +1,22 @@
+- type: entity
+  parent: LightPostSmall
+  id: LightPostSmallRed
+  components:
+  - type: Sprite
+    sprite: Structures/Lighting/LightPosts/small_light_post.rsi
+    snapCardinals: true
+    drawdepth: Objects
+    noRot: true
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: base
+    - map: ["enum.PoweredLightLayers.Glow"]
+      state: glow
+      shader: unshaded
+      color: "#FB4747"
+    state: base
+  - type: PointLight
+    radius: 10
+    energy: 0.8
+    softness: 1
+    color: "#FB4747"

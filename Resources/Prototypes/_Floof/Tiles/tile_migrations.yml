@@ -1,0 +1,23 @@
+- type: tileAlias
+  id: CultFloorConcealed
+  target: FloorChromite
+
+- type: tileAlias
+  id: FloorMS13MetalGrate
+  target: FloorTechMaint3
+
+- type: tileAlias
+  id: FloorMS13WoodFancy
+  target: FloorWood
+
+- type: tileAlias
+  id: FloorMS13WoodMosaic
+  target: FloorWood
+
+- type: tileAlias
+  id: FloorMetalYellowSolid
+  target: FloorGold
+
+- type: tileAlias
+  id: FloorMetalGreySolid
+  target: FloorSilver

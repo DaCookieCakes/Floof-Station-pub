@@ -1,0 +1,169 @@
+# Named warp points, recreated for ported maps.
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointArrivals
+  suffix: Arrivals
+  components:
+  - type: WarpPoint
+    location: location-floof-arrivals
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointAtmos
+  suffix: Atmos
+  components:
+  - type: WarpPoint
+    location: location-floof-atmos
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointBotany
+  suffix: Botany
+  components:
+  - type: WarpPoint
+    location: location-floof-botany
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointChapel
+  suffix: Chapel
+  components:
+  - type: WarpPoint
+    location: location-floof-chapel
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointCourt
+  suffix: Court
+  components:
+  - type: WarpPoint
+    location: location-floof-court
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointCryo
+  suffix: Cryo
+  components:
+  - type: WarpPoint
+    location: location-floof-cryo
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointDorms
+  suffix: Dorms
+  components:
+  - type: WarpPoint
+    location: location-floof-dorms
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointEngineering
+  suffix: Engineering
+  components:
+  - type: WarpPoint
+    location: location-floof-engineering
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointEpistemics
+  suffix: Epistemics
+  components:
+  - type: WarpPoint
+    location: location-floof-epistemics
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointEvac
+  suffix: Evac
+  components:
+  - type: WarpPoint
+    location: location-floof-evac
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointHOP
+  suffix: HOP
+  components:
+  - type: WarpPoint
+    location: location-floof-hop
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointJanitor
+  suffix: Janitor
+  components:
+  - type: WarpPoint
+    location: location-floof-janitor
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointLawyer
+  suffix: Lawyer
+  components:
+  - type: WarpPoint
+    location: location-floof-lawyer
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointLogistics
+  suffix: Logistics
+  components:
+  - type: WarpPoint
+    location: location-floof-logistics
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointMedical
+  suffix: Medical
+  components:
+  - type: WarpPoint
+    location: location-floof-medical
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointPerma
+  suffix: Perma
+  components:
+  - type: WarpPoint
+    location: location-floof-perma
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointReporter
+  suffix: Reporter
+  components:
+  - type: WarpPoint
+    location: location-floof-reporter
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointSalvage
+  suffix: Salvage
+  components:
+  - type: WarpPoint
+    location: location-floof-salvage
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointSecurity
+  suffix: Security
+  components:
+  - type: WarpPoint
+    location: location-floof-security
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointSingulo
+  suffix: Singulo
+  components:
+  - type: WarpPoint
+    location: location-floof-singulo
+
+- type: entity
+  parent: WarpPoint
+  id: WarpPointVault
+  suffix: Vault
+  components:
+  - type: WarpPoint
+    location: location-floof-vault
