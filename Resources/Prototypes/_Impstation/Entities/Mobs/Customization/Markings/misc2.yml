@@ -46,7 +46,15 @@
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: abdomenbasic1
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: abdomenbasic1_behind
+    layer: TailBehindBackpack
+    colorFrom: abdomenbasic1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: abdomenbasic2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: abdomenbasic2_behind
+    layer: TailBehindBackpack
+    colorFrom: abdomenbasic2
 
 - type: marking
   id: CreepyArms
@@ -55,6 +63,10 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: creepy
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: creepy_behind
+    layer: TailBehindBackpack
+    colorFrom: creepy
 
 - type: marking
   id: AbdomenWidow
@@ -64,7 +76,15 @@
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: widow1
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: widow1_behind
+    layer: TailBehindBackpack
+    colorFrom: widow1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: widow2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: widow2_behind
+    layer: TailBehindBackpack
+    colorFrom: widow2
 
 - type: marking
   id: ScarTalons
@@ -122,6 +142,10 @@
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: tail_gecko1
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: tail_gecko1_behind
+    layer: TailBehind
+    colorFrom: tail_gecko1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: tail_gecko2
 
 - type: marking
@@ -135,4 +159,8 @@
     state: tail_snizard2
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: tail_snizard3
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: tail_snizard3_behind
+    layer: TailBehind
+    colorFrom: tail_snizard3
 
