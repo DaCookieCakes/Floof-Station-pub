@@ -767,3 +767,10 @@ Entries:
   id: 96
   time: '2026-10-27T20:54:16.0000000+00:00'
   url: https://github.com/Floof-Station-SS14/Floof-Station/pull/313
+- author: Pachat-Kas
+  changes:
+    - type: Add
+      message: The lobby and character picker now show each character's bank balance.
+  id: 97
+  time: '2026-10-30T02:17:06.0000000+00:00'
+  url: https://github.com/Floof-Station-SS14/Floof-Station/pull/317
