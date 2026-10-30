@@ -1,0 +1,20 @@
+- type: decal
+  id: NewMiniTileWhite
+  tags: ["station", "markings", "tiles", "white_tiles", "minis"]
+  sprite:
+    sprite: _Floof/Decals/mini.rsi
+    state: white
+
+- type: decal
+  id: NewMiniTileSteel
+  tags: ["station", "markings", "tiles", "steel_tiles", "minis"]
+  sprite:
+    sprite: _Floof/Decals/mini.rsi
+    state: steel
+
+- type: decal
+  id: NewMiniTileDark
+  tags: ["station", "markings", "tiles", "dark_tiles", "minis"]
+  sprite:
+    sprite: _Floof/Decals/mini.rsi
+    state: dark

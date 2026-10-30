@@ -1,3 +1,4 @@
+using Content.Client._Floof.Decals.UI; // Floof
 using Content.Client.Decals.UI;
 using Content.Client.Gameplay;
 using Content.Client.Sandbox;
@@ -17,8 +18,19 @@ public sealed partial class DecalPlacerUIController : UIController, IOnStateExit
 
     private DecalPlacerWindow? _window;
 
+    // Floof - set to false to fall back to the WizDen decal placer.
+    private static readonly bool UseFloofPlacer = true;
+
     public void ToggleWindow()
     {
+        // Floof - use the Floof decal placer instead. Covers the sandbox window, adminbus tab and keybind.
+        if (UseFloofPlacer)
+        {
+            UIManager.GetUIController<FloofDecalPlacerUIController>().ToggleWindow();
+            return;
+        }
+        // Floof end
+
         EnsureWindow();
 
         if (_window!.IsOpen)

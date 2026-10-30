@@ -1,0 +1,111 @@
+# Categories (tabs) for the decal placer.
+# A decal goes in a category if it matches any of `decals` (explicit IDs), `tags` (decal tags) or `prefixes` (ID prefixes).
+# `excludeTags` / `excludeDecals` will remove matches from that category.
+
+- type: decalCategory
+  id: DecalCatMarkings
+  name: decal-category-markings
+  priority: 100
+  prefixes:
+  - Arrows
+  - Bot
+  - Box
+  - Caution
+  - Checker
+  - Delivery
+  - HatchSmall
+  - LoadingArea
+  - StandClear
+  - VentSmall
+  - Warn
+  excludeTags:
+  - overlay
+
+- type: decalCategory
+  id: DecalCatTileTrims
+  name: decal-category-tile-trims
+  priority: 90
+  prefixes:
+  - BrickTile
+  - MiniTile
+  - ConcreteTrim
+  - GrayConcreteTrim
+  - OldConcreteTrim
+  - WoodTrimThin
+  excludeTags:
+  - overlay
+
+- type: decalCategory
+  id: DecalCatMiniTiles
+  name: decal-category-tile-mini
+  priority: 95
+  tags:
+  - minis
+
+- type: decalCategory
+  id: DecalCatOverlays
+  name: decal-category-overlays
+  priority: 80
+  tags:
+  - overlay
+
+- type: decalCategory
+  id: DecalCatSlats
+  name: decal-category-slats
+  priority: 70
+  prefixes:
+  - SteelSlat
+  - DarkSlat
+  - WhiteSlat
+  - Slat
+
+- type: decalCategory
+  id: DecalCatLettering
+  name: decal-category-lettering
+  priority: 60
+  prefixes:
+  - Stencil
+
+- type: decalCategory
+  id: DecalCatSigns
+  name: decal-category-signs
+  priority: 50
+  prefixes:
+  - SpaceStationSign
+  - OriginStationSign
+  - DerelictSign
+  - FloofStationSign
+  - syndlogo
+
+- type: decalCategory
+  id: DecalCatStairs
+  name: decal-category-stairs
+  priority: 40
+  prefixes:
+  - Stairs
+
+- type: decalCategory
+  id: DecalCatGrime
+  name: decal-category-grime
+  priority: 30
+  tags:
+  - dirty
+  - burnt
+
+- type: decalCategory
+  id: DecalCatNature
+  name: decal-category-nature
+  priority: 20
+  tags:
+  - flora
+  - rock
+  prefixes:
+  - Bush
+  - Flowers
+
+- type: decalCategory
+  id: DecalCatCrayon
+  name: decal-category-crayon
+  priority: 10
+  tags:
+  - crayon

@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "license": "CC0-1.0",
+    "copyright": "Edited by Cookie, modified from the Respritening tiles by Wizard's Den.",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "dark"
+        },
+        {
+            "name": "steel"
+        },
+        {
+            "name": "white"
+        }
+    ]
+}

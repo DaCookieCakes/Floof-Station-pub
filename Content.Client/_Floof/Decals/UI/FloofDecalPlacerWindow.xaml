@@ -1,0 +1,63 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+               Title="{Loc 'floof-decal-placer-window-title'}"
+               MinSize="460 560"
+               SetSize="520 720">
+    <BoxContainer Orientation="Vertical">
+        <!-- Categories + decal grid -->
+        <BoxContainer Orientation="Horizontal" VerticalExpand="True">
+            <ScrollContainer MinWidth="130" HScrollEnabled="False">
+                <BoxContainer Name="CategoryList" Orientation="Vertical" Margin="0 0 4 0">
+                    <!-- Category buttons get added here by code -->
+                </BoxContainer>
+            </ScrollContainer>
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+                <LineEdit Name="Search" PlaceHolder="{Loc 'floof-decal-placer-window-search'}" />
+                <ScrollContainer VerticalExpand="True" HScrollEnabled="False">
+                    <GridContainer Name="Grid" Columns="9">
+                        <!-- Decals get added here by code -->
+                    </GridContainer>
+                </ScrollContainer>
+                <Label Name="SelectedLabel" StyleClasses="LabelSubText" ClipText="True" />
+            </BoxContainer>
+        </BoxContainer>
+
+        <!-- Color -->
+        <BoxContainer Orientation="Vertical">
+            <ColorSelectorSliders Name="ColorPicker" IsAlphaVisible="True" />
+            <Button Name="PickerOpen" Text="{Loc 'decal-placer-window-palette'}" />
+        </BoxContainer>
+
+        <!-- Placement -->
+        <Label Text="{Loc 'floof-decal-placer-window-placement'}" StyleClasses="LabelHeading" Margin="0 6 0 0" />
+        <BoxContainer Orientation="Horizontal">
+            <CheckBox Name="EnableAuto" Text="{Loc 'decal-placer-window-enable-auto'}" HorizontalExpand="True" />
+            <CheckBox Name="EnableColor" Text="{Loc 'decal-placer-window-use-color'}" HorizontalExpand="True" />
+            <CheckBox Name="EnableCleanable" Text="{Loc 'decal-placer-window-enable-cleanable'}" HorizontalExpand="True" />
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal">
+            <Label Text="{Loc 'floof-decal-placer-window-snap'}" Margin="0 0 4 0" />
+            <OptionButton Name="SnapOption" HorizontalExpand="True" />
+            <CheckBox Name="ShowGrid" Text="{Loc 'floof-decal-placer-window-show-grid'}" Margin="8 0 0 0" />
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal">
+            <BoxContainer Name="SpinBoxContainer" Orientation="Horizontal" HorizontalExpand="True">
+                <Label Text="{Loc 'decal-placer-window-rotation'}" Margin="0 0 4 0" />
+            </BoxContainer>
+            <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="8 0 0 0">
+                <Label Text="{Loc 'decal-placer-window-zindex'}" Margin="0 0 4 0" />
+                <SpinBox Name="ZIndexSpinBox" HorizontalExpand="True" />
+            </BoxContainer>
+        </BoxContainer>
+
+        <!-- Erasing -->
+        <Label Text="{Loc 'floof-decal-placer-window-erasing'}" StyleClasses="LabelHeading" Margin="0 6 0 0" />
+        <BoxContainer Orientation="Horizontal">
+            <Label Text="{Loc 'floof-decal-placer-window-erase-mode'}" Margin="0 0 4 0" />
+            <OptionButton Name="EraseModeOption" HorizontalExpand="True" />
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal">
+            <CheckBox Name="EraseOnlySelected" Text="{Loc 'floof-decal-placer-window-erase-only-selected'}" HorizontalExpand="True" />
+            <CheckBox Name="EraseOnlyColor" Text="{Loc 'floof-decal-placer-window-erase-only-color'}" HorizontalExpand="True" />
+        </BoxContainer>
+    </BoxContainer>
+</DefaultWindow>
