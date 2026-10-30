@@ -32,41 +32,6 @@
             "directions": 4
         },
         {
-            "name": "blade",
-            "directions": 4
-        },
-        {
-            "name": "blade-wreck"
-        },
-        {
-            "name": "blade-rest",
-            "directions": 4
-        },
-        {
-            "name": "blade-sit",
-            "directions": 4
-        },
-        {
-            "name": "blade-bellyup",
-            "directions": 4
-        },
-        {
-            "name": "blade_e",
-            "directions": 4
-        },
-        {
-            "name": "blade_l",
-            "directions": 4
-        },
-        {
-            "name": "bladesleeper_r",
-            "directions": 4
-        },
-        {
-            "name": "bladesleeper_g",
-            "directions": 4
-        },
-        {
             "name": "k9",
             "directions": 4
         },
@@ -141,6 +106,10 @@
         },
         {
             "name": "k9_e",
+            "directions": 4
+        },
+        {
+            "name": "k9_e_r",
             "directions": 4
         },
         {
@@ -446,6 +415,10 @@
         },
         {
             "name": "medihound_e",
+            "directions": 4
+        },
+        {
+            "name": "medihound_e_r",
             "directions": 4
         },
         {
@@ -793,129 +766,6 @@
             ]
         },
         {
-            "name": "k69",
-            "directions": 4
-        },
-        {
-            "name": "k69_walk",
-            "directions": 4,
-            "delays": [
-                [
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07
-                ],
-                [
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07
-                ],
-                [
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07
-                ],
-                [
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07
-                ]
-            ]
-        },
-        {
-            "name": "k69-wreck"
-        },
-        {
-            "name": "k69_e",
-            "directions": 4
-        },
-        {
-            "name": "k69_l",
-            "directions": 4
-        },
-        {
-            "name": "k69_l",
-            "directions": 4,
-            "delays": [
-                [
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07
-                ],
-                [
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07
-                ],
-                [
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07
-                ],
-                [
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07,
-                    0.07
-                ]
-            ]
-        },
-        {
             "name": "scrubpup",
             "directions": 4
         },
@@ -982,6 +832,10 @@
         },
         {
             "name": "scrubpup_e",
+            "directions": 4
+        },
+        {
+            "name": "scrubpup_e_r",
             "directions": 4
         },
         {
@@ -1270,6 +1124,28 @@
         },
         {
             "name": "alina-eng_e",
+            "directions": 4,
+            "delays": [
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "alina-eng_e_r",
             "directions": 4,
             "delays": [
                 [
@@ -1596,6 +1472,10 @@
             "directions": 4
         },
         {
+            "name": "alina-sec_e_r",
+            "directions": 4
+        },
+        {
             "name": "alina-sec_walk_e",
             "directions": 4,
             "delays": [
@@ -1898,6 +1778,10 @@
         },
         {
             "name": "alina-med_e",
+            "directions": 4
+        },
+        {
+            "name": "alina-med_e_r",
             "directions": 4
         },
         {
@@ -2206,6 +2090,10 @@
             "directions": 4
         },
         {
+            "name": "medihounddark_e_r",
+            "directions": 4
+        },
+        {
             "name": "medihounddark_walk_e",
             "directions": 4,
             "delays": [
@@ -2511,6 +2399,10 @@
             "directions": 4
         },
         {
+            "name": "pupdozer_e_r",
+            "directions": 4
+        },
+        {
             "name": "pupdozer_walk_e",
             "directions": 4,
             "delays": [
@@ -2624,6 +2516,10 @@
         },
         {
             "name": "dozersleeper_g",
+            "directions": 4
+        },
+        {
+            "name": "dozersleeper_walk_r",
             "directions": 4,
             "delays": [
                 [
@@ -2675,10 +2571,6 @@
                     0.1
                 ]
             ]
-        },
-        {
-            "name": "dozersleeper_walk_r",
-            "directions": 4
         },
         {
             "name": "k9dark",
@@ -2752,6 +2644,126 @@
         {
             "name": "k9dark-bellyup",
             "directions": 4
+        },
+        {
+            "name": "k9dark_e",
+            "directions": 4
+        },
+        {
+            "name": "k9dark_e_r",
+            "directions": 4
+        },
+        {
+            "name": "k9dark_walk_e",
+            "directions": 4,
+            "delays": [
+                [
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07
+                ],
+                [
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07
+                ],
+                [
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07
+                ],
+                [
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07
+                ]
+            ]
+        },
+        {
+            "name": "k9dark_l",
+            "directions": 4
+        },
+        {
+            "name": "k9dark_walk_l",
+            "directions": 4,
+            "delays": [
+                [
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07
+                ],
+                [
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07
+                ],
+                [
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07
+                ],
+                [
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07,
+                    0.07
+                ]
+            ]
         },
         {
             "name": "k9darksleeper_g",
@@ -2944,6 +2956,10 @@
         },
         {
             "name": "valemed_e",
+            "directions": 4
+        },
+        {
+            "name": "valemed_e_r",
             "directions": 4
         },
         {
@@ -3248,7 +3264,11 @@
             "directions": 4
         },
         {
-            "name": "valsci_e",
+            "name": "valesci_e",
+            "directions": 4
+        },
+        {
+            "name": "valesci_e_r",
             "directions": 4
         },
         {
@@ -3554,6 +3574,10 @@
         },
         {
             "name": "valesec_e",
+            "directions": 4
+        },
+        {
+            "name": "valesec_e_r",
             "directions": 4
         },
         {
@@ -3895,6 +3919,28 @@
             ]
         },
         {
+            "name": "valeeng_e_r",
+            "directions": 4,
+            "delays": [
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
             "name": "valeeng_walk_e",
             "directions": 4,
             "delays": [
@@ -4197,6 +4243,10 @@
         },
         {
             "name": "valemine_e",
+            "directions": 4
+        },
+        {
+            "name": "valemine_e_r",
             "directions": 4
         },
         {
@@ -4505,7 +4555,11 @@
             "directions": 4
         },
         {
-            "name": "k50_e_walk",
+            "name": "k50_e_r",
+            "directions": 4
+        },
+        {
+            "name": "k50_walk_e",
             "directions": 4,
             "delays": [
                 [
@@ -4563,7 +4617,7 @@
             "directions": 4
         },
         {
-            "name": "k60_walk_l",
+            "name": "k50_walk_l",
             "directions": 4,
             "delays": [
                 [
@@ -4706,6 +4760,10 @@
         },
         {
             "name": "valeserv_e",
+            "directions": 4
+        },
+        {
+            "name": "valeserv_e_r",
             "directions": 4
         },
         {
@@ -5026,6 +5084,10 @@
         },
         {
             "name": "valeservdark_e",
+            "directions": 4
+        },
+        {
+            "name": "valeservdark_e_r",
             "directions": 4
         },
         {
