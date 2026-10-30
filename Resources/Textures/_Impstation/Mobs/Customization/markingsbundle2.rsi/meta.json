@@ -33,7 +33,15 @@
       "directions": 4
     },
     {
+      "name": "abdomenbasic1_behind",
+      "directions": 4
+    },
+    {
       "name": "abdomenbasic2",
+      "directions": 4
+    },
+    {
+      "name": "abdomenbasic2_behind",
       "directions": 4
     },
     {
@@ -73,6 +81,10 @@
       "directions": 4
     },
     {
+      "name": "tail_gecko1_behind",
+      "directions": 4
+    },
+    {
       "name": "tail_gecko2",
       "directions": 4
     },
@@ -89,7 +101,15 @@
       "directions": 4
     },
     {
+      "name": "tail_snizard3_behind",
+      "directions": 4
+    },
+    {
       "name": "widow1",
+      "directions": 4
+    },
+    {
+      "name": "widow1_behind",
       "directions": 4
     },
     {
@@ -97,7 +117,15 @@
       "directions": 4
     },
     {
+      "name": "widow2_behind",
+      "directions": 4
+    },
+    {
       "name": "creepy",
+      "directions": 4
+    },
+    {
+      "name": "creepy_behind",
       "directions": 4
     }
   ]

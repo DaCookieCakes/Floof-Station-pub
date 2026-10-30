@@ -12,7 +12,15 @@
             "directions": 4
         },
         {
+            "name": "selene_behind",
+            "directions": 4
+        },
+        {
             "name": "selene_primary",
+            "directions": 4
+        },
+        {
+            "name": "selene_primary_behind",
             "directions": 4
         },
         {

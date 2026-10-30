@@ -14,6 +14,7 @@
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: bunnytail
+    layer: TailBehindBackpack
 
 - type: marking
   id: BunnyTailAlt
@@ -31,6 +32,7 @@
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: bunnytailalt
+    layer: TailBehindBackpack
 
 - type: marking
   id: DobleFur
@@ -156,6 +158,10 @@
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: sharktail
+  - sprite: Mobs/Customization/kemonomimi-tails.rsi
+    state: sharktail_behind
+    layer: TailBehind
+    colorFrom: sharktail
 
 - type: marking
   id: TasselTail
