@@ -1,3 +1,6 @@
+job-name-dogborg = Dogborg
+job-description-dogborg = Use your canine robotic chassis to perform a wide variety of specialized tasks.
+
 ## Dogborg types. Variants share their main type's description.
 
 borg-select-type-menu-variants = Variants
